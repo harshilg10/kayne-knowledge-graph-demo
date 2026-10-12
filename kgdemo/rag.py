@@ -58,6 +58,7 @@ class RagResult:
     chunks: list[dict] = field(default_factory=list)
     facts: list[Fact] = field(default_factory=list)
     cypher: list[str] = field(default_factory=list)
+    queries: list[dict] = field(default_factory=list)   # {purpose, kind: retrieve|graph, cypher, params, rows}
     nodes: list[dict] = field(default_factory=list)
     edges: list[dict] = field(default_factory=list)
     context: str = ""
@@ -102,14 +103,28 @@ def _fmt_date(iso: str) -> str:
 
 
 class _Recorder:
-    """Runs Cypher and remembers what was executed (shown in the app for transparency)."""
+    """Runs Cypher and remembers what was executed, why, and with which parameters (shown in the app)."""
 
     def __init__(self, result: RagResult):
         self.result = result
 
-    def run(self, cypher: str, params: dict) -> list[dict]:
+    def run(self, purpose: str, cypher: str, params: dict) -> list[dict]:
+        rows = db.run(cypher, params)
+        self._log(purpose, "retrieve", cypher, params, len(rows))
+        return rows
+
+    def graph(self, purpose: str, cypher: str, params: dict) -> None:
+        """Runs the query that draws the traversal; best effort, so a failure leaves an empty picture."""
+        try:
+            self.result.nodes, self.result.edges = db.run_graph(cypher, params)
+        except Exception:
+            self.result.nodes, self.result.edges = [], []
+        self._log(purpose, "graph", cypher, params, len(self.result.nodes))
+
+    def _log(self, purpose: str, kind: str, cypher: str, params: dict, rows: int) -> None:
         self.result.cypher.append(cypher.strip())
-        return db.run(cypher, params)
+        self.result.queries.append({"purpose": purpose, "kind": kind, "cypher": cypher.strip(),
+                                    "params": dict(params), "rows": rows})
 
 
 # =============================================================================
@@ -196,7 +211,7 @@ def choose_strategy(linked: dict) -> str:
 # Graph-RAG strategies
 # =============================================================================
 def _client_overview(rec: _Recorder, client_id: str) -> tuple[dict, list[Fact]]:
-    rows = rec.run(
+    rows = rec.run("Client, advisor and contacts",
         "MATCH (c:Client {id: $cid})\n"
         "OPTIONAL MATCH (c)-[:ADVISED_BY]->(adv:Person)\n"
         "OPTIONAL MATCH (p:Person)-[r:CONTACT_FOR]->(c)\n"
@@ -205,7 +220,8 @@ def _client_overview(rec: _Recorder, client_id: str) -> tuple[dict, list[Fact]]:
     if not rows:
         return {}, []
     c = rows[0]
-    total = rec.run("MATCH (:Client {id: $cid})-[o:OWNS]->(:Fund) RETURN sum(o.market_value) AS total",
+    total = rec.run("The client's total assets",
+                    "MATCH (:Client {id: $cid})-[o:OWNS]->(:Fund) RETURN sum(o.market_value) AS total",
                     {"cid": client_id})[0]["total"]
     c["total"] = total
     fact = Fact("client", f"Client {c['name']} ({c['id']}): {c['segment']}, {c['risk']} profile, total assets "
@@ -215,7 +231,7 @@ def _client_overview(rec: _Recorder, client_id: str) -> tuple[dict, list[Fact]]:
 
 
 def _exposure_facts(rec: _Recorder, client_id: str, theme: dict, total: float) -> tuple[float, list[Fact]]:
-    rows = rec.run(
+    rows = rec.run("Look-through exposure, fund by fund",
         "MATCH (:Client {id: $cid})-[o:OWNS]->(f:Fund)\n"
         "OPTIONAL MATCH (f)-[i:INVESTED_IN]->(co:Company)-[e:EXPOSED_TO]->(:Theme {id: $tid})\n"
         "WITH f, o, i, co, e ORDER BY i.weight DESC\n"
@@ -248,7 +264,7 @@ def _exposure_facts(rec: _Recorder, client_id: str, theme: dict, total: float) -
 
 
 def _related_theme_facts(rec: _Recorder, client_id: str, theme: dict, total: float) -> list[Fact]:
-    rows = rec.run(
+    rows = rec.run("Exposure to related themes",
         "MATCH (:Theme {id: $tid})-[l:RELATED_TO]-(rt:Theme)\n"
         "MATCH (:Client {id: $cid})-[o:OWNS]->(f:Fund)-[i:INVESTED_IN]->(co:Company)-[e:EXPOSED_TO]->(rt)\n"
         f"WITH rt, l, sum(o.market_value * i.weight / 100.0 * {DEGREE_CASE}) AS exposed,\n"
@@ -267,7 +283,7 @@ def _related_theme_facts(rec: _Recorder, client_id: str, theme: dict, total: flo
 
 def _decision_facts(rec: _Recorder, theme_ids: list[str], since: str | None, as_of: str,
                     client_id: str | None = None, direction: str | None = None) -> list[Fact]:
-    rows = rec.run(
+    rows = rec.run("Investment Committee decisions on the theme",
         "MATCH (dec:Decision)-[:AFFECTS]->(t:Theme) WHERE t.id IN $tids\n"
         "  AND dec.date <= date($as_of) AND ($since IS NULL OR dec.date >= date($since))\n"
         "  AND ($direction IS NULL OR dec.direction = $direction)\n"
@@ -297,7 +313,7 @@ def _decision_facts(rec: _Recorder, theme_ids: list[str], since: str | None, as_
 
 
 def _trade_facts(rec: _Recorder, client_id: str, theme_id: str, since: str | None, as_of: str) -> list[Fact]:
-    rows = rec.run(
+    rows = rec.run("Trades in the client's accounts",
         "MATCH (:Client {id: $cid})-[:HAS_ACCOUNT]->(a:Account)-[:HAS_TRANSACTION]->(x:Transaction)-[:INVOLVES]->(f:Fund)\n"
         "WHERE x.date <= date($as_of) AND ($since IS NULL OR x.date >= date($since))\n"
         "OPTIONAL MATCH (x)-[:PURSUANT_TO]->(dec:Decision)\n"
@@ -321,7 +337,7 @@ def _client_document_facts(rec: _Recorder, client_id: str, theme_id: str, since:
     """Documents linked to the client and to the theme. Client correspondence (CRM notes, emails with the client's
     contacts) and internal documents that name the client are kept apart; notes of client meetings are reported with
     the meetings."""
-    rows = rec.run(
+    rows = rec.run("Documents about the client",
         "MATCH (c:Client {id: $cid})\n"
         "MATCH (d:Document)\n"
         "WHERE d.date <= date($as_of) AND ($since IS NULL OR d.date >= date($since))\n"
@@ -367,7 +383,7 @@ def _client_document_facts(rec: _Recorder, client_id: str, theme_id: str, since:
 
 def _meeting_facts(rec: _Recorder, theme_id: str, since: str | None, as_of: str, client_id: str | None = None,
                    before: str | None = None, committee_only: bool = False) -> list[Fact]:
-    rows = rec.run(
+    rows = rec.run("Meetings that discussed the theme",
         "MATCH (m:Meeting)-[r:DISCUSSED]->(:Theme {id: $tid})\n"
         "WHERE m.date <= date($as_of) AND ($since IS NULL OR m.date >= date($since))\n"
         "  AND ($before IS NULL OR m.date < date($before))\n"
@@ -392,7 +408,7 @@ def _meeting_facts(rec: _Recorder, theme_id: str, since: str | None, as_of: str,
 
 
 def _client_meeting_facts(rec: _Recorder, client_id: str, since: str | None, as_of: str) -> list[Fact]:
-    rows = rec.run(
+    rows = rec.run("Meetings with the client",
         "MATCH (m:Meeting)-[:FOR_CLIENT]->(:Client {id: $cid})\n"
         "WHERE m.date <= date($as_of) AND ($since IS NULL OR m.date >= date($since))\n"
         "OPTIONAL MATCH (p:Person)-[:ATTENDED]->(m)\n"
@@ -407,7 +423,7 @@ def _client_meeting_facts(rec: _Recorder, client_id: str, since: str | None, as_
 
 
 def _research_facts(rec: _Recorder, theme_id: str, since: str | None, as_of: str, limit: int = 8) -> list[Fact]:
-    rows = rec.run(
+    rows = rec.run("Research on the theme",
         "MATCH (d:Document {doc_type: 'Research Report'})-[r:MENTIONS]->(:Theme {id: $tid})\n"
         "WHERE d.date <= date($as_of) AND ($since IS NULL OR d.date >= date($since))\n"
         "OPTIONAL MATCH (a:Person)-[:AUTHORED]->(d)\n"
@@ -426,17 +442,13 @@ def _research_facts(rec: _Recorder, theme_id: str, since: str | None, as_of: str
     return facts
 
 
-def _graph_for(query_id: str, params: dict) -> tuple[list[dict], list[dict]]:
+def _graph_for(rec: _Recorder, query_id: str, params: dict) -> None:
     from .queries import by_id
     q = by_id(query_id)
-    try:
-        return db.run_graph(q.cypher, {**q.params, **params})
-    except Exception:  # visualization is best effort
-        return [], []
+    rec.graph("Draw the graph above", q.cypher, {**q.params, **params})
 
 
 def strategy_client_theme_impact(rec: _Recorder, linked: dict) -> list[Fact]:
-    res = rec.result
     client = linked["clients"][0]
     theme = linked["themes"][0]
     since, as_of = linked["since"], linked["as_of"]
@@ -451,15 +463,13 @@ def strategy_client_theme_impact(rec: _Recorder, linked: dict) -> list[Fact]:
     facts += _meeting_facts(rec, theme["id"], since, as_of, client_id=client["id"], committee_only=True)
     facts += _client_document_facts(rec, client["id"], theme["id"], since, as_of)
     facts += _research_facts(rec, theme["id"], since, as_of)
-    res.nodes, res.edges = _graph_for("client-theme-impact", {"client": client["name"], "theme": theme["name"],
-                                                              "as_of": as_of})
+    _graph_for(rec, "client-theme-impact", {"client": client["name"], "theme": theme["name"], "as_of": as_of})
     return facts
 
 
 def strategy_decision_provenance(rec: _Recorder, linked: dict) -> list[Fact]:
     """Decision -> proposing memo and its authors -> cited research -> the meetings and internal correspondence about
     what the decision changes (its funds and companies) in the 120 days before -> the decision meeting -> trades."""
-    res = rec.result
     theme = linked["themes"][0]
     as_of = linked["as_of"]
     decisions = _decision_facts(rec, [theme["id"]], linked["since"], as_of, direction=linked["direction"])
@@ -468,7 +478,7 @@ def strategy_decision_provenance(rec: _Recorder, linked: dict) -> list[Fact]:
         dec = dec_fact.data
         facts.append(dec_fact)
         if dec["memo_id"]:
-            cited = rec.run(
+            cited = rec.run(f"{dec['id']}: research the memo cites",
                 "MATCH (:Document {id: $memo})-[:CITES]->(d:Document)\n"
                 "OPTIONAL MATCH (a:Person)-[:AUTHORED]->(d)\n"
                 "RETURN d.id AS id, d.title AS title, toString(d.date) AS date, d.doc_type AS type,\n"
@@ -478,7 +488,7 @@ def strategy_decision_provenance(rec: _Recorder, linked: dict) -> list[Fact]:
                                            f"({_fmt_date(c['date'])}, by {', '.join(c['authors'])}).",
                                   [c["id"]], {**c, "decision": dec["id"]}))
         if dec["meeting_id"]:
-            mt = rec.run(
+            mt = rec.run(f"{dec['id']}: the meeting that decided it",
                 "MATCH (m:Meeting {id: $mid})\n"
                 "OPTIONAL MATCH (p:Person)-[:ATTENDED]->(m)\n"
                 "OPTIONAL MATCH (d:Document)-[:RECORDS]->(m)\n"
@@ -492,12 +502,12 @@ def strategy_decision_provenance(rec: _Recorder, linked: dict) -> list[Fact]:
                                   f"{', '.join(m['attendees'])}. Notes: \"{(m['evidence'] or '')[:240]}\"",
                                   [m["doc_id"] or dec["meeting_id"]], {**m, "decision": dec["id"]}))
         start = (date.fromisoformat(dec["date"]) - timedelta(days=120)).isoformat()
-        affected = rec.run(
+        affected = rec.run(f"{dec['id']}: what the decision changes",
             "MATCH (:Decision {id: $did})-[:AFFECTS]->(x)\n"
             "RETURN [y IN collect(x) WHERE y:Company | y.id] AS companies, [y IN collect(x) WHERE y:Fund | y.id] AS funds",
             {"did": dec["id"]})[0]
         targets = affected["companies"] or affected["funds"]  # what the decision is specifically about
-        meetings = rec.run(
+        meetings = rec.run(f"{dec['id']}: earlier meetings on those topics",
             "MATCH (m:Meeting)-[r:DISCUSSED]->(x)\n"
             "WHERE m.date >= date($start) AND m.date < date($before)\n"
             "  AND m.meeting_type IN ['Investment Committee', 'Research', 'Due Diligence', 'Risk Review']\n"
@@ -514,7 +524,7 @@ def strategy_decision_provenance(rec: _Recorder, linked: dict) -> list[Fact]:
                               f"{_fmt_date(m['date'])} {m['title']} ({m['type']}) discussed {', '.join(m['topics'])}; "
                               f"attendees: {', '.join(m['attendees'])}. \"{(m['evidence'] or '')[:220]}\"",
                               [m["doc_id"] or m["id"]], {**m, "decision": dec["id"]}))
-        prior_docs = rec.run(
+        prior_docs = rec.run(f"{dec['id']}: earlier internal emails and memos",
             "MATCH (d:Document)-[r:MENTIONS]->(x)\n"
             "WHERE d.doc_type IN ['Email', 'IC Memo'] AND d.date >= date($start) AND d.date < date($before)\n"
             "  AND (x.id IN $targets OR (size($targets) = 0 AND x.id = $tid))\n"
@@ -536,7 +546,7 @@ def strategy_decision_provenance(rec: _Recorder, linked: dict) -> list[Fact]:
             facts.append(Fact("prior_document",
                               f"{_fmt_date(d['date'])} {d['type'].lower()} '{d['title']}' from {', '.join(d['authors'])}: "
                               f"\"{quote[:220]}\"", [d["id"]], {**d, "decision": dec["id"]}))
-        impl = rec.run(
+        impl = rec.run(f"{dec['id']}: the trades that implemented it",
             "MATCH (:Decision {id: $did})<-[:PURSUANT_TO]-(x:Transaction)<-[:HAS_TRANSACTION]-(a:Account)<-[:HAS_ACCOUNT]-(c:Client)\n"
             "RETURN count(x) AS trades, count(DISTINCT a) AS accounts, collect(DISTINCT c.name) AS clients,\n"
             "       sum(CASE WHEN x.txn_type IN ['BUY', 'CAPITAL_CALL'] THEN x.amount_usd ELSE 0 END) AS bought,\n"
@@ -550,12 +560,13 @@ def strategy_decision_provenance(rec: _Recorder, linked: dict) -> list[Fact]:
                               + (f"on {_fmt_date(i['first'])}." if i["first"] == i["last"] else
                                  f"between {_fmt_date(i['first'])} and {_fmt_date(i['last'])}."),
                               [dec["id"]], {**i, "decision": dec["id"]}))
-    res.nodes, res.edges = _graph_for("decision-provenance", {"theme": theme["name"]})
+    _graph_for(rec, "decision-provenance", {"theme": theme["name"]})
     return facts
 
 
-def _company_graph(company_id: str, client_ids: list[str] | None = None):
-    return db.run_graph(
+def _company_graph(rec: _Recorder, company_id: str, client_ids: list[str] | None = None) -> None:
+    rec.graph(
+        "Draw the graph above",
         "MATCH (co:Company {id: $cid})\n"
         "CALL (co) {\n"
         "  MATCH p = (c:Client)-[:OWNS]->(:Fund)-[:INVESTED_IN]->(co)\n"
@@ -570,9 +581,8 @@ def _company_graph(company_id: str, client_ids: list[str] | None = None):
 
 
 def strategy_company_exposure(rec: _Recorder, linked: dict) -> list[Fact]:
-    res = rec.result
     company = linked["companies"][0]
-    rows = rec.run(
+    rows = rec.run("Clients exposed to the company, through funds",
         "MATCH (c:Client)-[o:OWNS]->(f:Fund)-[i:INVESTED_IN]->(co:Company {id: $cid})\n"
         "WITH c, sum(o.market_value * i.weight / 100.0) AS look_through,\n"
         "     collect(f.name + ' (' + toString(i.weight) + '%)') AS via\n"
@@ -587,7 +597,7 @@ def strategy_company_exposure(rec: _Recorder, linked: dict) -> list[Fact]:
                           f"{r['client']}: {_usd(r['look_through'])} look-through {company['name']} exposure "
                           f"({_pct(100 * r['look_through'] / r['total'])} of {_usd(r['total'])}) via {', '.join(r['via'])}; "
                           f"advisor {r['advisor']}.", [r["id"]], r))
-    comms = rec.run(
+    comms = rec.run("Client communications that mention the company",
         "MATCH (d:Document)-[r:MENTIONS]->(:Company {id: $cid})\n"
         "MATCH (c:Client)\n"
         "WHERE EXISTS { (d)-[:ABOUT]->(c) } OR EXISTS { (d)-[:SENT_TO]->(:Person)-[:CONTACT_FOR]->(c) }\n"
@@ -601,7 +611,7 @@ def strategy_company_exposure(rec: _Recorder, linked: dict) -> list[Fact]:
         facts.append(Fact("client_communication",
                           f"{_fmt_date(d['date'])} {d['type']} with {d['client']}: '{d['title']}'{who}: "
                           f"\"{(d['evidence'] or '')[:220]}\"", [d["id"]], d))
-    res.nodes, res.edges = _company_graph(company["id"], [r["id"] for r in rows[:6]] or None)
+    _company_graph(rec, company["id"], [r["id"] for r in rows[:6]] or None)
     return facts
 
 
@@ -611,7 +621,7 @@ def strategy_company_exposure(rec: _Recorder, linked: dict) -> list[Fact]:
 def strategy_client_company_exposure(rec: _Recorder, linked: dict) -> list[Fact]:
     client, company = linked["clients"][0], linked["companies"][0]
     _overview, facts = _client_overview(rec, client["id"])
-    rows = rec.run(
+    rows = rec.run("The client's holdings of the company, through funds",
         "MATCH (:Client {id: $cl})-[o:OWNS]->(f:Fund)-[i:INVESTED_IN]->(:Company {id: $co})\n"
         "RETURN f.name AS fund, o.market_value AS position, i.weight AS weight,\n"
         "       o.market_value * i.weight / 100.0 AS look_through ORDER BY look_through DESC",
@@ -619,7 +629,7 @@ def strategy_client_company_exposure(rec: _Recorder, linked: dict) -> list[Fact]
     for r in rows:
         facts.append(Fact("holding", f"{r['fund']}: position {_usd(r['position'])}, {company['name']} weight "
                                      f"{r['weight']}% -> {_usd(r['look_through'])} look-through.", [], r))
-    rec.result.nodes, rec.result.edges = _company_graph(company["id"], [client["id"]])
+    _company_graph(rec, company["id"], [client["id"]])
     return facts
 
 
@@ -630,7 +640,7 @@ def strategy_expertise(rec: _Recorder, linked: dict) -> list[Fact]:
         target_label, target = "Company", linked["companies"][0]
     else:
         target_label, target = "Theme", linked["themes"][0]
-    rows = rec.run(
+    rows = rec.run("People who wrote about or discussed it",
         f"MATCH (x:{target_label} {{id: $id}})\n"
         "MATCH (p:Person)\n"
         "OPTIONAL MATCH (p)-[:AUTHORED|SENT]->(d:Document)-[:MENTIONS]->(x)\n"
@@ -646,11 +656,10 @@ def strategy_expertise(rec: _Recorder, linked: dict) -> list[Fact]:
                           f"{r['name']} ({r['title']}, {r['org']}): {_n(len(r['docs']), 'document')} on {target['name']}"
                           f"{_paren(r['docs'])} and {_n(len(r['meetings']), 'meeting')} where it was discussed"
                           f"{_paren(r['meetings'], 3)}.", [r["id"]], r))
-    nodes, edges = db.run_graph(
-        f"MATCH (x:{target_label} {{id: $id}})\n"
-        "MATCH p = (:Person)-[:AUTHORED|SENT|ATTENDED]->()-[:MENTIONS|DISCUSSED]->(x)\n"
-        "RETURN p LIMIT 60", {"id": target["id"]})
-    rec.result.nodes, rec.result.edges = nodes, edges
+    rec.graph("Draw the graph above",
+              f"MATCH (x:{target_label} {{id: $id}})\n"
+              "MATCH p = (:Person)-[:AUTHORED|SENT|ATTENDED]->()-[:MENTIONS|DISCUSSED]->(x)\n"
+              "RETURN p LIMIT 60", {"id": target["id"]})
     return facts
 
 
@@ -661,7 +670,7 @@ def strategy_hybrid(rec: _Recorder, linked: dict) -> list[Fact]:
     doc_ids = list(dict.fromkeys(c["doc_id"] for c in chunks))
     facts = [Fact("passage", f"'{c['title']}' ({c['doc_type']}, {c['date']}): \"{c['text'][:260]}\"", [c["doc_id"]], c)
              for c in chunks]
-    rows = rec.run(
+    rows = rec.run("What the matching documents mention",
         "MATCH (d:Document)-[:MENTIONS]->(x) WHERE d.id IN $ids AND (x:Company OR x:Fund OR x:Client OR x:Theme)\n"
         "OPTIONAL MATCH (x)<-[:INVESTED_IN]-(f:Fund)<-[:OWNS]-(c:Client)\n"
         "RETURN labels(x)[0] AS label, x.name AS name, collect(DISTINCT d.id) AS docs,\n"
@@ -669,9 +678,8 @@ def strategy_hybrid(rec: _Recorder, linked: dict) -> list[Fact]:
     for r in rows:
         extra = f"; held by {', '.join(r['funds'])} ({r['clients']} clients)" if r["funds"] else ""
         facts.append(Fact("entity", f"{r['label']} {r['name']} appears in {', '.join(r['docs'])}{extra}.", r["docs"], r))
-    nodes, edges = db.run_graph("MATCH p = (d:Document)-[:MENTIONS]->() WHERE d.id IN $ids RETURN p LIMIT 80",
-                                {"ids": doc_ids})
-    rec.result.nodes, rec.result.edges = nodes, edges
+    rec.graph("Draw the graph above",
+              "MATCH p = (d:Document)-[:MENTIONS]->() WHERE d.id IN $ids RETURN p LIMIT 80", {"ids": doc_ids})
     return facts
 
 

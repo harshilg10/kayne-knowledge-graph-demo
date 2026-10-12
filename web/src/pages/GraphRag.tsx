@@ -1,15 +1,17 @@
 import { useMutation, useQuery } from "@tanstack/react-query";
 import clsx from "clsx";
-import { Check, X } from "lucide-react";
+import { Check, ChevronRight, ExternalLink, X } from "lucide-react";
 import { useState, type ReactNode } from "react";
 import { api } from "../api";
 import { Answer } from "../components/Answer";
+import { CodeBlock } from "../components/CodeBlock";
 import { GraphView } from "../components/GraphView";
-import { PageHeader } from "../components/Layout";
+import { PageHeader, useStatus } from "../components/Layout";
 import { Button, ErrorState, LoadingBlock, TextInput, Toggle } from "../components/ui";
 import { colorFor } from "../lib/colors";
 import { fmtDate } from "../lib/format";
-import type { RagCompare, RagSide } from "../types";
+import { browserLink } from "../lib/neo4j";
+import type { RagCompare, RagQuery, RagSide } from "../types";
 
 interface Presets {
   questions: string[];
@@ -125,12 +127,58 @@ export function GraphRag() {
               <div>
                 <div className="mb-2 text-[13px] font-medium text-slate-500">The part of the graph Graph-RAG walked</div>
                 <GraphView graph={d.graph.graph} height={600} />
+                {d.graph.queries.length > 0 && <CypherList queries={d.graph.queries} />}
               </div>
             ) : (
               <Button onClick={() => setTraversal(true)}>Show the traversal</Button>
             ))}
         </div>
       )}
+    </div>
+  );
+}
+
+function CypherList({ queries }: { queries: RagQuery[] }) {
+  const browserUrl = useStatus().data?.browser_url;
+  const [open, setOpen] = useState<number | null>(null);
+  return (
+    <div className="mt-6">
+      <div className="mb-2 text-[13px] font-medium text-slate-500">
+        The Cypher behind it · {queries.length} {queries.length === 1 ? "query" : "queries"}, in the order they ran
+      </div>
+      <div className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white">
+        {queries.map((q, i) => (
+          <div key={i}>
+            <button
+              type="button"
+              onClick={() => setOpen(open === i ? null : i)}
+              className="flex w-full items-center gap-3 px-5 py-2.5 text-left hover:bg-slate-50"
+            >
+              <span className="w-5 shrink-0 text-right text-[12px] text-slate-400 tabular-nums">{i + 1}</span>
+              <span className={clsx("flex-1 text-[13.5px]", open === i ? "font-medium text-slate-900" : "text-slate-700")}>{q.purpose}</span>
+              <span className="text-[12px] text-slate-400 tabular-nums">
+                {q.rows.toLocaleString()} {q.kind === "graph" ? "nodes" : q.rows === 1 ? "row" : "rows"}
+              </span>
+              <ChevronRight className={clsx("size-4 shrink-0 text-slate-400 transition-transform", open === i && "rotate-90")} />
+            </button>
+            {open === i && (
+              <div className="px-5 pt-1 pb-4 pl-[52px]">
+                <CodeBlock code={q.browser_cypher} maxHeight={320} />
+                {browserUrl && (
+                  <a
+                    href={browserLink(browserUrl, q.browser_cypher)}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-3 inline-flex h-9 items-center gap-1.5 rounded-lg bg-ink-900 px-3.5 text-[13px] font-medium text-white shadow-sm hover:bg-ink-800"
+                  >
+                    Open in Neo4j Browser <ExternalLink className="size-3.5" />
+                  </a>
+                )}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -133,10 +133,24 @@ def _require_graph() -> None:
                                  ".venv/bin/python -m kgdemo.build.")
 
 
+def _cypher_literal(value: Any) -> str:
+    if value is None:
+        return "null"
+    if isinstance(value, bool):
+        return "true" if value else "false"
+    if isinstance(value, (int, float)):
+        return repr(value)
+    if isinstance(value, (list, tuple)):
+        return "[" + ", ".join(_cypher_literal(v) for v in value) + "]"
+    if isinstance(value, dict):
+        return "{" + ", ".join(f"`{k}`: {_cypher_literal(v)}" for k, v in value.items()) + "}"
+    return "'" + str(value).replace("\\", "\\\\").replace("'", "\\'") + "'"
+
+
 def _inline_params(cypher: str, params: dict) -> str:
     """Cypher with parameters written in as literals, so it runs as-is in Neo4j Browser."""
     for name in sorted(params, key=len, reverse=True):
-        literal = "'" + str(params[name]).replace("\\", "\\\\").replace("'", "\\'") + "'"
+        literal = _cypher_literal(params[name])
         cypher = re.sub(rf"\${re.escape(name)}\b", lambda _m: literal, cypher)
     return cypher
 
@@ -476,6 +490,7 @@ def _rag_payload(res: rag.RagResult) -> dict:
     d = asdict(res)
     d["graph"] = viz.graph_payload(res.nodes, res.edges) if res.nodes else {"nodes": [], "edges": []}
     d.pop("nodes"), d.pop("edges")
+    d["queries"] = [{**q, "browser_cypher": _inline_params(q["cypher"], q["params"])} for q in d["queries"]]
     for c in d["chunks"]:
         c.pop("embedding", None)
     return d

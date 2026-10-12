@@ -166,6 +166,15 @@ export interface Chunk {
   source_system: string;
 }
 
+export interface RagQuery {
+  purpose: string;
+  kind: "retrieve" | "graph";
+  cypher: string;
+  params: Record<string, unknown>;
+  rows: number;
+  browser_cypher: string;
+}
+
 export interface RagSide {
   mode: string;
   question: string;
@@ -174,6 +183,7 @@ export interface RagSide {
   chunks: Chunk[];
   facts: Fact[];
   cypher: string[];
+  queries: RagQuery[];
   context: string;
   answer: string;
   answer_engine: string;

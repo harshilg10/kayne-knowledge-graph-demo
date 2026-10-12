@@ -16,6 +16,10 @@ def test_inline_params_writes_safe_literals():
     cypher = "MATCH (c {name: $client, id: $client_id}) WHERE d >= date($as_of) RETURN c"
     out = _inline_params(cypher, {"client": "O'Brien \\ Co", "client_id": "C-1", "as_of": "2026-09-30"})
     assert out == ("MATCH (c {name: 'O\\'Brien \\\\ Co', id: 'C-1'}) WHERE d >= date('2026-09-30') RETURN c")
+    typed = _inline_params("WHERE t IN $tids AND ($since IS NULL OR $limit > 0) AND $flag AND $cid = $c",
+                           {"tids": ["THM-AI", "THM-SEMI"], "since": None, "limit": 8, "flag": False, "cid": "C-001",
+                            "c": "x"})
+    assert typed == "WHERE t IN ['THM-AI', 'THM-SEMI'] AND (null IS NULL OR 8 > 0) AND false AND 'C-001' = 'x'"
 
 
 def test_status_and_overview(graph):
@@ -99,6 +103,19 @@ def test_rag_compare(graph):
     cov = r["coverage"]
     assert cov["graph"] == cov["total"] and cov["standard"] < cov["graph"]
     assert client.post("/api/rag", json={"question": "x"}).status_code == 422
+
+
+@pytest.mark.parametrize("question", rag.PRESET_QUESTIONS[:2])
+def test_rag_cypher_runs_as_shown(graph, question):
+    """Every Graph-RAG query is listed with its purpose, and runs in Neo4j Browser exactly as the app shows it."""
+    qs = client.post("/api/rag", json={"question": question, "use_llm": False}).json()["graph"]["queries"]
+    assert qs and all(q["purpose"] for q in qs)
+    assert sum(q["kind"] == "graph" for q in qs) == 1
+    for q in qs:
+        assert "$" not in q["browser_cypher"], q["purpose"]
+        rows = db.run(q["browser_cypher"])
+        if q["kind"] == "retrieve":
+            assert len(rows) == q["rows"], q["purpose"]
 
 
 def test_value_cards(graph):

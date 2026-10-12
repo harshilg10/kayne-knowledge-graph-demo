@@ -118,7 +118,8 @@ to increase AI infrastructure exposure?* Citations such as `DOC-EM-08` open the 
   holdings → look-through exposure → decisions → trades → meetings → documents → people. Every fact carries its source.
 * **"What each approach could see":** the checklist lists the facts a complete answer needs (decisions, trades, current exposure, advisor, private-credit link) and whether each retriever *put them in front of the LLM*: __COV_STD__ for standard RAG vs __COV_GR__ for Graph-RAG on the first question. Be clear that this measures retrieval: an LLM can only cite what it was given. Some facts, such as the current look-through exposure, exist only as structured data, so no document search can find them.
 
-* **Show the traversal** draws the part of the graph Graph-RAG walked.
+* **Show the traversal** draws the part of the graph Graph-RAG walked. Below it, **The Cypher behind it** lists every
+  query Graph-RAG ran, in order and with its purpose; expand one to see the Cypher and open it in Neo4j Browser.
 
 > "Graph-RAG doesn't replace vector search. It gives the LLM the connected facts and the provenance, which is what
 > makes an answer explainable to a client or a regulator."
