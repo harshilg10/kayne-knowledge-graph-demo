@@ -1,0 +1,30 @@
+Recommendation:
+We recommend that the July 16 Investment Committee adopt a 10% single-name cap in the AI Infrastructure Fund. In practice this trims Nvidia from 12% to 10% of the fund, with the released weight redeployed into AMD, Broadcom and power and cooling names. This is a sizing recommendation, not a change in conviction: GPU capacity is still tight and we continue to expect demand to hold through 2027.
+
+Position today:
+- Nvidia is 12% of the AI Infrastructure Fund, its largest position, and about 8% of the Global Technology Fund.
+- Clients who hold both funds own Nvidia twice. The risk team's look-through analysis as of June 15 found three client relationships above the 15% guideline for AI infrastructure exposure, with Nvidia the largest single-name contributor.
+
+Fundamentals are intact:
+- Supply: GPU capacity remains tight. Advanced packaging and high-bandwidth memory are still allocated, and power availability at data centers now sets the timing of many new clusters.
+- Demand: hyperscaler capex plans keep rising and inference demand is compounding with usage. The view we set out in our November 2025 outlook - demand for GPU capacity exceeding supply through 2027 - is unchanged.
+- Competitive position: Nvidia remains the platform leader across compute, networking and software, and we think its pace of new platforms keeps it ahead in large-scale training.
+
+Why cap the position anyway:
+- Concentration: at 12%, one company drives a disproportionate share of the fund's risk and of its drawdowns in a sell-off. For clients, the overlap with the Global Technology Fund compounds it. Elena Vasquez raised this when she dissented on IC-2026-004 in February, and the June look-through results show the concern was well founded.
+- Valuation: the market already discounts years of strong execution. Our base case remains positive, but the payoff has become asymmetric - a digestion phase, a delayed product transition or tighter export controls would cost a 12% position more than the upside we see from here.
+- Breadth: the same demand can be owned through other links in the chain with a better balance of risk - AMD as inference adoption broadens, Broadcom through custom accelerators and AI networking, and power and cooling suppliers, where lead times are stretching as rack density rises.
+
+Proposed implementation:
+- Adopt a 10% single-name cap for the AI Infrastructure Fund, checked at each rebalance.
+- Trim Nvidia from 12% to 10% and redeploy the roughly two points of fund weight into AMD, Broadcom and power and cooling names such as Vertiv and Eaton, both highlighted in Arjun Mehta's June 4 report on liquid cooling. Brendan Kessler would set the split and the timing.
+- Leave the Global Technology Fund's Nvidia position, at about 8%, unchanged; it would sit below a 10% limit in any case. Client-level overlap is better handled through the recommendations for clients above the 15% guideline that Elena Vasquez and Lucas Meyer are preparing for the same meeting.
+- No change to the model weight of the AI Infrastructure Fund (8% in Growth models, 5% in Balanced models).
+
+Risks to this recommendation:
+- If Nvidia keeps outperforming, the cap will cost the fund relative performance. We accept that trade-off in exchange for a more balanced portfolio.
+- AMD must keep converting inference interest into volume, and Broadcom's custom programs are concentrated in a few customers.
+- Valuation discipline applies to the power and cooling names as well, so purchases may need to be staged.
+
+Conclusion:
+Our conviction in AI infrastructure is unchanged. A 10% cap keeps Nvidia among the fund's largest positions while making the fund, and our clients' combined exposure, less dependent on a single company.

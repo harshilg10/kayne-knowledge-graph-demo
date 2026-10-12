@@ -1,0 +1,12 @@
+Margaret,
+
+Thank you for your time yesterday. As promised, here is a short written recap for your files and for the board.
+
+Our Investment Committee approved IC-2026-008 on May 14, raising the Energy Infrastructure Fund from 5% to 7% in our growth and balanced model portfolios. The Bellamy Foundation is exempt. Its investment policy excludes fossil-fuel infrastructure, the foundation holds no Energy Infrastructure Fund, and its account will be left out of the June rebalancing - the same treatment it received when the fund was first added to our models last year.
+
+The foundation's energy allocation remains the Clean Energy Transition Fund. Its holdings include NextEra Energy, First Solar and Fluence Energy, and its focus on battery storage and grid modernization is unchanged. We are not proposing any change to that allocation.
+
+On your question about indirect exposure to data center power demand: as we discussed, the AI Infrastructure Fund owns Constellation Energy and Quanta Services, and both also appear in the Clean Energy Transition Fund. Our risk team is building look-through reporting for all client portfolios, with results expected by mid-year. I will send you the foundation's report, showing its exposure to power and grid companies across every fund it holds, as soon as it is ready, so the board has figures to review rather than a description.
+
+Warm regards,
+Andre Washington

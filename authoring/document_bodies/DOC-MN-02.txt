@@ -1,0 +1,19 @@
+Discussion:
+Item 1 - Cybersecurity allocation (Daniel Cho)
+- Daniel Cho presented the proposal, prepared with Olivia Grant (memo of November 6), to add the Arbor Peak Cybersecurity Leaders Fund to Growth models at 4%, funded from the Global Technology Fund, whose model weight falls from 16% to 12%.
+- Thesis: large enterprises are consolidating security spending onto fewer vendors, and platform consolidation favors the scaled leaders. Zero trust adoption keeps security budgets resilient even when other IT projects are deferred. Key holdings are CrowdStrike, Palo Alto Networks and Zscaler.
+- Brendan Kessler asked whether the change reduces technology exposure. Daniel Cho: the total technology weight in the model is unchanged; the change moves 4 points from broad large-cap technology into a focused security sleeve. Several of the fund's names are already held in the Global Technology Fund at smaller weights.
+- Elena Vasquez flagged valuation as the main risk. Daniel Cho agreed and added competition as a second risk.
+- Philip Ashworth asked for advisor materials before trading begins.
+
+Item 2 - GPU demand preview (Meredith Calloway, for information)
+- Meredith Calloway previewed her forthcoming report on GPU demand. Her view is that hyperscaler demand for GPUs still exceeds supply; the full report, covering the outlook for 2026 and 2027, will be published later this month.
+- Douglas Whitfield asked that the report come back to the committee once it is published. No decision on AI-related allocations was taken.
+
+Decisions:
+- IC-2025-019: add the Cybersecurity Leaders Fund at 4% to Growth models, funded from the Global Technology Fund (16% to 12%). Approved 7-0.
+
+Action Items:
+- Trevor Iwasaki to execute the model trades November 17-26.
+- Daniel Cho to send advisor talking points ahead of the trades.
+- Meredith Calloway to publish the full GPU demand report later this month.

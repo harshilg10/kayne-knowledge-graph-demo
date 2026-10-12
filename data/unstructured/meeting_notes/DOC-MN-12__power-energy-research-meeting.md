@@ -1,0 +1,29 @@
+Power & Energy Research Meeting
+
+Date: 2026-01-22
+Meeting Type: Research
+
+Participants:
+Natalie Brooks
+Rebecca Thornton
+Wade Pruitt
+Leah Goldberg (Pemberton Grid Consulting)
+
+Natalie Brooks hosted Dr. Leah Goldberg, managing director at Pemberton Grid Consulting, for a working session on power availability for large data center campuses. Rebecca Thornton and Wade Pruitt joined from the energy team.
+
+Discussion:
+- Leah Goldberg: electricity demand from AI data centers is now the main source of US load growth in Pemberton's work, and data center developers account for most new large-load requests in its coverage.
+- Interconnection queue: in Texas and the Mid-Atlantic, a large new load can wait three to five years for firm grid service. Many campuses therefore pair grid power with on-site gas-fired generation, first as bridge power and later as backup. She expects the pattern to persist.
+- Leah Goldberg on nuclear: restarts help at the margin but cannot close the gap; candidate sites are few and timelines are long.
+- Natalie Brooks asked how much of the queued power demand is real. Leah Goldberg said Pemberton screens out speculative requests; the committed projects alone tighten reserve margins in both regions.
+
+Implications:
+- Natalie Brooks: tighter power markets favor generators with existing capacity. In our view Constellation Energy and Vistra are best placed.
+- Wade Pruitt: every gas-fired plant built at or near a campus adds incremental demand on natural gas pipelines. Williams Companies and Kinder Morgan are the most direct beneficiaries in his coverage.
+- Rebecca Thornton noted that all four names already sit in the Energy Infrastructure Fund. She wants this work to inform a possible Energy Infrastructure Fund proposal to the Investment Committee and asked for estimates the committee can test, not a narrative.
+
+Action Items:
+- Natalie Brooks to extend her January "Powering AI" estimates with Pemberton's queue data, including the share of new load likely to be served by on-site gas.
+- Wade Pruitt to start a midstream note on gas demand from data center generation.
+- Leah Goldberg to send Pemberton's interconnection queue summary for Texas and the Mid-Atlantic.
+- Rebecca Thornton to decide whether to bring a proposal once both pieces are in.

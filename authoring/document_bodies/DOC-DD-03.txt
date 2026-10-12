@@ -1,0 +1,39 @@
+Scope:
+Caldwell & Pierce LLP acts as counsel to Arbor Peak Private Credit Fund II (the "Lender") on the proposed $45 million senior secured term loan to Cobalt Ridge Data Centers (the "Borrower") to finance phase 1 of its West Texas data center campus, planned at 120 MW in total. This summary covers title, permits, leases, the power purchase agreement, the first lien collateral package, the covenants package and litigation. It reflects data room documents through March 26 and our own searches, and it is a diligence summary, not a legal opinion.
+
+Title and real property:
+Fee simple title to the campus parcel is vested in the Borrower, and the title commitment shows no monetary liens other than current-year ad valorem taxes. Recorded easements for a transmission corridor and a gas pipeline run along the parcel boundary; the survey shows neither affects the phase 1 footprint. As is common in the region, the mineral estate is severed, and we recommend a surface use accommodation from the mineral owner, or a title endorsement covering surface damage, before closing.
+
+Permits:
+Building permits for the phase 1 data hall and substation have been issued, and the air authorization for the on-site backup gas generators is in place, with operating limits consistent with backup duty.
+
+Leases and lease assignment:
+We reviewed current drafts of the leases with the investment-grade hyperscale tenant and the GPU cloud operator. Both permit collateral assignment to a lender: the hyperscale lease requires notice only, while the GPU cloud operator's lease requires its consent, not to be unreasonably withheld. Both leases tie a power delivery date to phase 1 energization, with rent abatement for delay and tenant termination rights after an outside date. Those dates fit a Q3 2026 energization with limited cushion, so the credit agreement should track them as construction milestones.
+
+Power purchase agreement:
+The 15-year power purchase agreement may be collaterally assigned to financing parties with the supplier's consent, not to be unreasonably withheld, and contemplates a consent and direct agreement giving the Lender notice, cure and step-in rights; that agreement has been requested but not yet delivered. The supplier may terminate for a delayed start only if deliveries have not begun by a long-stop date well after scheduled energization.
+
+First lien collateral package:
+- Deed of trust granting a first lien on the land and improvements, including the data hall and the Borrower-owned substation equipment.
+- Security interest in all personal property, including Borrower-owned power distribution and cooling plant.
+- Assignment of leases and rents.
+- Collateral assignment of material contracts: the power purchase agreement, the substation construction contract with Ostrander Power Constructors and the cooling equipment supply agreement with Polar Loop Cooling Systems.
+- Pledge of all equity in the Borrower and control agreements over its operating and reserve accounts, including the debt service reserve.
+Lien searches are clear apart from an equipment lessor's precautionary filing, which must be released at closing.
+
+Covenants package:
+The draft credit agreement reflects the term sheet: five-year tenor, SOFR + 575 bps, and maintenance covenants requiring debt service coverage of at least 1.35x after stabilization and loan-to-value of no more than 65%, with a debt service reserve funded at closing. Construction-period covenants cover completion milestones, sponsor funding of cost overruns and monthly construction reporting. Negative covenants restrict additional debt, liens and asset sales, and block distributions until stabilization and during any covenant shortfall. Events of default include failure to energize phase 1 by an outside date and termination of the power purchase agreement or the hyperscale lease without acceptable replacement.
+
+Litigation:
+Court record searches and an officer's certificate disclosed no pending or threatened litigation that we consider material. The environmental site assessment identified no recognized environmental conditions.
+
+Open items before closing:
+- Executed tenant leases, tenant estoppel certificates and subordination, non-disturbance and attornment agreements.
+- Supplier consent and direct agreement under the power purchase agreement.
+- Pro forma lender's title policy with customary endorsements, including the mineral accommodation or endorsement.
+- Final survey certified to the Lender.
+- Release of the equipment lessor's precautionary filing.
+- Insurance certificates naming the Lender, organizational documents and local counsel opinions.
+
+Conclusion:
+Subject to the open items above, we have identified no legal impediment to closing a first lien senior secured term loan to Cobalt Ridge Data Centers on the proposed terms.

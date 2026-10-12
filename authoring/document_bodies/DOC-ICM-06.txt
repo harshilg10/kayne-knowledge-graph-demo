@@ -1,0 +1,23 @@
+Recommendation:
+We recommend raising the Arbor Peak Energy Infrastructure Fund model weight from 5% to 7% in Growth models and Balanced models, funded from fixed income (proposed decision IC-2026-008). The 5% weight dates from IC-2025-014 last June, when the case rested mainly on fee-based cash flows and LNG exports. Power generation was a secondary driver then. It is now central, because power demand from AI data centers is driving a wave of new gas-fired generation.
+
+Background:
+Natalie Brooks's January 8 report, Powering AI: Data Center Electricity Demand and the Grid, concluded that AI data centers are the fastest-growing source of US load growth. At our January 22 meeting, Dr. Leah Goldberg of Pemberton Grid Consulting described interconnection queues in Texas and the Mid-Atlantic that stretch three to five years, which pushes developers to pair grid supply with on-site gas-fired generation and long-term power purchase agreements. Wade Pruitt's April 23 report, Natural Gas Midstream: The Data Center Power Trade, traced the effect through to pipeline volumes and recommended overweighting midstream within the fund.
+
+Investment Thesis:
+- Gas is the marginal fuel for new load: In our assessment, most new firm generation planned to serve AI data centers is gas-fired, whether connected to the grid or built on site. Every new plant needs firm transportation on natural gas pipelines.
+- Pipeline operators capture contracted growth: Williams Companies, Kinder Morgan and Energy Transfer are well placed to serve these load centers, and we expect them to underwrite expansions with long-term fee-based contracts. That converts power demand into contracted volume growth with limited commodity exposure.
+- Power producers benefit from tighter markets: Constellation Energy and Vistra, already held in the fund, should benefit from higher capacity prices and from long-term supply contracts with large-load customers.
+- Visibility: Fee-based pipeline revenue combined with contracted power sales gives the fund better earnings visibility than the broader energy sector, in our view.
+
+Risks and Mitigants:
+- Rate sensitivity: Midstream and power equities trade partly as income assets, and our own fixed income view (IC-2026-005) assumes fewer rate cuts than the market had priced. Mitigant: contracted cash flow growth should offset some valuation pressure, and a 2-point increase is moderate.
+- Project delays: Permitting, turbine lead times and interconnection timelines can push out volume growth. Mitigant: the thesis does not depend on any single project, and in-service assets generate the base income.
+- Policy: Changes to permitting, power market rules or large-load tariffs could alter project economics. Mitigant: diversification across pipelines, power producers and equipment suppliers.
+- Overlap: Constellation Energy is also held in the AI Infrastructure Fund and the Clean Energy Transition Fund. The overlap is small, and we will flag it for the risk team's mid-year look-through review.
+- Exclusions: The Bellamy Foundation is exempt because of its fossil-fuel exclusion and keeps its energy allocation in the Clean Energy Transition Fund.
+
+Implementation:
+- Rebalancing over June 1-12, covering about 31 accounts and roughly $6.5 million of purchases.
+- Funding from the Municipal Income Fund in taxable accounts and the Core Fixed Income Fund otherwise.
+- Advisors to confirm any other client restrictions before trades; talking points on data center power demand to follow approval.

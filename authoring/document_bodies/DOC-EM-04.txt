@@ -1,0 +1,12 @@
+Meredith, Brendan,
+
+To put on record where yesterday's Investment Committee landed: we remain bullish on Nvidia and other AI infrastructure providers, and the technology team believes demand for GPU capacity will continue through 2027. If that is our view, I want to test whether the current AI Infrastructure Fund weights - 5% in Growth, 3% in Balanced - still reflect it.
+
+Please draft a proposal to increase the AI Infrastructure Fund model weight for the February 12 meeting, and circulate the memo a week ahead so members have time to read it. It should cover:
+- the size of the increase in each model, with the case for each;
+- the funding source - my starting assumption is fixed income, but show me the tax angle for taxable versus retirement accounts;
+- concentration. Nvidia already appears in both the AI Infrastructure Fund and the Global Technology Fund, so clients who own both have more single-name exposure than the model weights suggest. I have copied Elena Vasquez so the risk team can tell you up front what analysis they would want to see before the vote.
+
+It is also worth folding in Natalie Brooks's work on power and cooling - the bottleneck is not only chips.
+
+Douglas Whitfield

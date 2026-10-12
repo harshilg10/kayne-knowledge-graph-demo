@@ -1,0 +1,29 @@
+Scope:
+Pemberton Grid Consulting was engaged on behalf of the lenders to assess power supply for phase 1 (60 MW) of the Cobalt Ridge Data Centers campus in West Texas, a 120 MW development. We reviewed the interconnection agreement and study results, the substation design and construction schedule prepared by Ostrander Power Constructors, the 15-year power purchase agreement, the design and air authorization for on-site gas-fired generation, and regional load and transmission data. Our team, led by Dr. Leah Goldberg, held working sessions with Cobalt Ridge management and Ostrander's project team. We relied on progress reports and photographs supplied by the developer and did not carry out a separate site inspection.
+
+Summary conclusion:
+In our opinion, energization of phase 1 in Q3 2026 is achievable with moderate risk. The interconnection position is strong and the supply arrangements are sound. Residual risk sits in the remaining substation work, delivery of the main power transformers and coordination of the transmission owner's tie-in, which together leave the schedule with little float.
+
+Interconnection queue position and timeline:
+Cobalt Ridge entered the interconnection queue ahead of the current wave of large-load requests and holds a secured position, with an executed interconnection agreement covering phase 1 load and all required phase 1 studies complete. The transmission owner's scope is limited to a line tap, a new switching station and associated protection work, scheduled to finish ahead of the developer's substation. New large-load requests in Texas now face waits of three to five years, so this position is a material asset in its own right. Phase 2 will require further studies and transmission upgrades and is outside this conclusion.
+
+Substation construction:
+Ostrander Power Constructors is building the developer-owned high-voltage substation under a fixed-price engineering, procurement and construction contract. Progress reports show civil and foundation work well advanced, with steel structures and the control building in progress. The main power transformers are on order for delivery ahead of commissioning and are the item we would watch most closely. Ostrander is an experienced regional substation contractor, and its staffing and sequencing are reasonable for the scope. Its schedule shows mechanical completion, testing and energization within Q3 2026, with a few weeks of float.
+
+Power purchase agreement:
+The 15-year power purchase agreement with a creditworthy supplier covers expected phase 1 consumption. Pricing is largely fixed, insulating the campus from regional price spikes, although Cobalt Ridge retains shape and basis risk on consumption outside the contracted profile. Deliveries begin at energization, and the supplier may not terminate for a delayed start until a cure period has run, which we consider adequate for a moderate delay. Management indicates that the tenant leases pass power costs through.
+
+On-site backup generation:
+The design includes on-site gas-fired generation (reciprocating engine generator sets), fed by a dedicated lateral from a nearby intrastate pipeline and sized to carry critical phase 1 load during grid outages. Unlike campuses that run on-site units as bridge power until interconnection, Cobalt Ridge holds an air authorization that limits operating hours to backup duty. The units could support commissioning and critical loads but cannot carry full phase 1 load in place of the grid, so we give them only limited weight as a mitigant to schedule risk.
+
+Regional power demand outlook:
+Power demand in West Texas is growing quickly. In our data, AI data centers account for most new large-load requests in Texas, alongside oilfield electrification in the Permian Basin and new industrial load. Load growth at this pace will keep transmission constraints and congestion elevated, with periods of price volatility. For Cobalt Ridge, the outlook supports tenant demand and the value of an energized site, and it underlines the importance of the largely fixed-price PPA and the existing queue position.
+
+Key risks to monitor:
+- Transformer delivery and factory acceptance testing.
+- The transmission owner's outage window for the tie-in.
+- Protection and controls commissioning.
+- Evolving state rules for large loads, which could add curtailment obligations during grid emergencies; backup generation partly mitigates this.
+
+Conclusion:
+Phase 1 energization in Q3 2026 is achievable with moderate risk. We recommend that the lenders receive monthly progress reports from Ostrander Power Constructors, written confirmation of transformer shipment and the transmission owner's tie-in schedule. In our view, a short delay would defer rent commencement but would not threaten the campus's power position.

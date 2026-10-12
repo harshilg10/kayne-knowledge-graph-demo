@@ -1,0 +1,9 @@
+.venv/
+.cache/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+web/node_modules/
+build/
+.DS_Store

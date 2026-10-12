@@ -1,0 +1,30 @@
+Summary:
+In our November outlook on GPU demand, we concluded that demand for GPU capacity will exceed supply through 2027. This note asks where the incremental dollars go as clusters scale from thousands of accelerators to hundreds of thousands. Our answer: a rising share is moving to custom silicon designed for individual hyperscalers and to the networks that connect accelerators. Nvidia remains dominant, but the AI Infrastructure Fund should diversify further beyond GPUs to capture this shift.
+
+Custom silicon:
+The largest cloud platforms run a few workloads - search, ranking, recommendation and, increasingly, inference for their own models - at enormous and predictable scale. For workloads like these, a purpose-built accelerator can deliver better performance per watt and per dollar than a general-purpose GPU, and it gives the buyer a second source and negotiating leverage. The hyperscaler defines the architecture; a design partner supplies the high-speed interfaces, packaging expertise and physical design needed to take the chip to TSMC.
+- Broadcom is, in our view, the leader in custom accelerators, with several programs in production and more in development by our count. It also sells the merchant switch silicon at the center of most AI networks built on Ethernet, so it benefits twice as clusters grow.
+- Marvell is smaller and earlier in its custom ramp, with more customer concentration and therefore more volatility. Its second lever is electro-optics: the signal-processing chips inside optical transceivers.
+We do not see custom silicon displacing merchant GPUs. The two coexist: custom chips absorb the largest and most stable internal workloads, while GPUs remain the default for frontier training, for cloud customers renting capacity, and for any buyer that depends on the software ecosystem.
+
+AI networking:
+At cluster scale the network becomes part of the computer. Every training step requires accelerators to exchange data, and a congested fabric leaves expensive GPUs waiting. Two layers matter:
+- Scale-up links connect accelerators within a rack or pod. Nvidia's proprietary interconnect leads here, and it is one of the reasons its systems are hard to displace.
+- Scale-out, or back-end networking, connects racks across the data hall. InfiniBand historically dominated large training clusters; increasingly, hyperscalers are standardizing on Ethernet for back-end clusters because it is multi-vendor and fits their existing operations.
+Arista Networks is the main beneficiary of that shift, in our view. It already has deep relationships with large cloud operators from their front-end networks, and its software and high-radix switches suit very large back-end fabrics. Broadcom benefits alongside it through the switch chips.
+
+Optical interconnects:
+As clusters spread across entire buildings, and increasingly across several buildings on one campus, copper runs out of reach and links move to optics. We expect demand for optical interconnects - transceivers, the chips inside them and, later, co-packaged optics - to grow faster than accelerator shipments, because the number of optical links per accelerator rises with cluster size. Component availability, lasers in particular, is the main risk to deployment schedules.
+
+Nvidia's position:
+This is not a bearish call on Nvidia. Nvidia remains dominant, and it is not only a GPU company: its networking portfolio - scale-up interconnect, InfiniBand and its own Ethernet platform for AI - is a growing part of what it sells into each cluster. The opportunity set is broadening; the leader is not shrinking.
+
+Portfolio Implications:
+- The AI Infrastructure Fund should diversify beyond GPUs. Custom silicon, switching and optics give exposure to the same demand with a different risk profile.
+- We support Brendan Kessler's plan, discussed at our December 4 working session, to consider adding to the fund's existing Marvell and Arista Networks positions, and we would keep Broadcom as a core holding.
+- Diversification also addresses the overlap Elena Vasquez raised at the December 11 Investment Committee: Nvidia already appears in both the AI Infrastructure Fund and the Global Technology Fund, so incremental capital in the theme is better directed to other links in the chain.
+
+Risks:
+- Custom programs are lumpy and concentrated in a few customers; a hyperscaler can move a design to another partner or take more of it in-house.
+- The move from InfiniBand to Ethernet in back-end networks could be slower than we expect.
+- Networking and optics valuations already reflect strong expectations, and optical component shortages could delay revenue.

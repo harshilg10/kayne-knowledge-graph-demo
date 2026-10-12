@@ -1,0 +1,31 @@
+Investment Committee Meeting
+
+Date: 2026-04-09
+Meeting Type: Investment Committee
+
+Participants:
+Douglas Whitfield
+Meredith Calloway
+Brendan Kessler
+Rebecca Thornton
+Marcus Bell
+Elena Vasquez
+Philip Ashworth
+Priya Nair
+
+Discussion:
+- Marcus Bell and Priya Nair presented the credit approval memo for Cobalt Ridge Data Centers: a $45 million senior secured term loan from Private Credit Fund II with a 5-year term, priced at SOFR + 575 bps and secured by a first lien on the company's 120 MW data center campus in West Texas.
+- Priya Nair: phase 1 is pre-leased under letters of intent to two tenants deploying Nvidia-based GPU clusters; executed leases are a condition to funding. Direct-to-chip cooling will be supplied by Polar Loop Cooling Systems. Power is contracted under a 15-year power purchase agreement. A new substation is being built by Ostrander Power Constructors, an existing Private Credit Fund II borrower that remains in compliance with its covenants.
+- Pemberton Grid Consulting's independent power assessment is supportive of the interconnection and energization timeline.
+- Key risks: construction delay, interconnection timing and tenant concentration. Mitigants: maintenance covenants and a debt service reserve.
+- Rebecca Thornton asked what happens if grid power arrives late. Priya Nair: the on-site gas-fired generation is permitted for backup duty only and cannot carry the campus in place of the grid, so the protection is the debt service reserve, which gives lenders a cushion if energization slips.
+- Meredith Calloway commented that the tenants' plans are consistent with the research view that demand for GPU capacity continues through 2027.
+- Elena Vasquez noted the loan adds data center exposure for clients invested in Private Credit Fund II, on top of their public-equity holdings tied to the same theme. She asked that it be captured in the mid-year look-through review.
+
+Decisions:
+- IC-2026-006: approve the $45 million senior secured term loan to Cobalt Ridge Data Centers, funded by Private Credit Fund II capital call #6 on April 20. Approved 7-0.
+
+Action Items:
+- Marcus Bell and Priya Nair to proceed to closing, with loan documentation by Caldwell & Pierce LLP.
+- Philip Ashworth to coordinate capital call #6 notices to Private Credit Fund II investors ahead of the April 20 funding date.
+- Elena Vasquez to include the loan in the look-through exposure review.

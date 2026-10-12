@@ -1,0 +1,35 @@
+Summary:
+As Meredith Calloway previewed at the November 13 Investment Committee, hyperscaler demand for GPUs still exceeds supply. Having completed the work, we are extending that view: we expect demand for GPU capacity to exceed supply through 2027. The gap should narrow as new packaging and memory capacity arrives in 2027, but our supply-demand model does not close it within our forecast horizon. Three demand drivers and three supply constraints explain why.
+
+Key Points:
+- Demand: hyperscaler capex plans for 2026 point higher again, inference demand is compounding, and enterprise adoption is moving from pilots into production.
+- Supply: TSMC advanced packaging (CoWoS) capacity, high-bandwidth memory supply and power availability at data centers all bind, and none can be expanded quickly.
+- Positioning: Nvidia remains the platform leader; AMD is gaining in inference, Broadcom's custom accelerators broaden the opportunity, and Micron is gaining HBM share.
+- Implication: the outlook supports the AI infrastructure theme and the positioning of the AI Infrastructure Fund.
+
+Demand drivers:
+Hyperscaler capex remains the largest driver. Our read of the latest round of commentary from the large cloud platforms is that 2026 spending plans are moving higher again and that the incremental dollars are going to accelerated computing and the data centers that house it. The tone has also changed, from building ahead of demand to describing capacity as the constraint.
+
+Inference demand is the second driver and, in our view, the one the market underestimates. Training builds a model once; inference runs it every time a user asks a question or an agent completes a task. Newer reasoning-style models generate far more output per request, which multiplies the compute behind each query. We expect inference to account for the majority of accelerator demand by 2027 (internal estimate).
+
+Enterprise adoption is the third. Beyond the hyperscalers, GPU cloud operators, sovereign programs and large enterprises are buying or renting capacity directly, which broadens the customer base and makes demand less dependent on a handful of budgets.
+
+Supply constraints:
+- Advanced packaging: nearly every leading accelerator, merchant GPU or custom chip, passes through TSMC's CoWoS lines, where the compute die is joined to its memory. TSMC is expanding this capacity aggressively, but it remains the narrowest point in the chain and is largely committed to the biggest customers well in advance.
+- High-bandwidth memory: HBM content per accelerator rises with each generation, and supply comes from only three manufacturers, Micron among them. Our checks suggest HBM output is effectively committed through 2026.
+- Power: a growing number of projects are limited not by chips but by when the site can be energized. Substations, transformers and grid interconnection take years to add.
+
+Company views (our own, qualitative):
+- Nvidia: remains the platform leader. Its advantage is the whole system - GPU, networking and software - rather than any single chip, and we expect it to retain the majority of accelerator spending through 2027.
+- AMD: gaining in inference, where memory capacity and total cost of ownership matter more than ecosystem lock-in. We see it as the most credible merchant second source.
+- Broadcom: its custom accelerator programs with hyperscalers broaden the opportunity beyond merchant GPUs rather than shrinking it, and its networking silicon benefits as clusters grow.
+- Micron: gaining HBM share from a low base as its products qualify with major accelerator customers.
+- TSMC: the common denominator. Whoever wins the design, TSMC most likely manufactures and packages it.
+
+Risks:
+- Digestion phase: after several years of heavy spending, buyers could pause to absorb capacity, and orders could turn quickly even if long-term demand is intact.
+- Export controls: rules on advanced accelerators keep changing; our base case assumes no meaningful contribution from restricted markets.
+- Valuation: expectations across the group are high, and the shares can de-rate even if our demand view proves right.
+
+Portfolio Implications:
+The supply-demand picture supports the AI infrastructure theme and the AI Infrastructure Fund's positioning across compute, foundry, memory, networking and power. Because the bottlenecks sit outside the GPU itself, we think the second-order beneficiaries - TSMC, Micron, Broadcom and power and cooling suppliers - deserve as much attention as Nvidia. This report does not make a model allocation recommendation; it is intended as the evidence base for the committee's discussion of the theme.

@@ -1,0 +1,26 @@
+Summary:
+Mesquite Draw Midstream has been a Private Credit Fund II borrower since March 2025 under a first lien term loan. The company owns and operates a natural gas gathering and compression system in the Permian Basin, serving producers under long-term acreage dedications. This first annual review finds the credit performing ahead of underwriting: gathered volumes are rising, covenants were met with comfortable headroom and the valuation cushion beneath our loan has widened. We recommend maintaining the position with no change to the internal rating.
+
+Business update (Priya Nair):
+Revenue comes from fee-based contracts, mainly per-unit gathering and compression fees on dedicated acreage, with minimum volume commitments from the largest producers. Commodity exposure is indirect, through producer activity rather than prices. In our review meeting, CEO Ray Dawson highlighted volume growth from new wells on dedicated acreage and a new delivery point into an intrastate pipeline that serves gas-fired power plants, which reduces reliance on a single downstream outlet. Compression added in 2025 was funded from operating cash flow.
+
+Sector view (Wade Pruitt):
+New gas-fired generation built to serve data centers is a growing and durable source of in-state demand for Permian gas. As argued in my April 23 report on the data center power trade, those plants need firm supply, which supports intrastate pipeline expansions and, upstream of them, gas gathering volumes. For a system like Mesquite Draw's, the benefit comes through steadier producer activity and fewer curtailments when takeaway is tight, rather than through prices. The main sector risk is a stretch of weak local gas prices if pipeline capacity lags production growth.
+
+Valuation benchmark:
+We benchmark Mesquite Draw against public midstream peers such as Williams Companies and Targa Resources, which are far larger and more diversified. After a substantial discount to the peer trading range for scale, basin concentration and illiquidity, our internal estimate of enterprise value still covers the loan comfortably. These companies are valuation reference points only: neither has a contractual relationship with Mesquite Draw, and none is implied.
+
+Financial performance and covenants (Priya Nair):
+- Audited 2025 results show EBITDA growing in line with volumes, and first-quarter 2026 management accounts continue the trend.
+- Total leverage has declined at each test date since funding and remains well inside the maximum leverage covenant.
+- Interest coverage is comfortable despite floating-rate debt service at current SOFR levels.
+- All reporting and other covenants are met, and no waivers have been requested.
+
+Risks and Mitigants:
+- Producer concentration: minimum volume commitments and long-term dedications.
+- Local gas price weakness and takeaway constraints: multiple delivery points, including the new intrastate connection.
+- Methane and flaring regulation: compliance costs appear manageable; we will continue to monitor.
+- Slower data center construction: would reduce incremental demand from gas-fired generation, but base volumes rest on oil-directed drilling across the dedicated acreage.
+
+Recommendation:
+Maintain the position on existing terms; internal rating unchanged, with a positive bias. Continue quarterly monitoring and revisit at the next annual review.

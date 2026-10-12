@@ -1,0 +1,24 @@
+Summary:
+Larkspur Fiber Networks, a Private Credit Fund II borrower since September 2024, continues to perform in line with underwriting. The company builds and operates regional long-haul fiber networks that connect data center campuses with each other and with major network exchange points. All covenants were met for the September quarter with adequate headroom. We maintain a stable outlook and recommend no change to the internal rating.
+
+Business update:
+Revenue is anchored by long-term dark fiber agreements, structured as indefeasible rights of use with upfront payments and recurring maintenance fees, plus a growing base of lit wavelength services. Customers are cloud providers, carriers and data center operators that need diverse, low-latency routes between campuses. Demand follows data center construction: as cloud providers build larger campuses and spread training and inference across sites, they contract for more capacity between them. Renewals have been high and churn minimal. Our first lien is secured by the network assets, the associated rights-of-way and the customer contracts, which would hold their value in a sale given how few diverse routes serve the major data center markets. Larkspur Fiber remains one of the fund's core digital infrastructure credits.
+
+Management call:
+On our quarterly call, CEO Sophie Laurent reported that the latest route segment was completed on schedule and within budget, and that construction of an extension to a new data center cluster is under way with an anchor customer already signed. Right-of-way permitting remains the main source of schedule variance; the company now starts permitting earlier and carries more contingency in route budgets. Sophie Laurent also noted better availability of fiber cable and splicing crews than a year ago, which should ease cost pressure on new builds, and said customer inquiries for new routes remain strong as cloud capex continues to grow.
+
+Financial performance and covenants:
+- Revenue grew in line with plan, and EBITDA margins were stable.
+- Growth capital spending was funded from operating cash flow and customer prepayments, with no incremental debt.
+- Leverage was broadly unchanged and remains inside the maximum leverage covenant.
+- Interest coverage and minimum liquidity covenants were met with adequate headroom.
+- Financial reporting has been timely and complete.
+
+Risks:
+- Construction cost overruns and right-of-way delays on new routes.
+- Customer concentration among a handful of large cloud providers.
+- Overbuild risk if national carriers add competing fiber routes along the same corridors.
+- Floating-rate debt service if base rates stay higher for longer; interest coverage remains adequate under our stress case.
+
+Outlook and recommendation:
+The outlook is stable. Contracted, long-dated revenue and a strong position on routes between data centers support the credit, and the route extension under construction is backed by a signed anchor customer. Maintain the position and the internal rating. Next review on receipt of the full-year 2025 financial statements.

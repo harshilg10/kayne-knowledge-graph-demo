@@ -1,0 +1,23 @@
+Recommendation:
+We recommend raising the Arbor Peak AI Infrastructure Fund model weight from 5% to 8% in Growth models and from 3% to 5% in Balanced models (proposed decision IC-2026-004). The increase would be funded from fixed income: the Municipal Income Fund in taxable accounts and the Core Fixed Income Fund in all other accounts.
+
+Background:
+At the January 15 Investment Committee meeting, the committee agreed that it remains bullish on Nvidia and other AI infrastructure providers, and the technology team reiterated its view that demand for GPU capacity will continue through 2027. Douglas Whitfield asked us on January 16 to turn that view into a sizing proposal and to address concentration and the funding source. This memo draws on four recent pieces: Meredith Calloway and Arjun Mehta's November report, GPU Demand Outlook 2026-2027; Arjun Mehta's December report on custom silicon and AI networking; Natalie Brooks's January report, Powering AI; and Olivia Grant's hyperscaler capex tracker for Q4 2025.
+
+Investment Thesis:
+- Demand still exceeds supply: Our base case is that demand for GPU capacity outruns supply through 2027. Training clusters keep growing, and inference demand is becoming a second, faster-growing driver as enterprises move models into production.
+- Spending plans rose again: Olivia Grant's tracker concludes that hyperscaler capex plans for 2026 moved higher once more, with the increase concentrated in AI data centers. We read this as a multi-year commitment rather than a single budget cycle.
+- Bottlenecks are moving beyond the GPU: Nvidia remains the platform leader and is 12% of the fund, but the binding constraints are shifting to advanced packaging at TSMC, to high-bandwidth memory, where we believe Micron is gaining share, and to AI networking, where Broadcom and Arista Networks benefit as clusters scale. Broadcom's custom accelerator programs and what we see as AMD's growing traction in inference widen the opportunity beyond a single supplier.
+- Power and cooling: Power availability is becoming a gating factor for new capacity. Vertiv and Eaton supply power distribution and thermal management into the same projects, with less sensitivity to chip pricing.
+- Breadth: The fund spreads exposure across compute, foundry, memory, networking and power and cooling, which in our view is a better way to add to the theme than buying more of individual names.
+
+Risks and Mitigants:
+- Valuation: Many holdings trade at elevated multiples, and a digestion phase in hyperscaler spending would hit the group at the same time. Mitigant: the increase is measured rather than a full overweight, and Brendan Kessler manages position sizes against valuation within the fund.
+- Concentration and overlap: Nvidia is also about 8% of the Global Technology Fund, so clients who hold both funds have overlapping exposure, and several family clients carry client-directed overweights in the Global Technology Fund. Elena Vasquez raised this at the December 11 meeting, and advisors are already fielding client questions about it. Mitigant: we propose a mid-year look-through review of client exposure by the risk team, with any resulting changes brought back to the committee.
+- Supply chain and policy: Export controls and the concentration of leading-edge manufacturing at TSMC remain risks to both supply and sentiment.
+- Funding: Moving from bonds to equities raises model risk modestly; the smaller increase for Balanced models reflects that.
+
+Implementation:
+- Rebalancing from February 17 to March 6, staggered across about 60 accounts for 32 clients, with roughly $10 million of purchases.
+- Funding from Municipal Income Fund sales in taxable accounts, at the cost of some tax-exempt income, and Core Fixed Income Fund sales in IRAs and tax-exempt accounts, which gain nothing from tax-exempt income.
+- Wealth management to prepare advisor talking points on the 2027 demand view and on how overlap will be monitored.

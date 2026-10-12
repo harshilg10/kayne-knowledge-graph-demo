@@ -1,0 +1,24 @@
+Polar Loop Cooling Systems Management Meeting
+
+Date: 2026-08-27
+Meeting Type: Due Diligence
+
+Participants:
+Priya Nair
+Marcus Bell
+Henrik Larsen (Polar Loop Cooling Systems)
+
+Management meeting with Henrik Larsen, CEO of Polar Loop Cooling Systems, as part of credit due diligence on the company's financing request.
+
+Discussion:
+- Business (Henrik Larsen): Polar Loop designs and builds direct-to-chip liquid cooling systems - cold plates, coolant distribution units and rack manifolds - for high-density GPU deployments. Backlog has grown sharply this year as AI data centers move to higher rack density and new GPU halls are designed beyond the limits of air cooling.
+- Customers: Cobalt Ridge Data Centers is the largest customer; Polar Loop supplies the cooling for its West Texas campus. Marcus Bell noted that Cobalt Ridge is also a Private Credit Fund II borrower, so the two credits are linked and will be assessed together.
+- Competition: Polar Loop competes with Vertiv on large deployments. Henrik Larsen said it wins on lead times - shorter delivery and faster commissioning - rather than on price.
+- Request: a $20 million senior secured facility to add a second manufacturing line. Priya Nair asked about ramp timing, the equipment budget and how much of the new line's output is already covered by backlog.
+- Risks: customer concentration, given the Cobalt Ridge Data Centers share of backlog, and component supply - pumps, cold plates and quick-disconnect fittings come from a small supplier base. Henrik Larsen said Polar Loop is qualifying second sources and holds buffer stock of long-lead parts; Priya Nair asked for the supplier agreements.
+- Marcus Bell was constructive on the business and wants customer concentration addressed in the structure and covenants.
+
+Action Items:
+- Henrik Larsen to send the backlog summary by customer, the customer pipeline and the second-line timeline.
+- Priya Nair to complete the credit due diligence report by end of August.
+- Marcus Bell to schedule the facility for the Investment Committee on September 10.

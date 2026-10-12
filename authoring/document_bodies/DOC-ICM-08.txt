@@ -1,0 +1,33 @@
+Recommendation:
+We recommend that the Investment Committee approve a $20 million senior secured facility from Arbor Peak Private Credit Fund II to Polar Loop Cooling Systems (proposed decision IC-2026-013) to fund a second manufacturing line. Polar Loop sells into what we see as the fastest-growing part of data center thermal management, the structure is conservative, and the related exposure to Cobalt Ridge Data Centers is identified and manageable. Approval would be subject to the remaining credit review items: reconciliation of trailing leverage, review of the largest customer contracts, and insurance and intellectual property diligence.
+
+Transaction Overview:
+- Facility: $20 million senior secured facility, first lien, 4-year term.
+- Pricing: floating at SOFR + 600 bps.
+- Use of proceeds: a second manufacturing line, drawn in stages against equipment invoices.
+- Collateral: first lien on receivables, inventory, equipment (including the new line) and intellectual property.
+- Funding: PCF II capital call #7 on September 15, 2026.
+
+Business Overview:
+Polar Loop Cooling Systems designs and manufactures direct-to-chip liquid cooling systems - cold plates, manifolds and coolant distribution units - for high rack density GPU deployments in AI data centers. Arjun Mehta's June 4 report on liquid cooling concluded that next-generation GPU racks exceed the limits of air cooling, and that direct-to-chip cooling is becoming the standard design as rack density rises. Backlog is up strongly in 2026, and Cobalt Ridge Data Centers is the largest customer. Polar Loop competes with Vertiv, in our view the leading public supplier, and typically wins on lead times and engineering responsiveness.
+
+Key Findings:
+- Management: At our August 27 meeting, CEO Henrik Larsen walked us through the backlog, the customer pipeline and the timing of the second line; his follow-up package the next day was consistent.
+- Demand: Backlog growth tracks rising rack density in new GPU deployments. Cobalt Ridge Data Centers leads the pipeline, followed by colocation operators and GPU cloud providers at earlier stages.
+- Capacity: The existing line runs near full utilization, so capacity, not demand, limits backlog conversion.
+- Leverage: Management's trailing figures put pro forma leverage inside the 3.5x covenant with reasonable headroom; Priya Nair is reconciling them to the reviewed financial statements.
+
+Covenants:
+- Minimum liquidity, tested monthly while the second line is built and quarterly thereafter.
+- Leverage of at most 3.5x, tested quarterly.
+- Quarterly backlog, customer concentration and supplier lead-time reporting.
+
+Risks and Mitigants:
+- Customer concentration and related exposure: Cobalt Ridge Data Centers is Polar Loop's largest customer and already a PCF II borrower under IC-2026-006, so a delay at the Cobalt Ridge campus would affect both credits. Mitigants: deposits and milestone billing on large orders, concentration reporting, and joint monitoring of the two credits.
+- Component supply: Pumps, cold plates and quick-disconnect fittings come from a small supplier base. Mitigants: Polar Loop is qualifying second sources and holds buffer stock of long-lead parts.
+- Competition: Larger suppliers, including Vertiv, could add capacity and erode Polar Loop's lead-time advantage. Mitigants: leverage capped at 3.5x and a 4-year tenor.
+- Technology shift: Immersion cooling or new rack designs could change demand. We view direct-to-chip cooling as the prevailing approach for the next several GPU generations.
+
+Portfolio Implications:
+- The facility adds to PCF II's data center-related exposure alongside Cobalt Ridge Data Centers and Ostrander Power Constructors, which we will track as a combined sector concentration.
+- Lucas Meyer estimates the facility adds roughly one percentage point of look-through exposure for clients in Private Credit Fund II. The three clients flagged under IC-2026-011 - Hartwell Family Trust, Okafor Family Office and Sterling-Hayes Family Office - completed their overlap reductions between late July and early August and would remain below the firm's 15% look-through guideline after capital call #7.

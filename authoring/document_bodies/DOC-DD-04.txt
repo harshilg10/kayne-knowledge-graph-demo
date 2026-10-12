@@ -1,0 +1,30 @@
+Transaction Overview:
+Polar Loop Cooling Systems has requested a $20 million senior secured facility from Private Credit Fund II to fund a second manufacturing line. Proposed terms: first lien on substantially all assets, four-year tenor, SOFR + 600 bps, and financial covenants for minimum liquidity and leverage of no more than 3.5x. Marcus Bell and I met CEO Henrik Larsen on August 27; he followed up on August 28 with a backlog summary, the customer pipeline and the new line's schedule. If approved, the facility would be funded through a Private Credit Fund II capital call.
+
+Business Overview:
+Polar Loop designs and manufactures direct-to-chip liquid cooling systems - cold plates, manifolds and coolant distribution units - for high rack density deployments. Heat loads from current GPU racks exceed what air cooling can remove, so operators of AI data centers now specify liquid cooling for new halls. Revenue is concentrated in a small number of large campuses. Its largest customer is Cobalt Ridge Data Centers, whose West Texas campus uses Polar Loop systems in phase 1; Cobalt Ridge has been a Private Credit Fund II borrower since April. Arjun Mehta's June report on liquid cooling named Polar Loop among the private suppliers that win on lead times.
+
+Key Findings:
+- Backlog has grown sharply through 2026 as rack density rises with each GPU generation; most racks in the pipeline are specified above 100 kW, and deliveries run well into 2027. Behind Cobalt Ridge, which is also in early discussions with Polar Loop about phase 2, the pipeline consists of colocation operators and GPU cloud providers at earlier stages.
+- Capacity, not demand, is the constraint: the existing line runs near full utilization. The second line, the main use of proceeds, is scheduled to commission in the first half of 2027 per management, with part of its first-year output already covered by backlog.
+- Competition: in our view Vertiv is the leading public player, with a broader thermal and power portfolio and global service coverage. Polar Loop competes with Vertiv on large deployments and wins mainly on lead times and engineering responsiveness, an edge that may narrow as larger competitors add capacity.
+- Customer concentration is the central credit issue: Cobalt Ridge's phase 1 order is the largest single backlog item. Management says large orders carry deposits and milestone billing, which limits working capital exposure.
+- Leverage: management's trailing figures put pro forma leverage inside the 3.5x covenant, and in our base case it stays there, with liquidity above the minimum, through the ramp of the new line. We will reconcile the figures to reviewed financial statements before the committee.
+
+Covenants and structure:
+- Minimum liquidity, tested monthly while the second line is being built and quarterly thereafter.
+- Maximum leverage of 3.5x, tested quarterly.
+- Draws for the second line only against equipment invoices.
+- First lien on receivables, inventory, equipment (including the new line) and intellectual property.
+- Quarterly reporting of backlog, customer concentration and supplier lead times.
+
+Risks and Mitigants:
+- Customer concentration: deposits and milestone billing, concentration reporting, and a downside case that assumes slower conversion of Cobalt Ridge orders.
+- Linked exposure: a Cobalt Ridge delay would hit Polar Loop's revenue, and a Polar Loop delivery problem could delay tenant commissioning at Cobalt Ridge. With Ostrander Power Constructors, the substation contractor at Cobalt Ridge, also in the fund, we will track the three positions as a combined data center exposure and disclose the link in the credit memo.
+- Component supply (pumps, cold plates, quick-disconnect fittings): Polar Loop is qualifying second sources and holds buffer stock of long-lead parts; we are reviewing the supplier agreements it provided.
+- Second-line execution: staged draws and the minimum liquidity covenant; a delay defers growth but does not impair the existing business.
+- Technology shift: immersion cooling has not displaced direct-to-chip designs for current GPU platforms.
+- Look-through exposure: Lucas Meyer is estimating the effect on Private Credit Fund II investors against the 15% look-through guideline behind the IC-2026-011 trades; results will be in the credit memo.
+
+Recommendation:
+Proceed to the September 10 Investment Committee with a recommendation to approve, subject to reconciliation of trailing leverage, review of the largest customer contracts, and satisfactory insurance and intellectual property diligence. Marcus Bell and I will present the credit approval memo.

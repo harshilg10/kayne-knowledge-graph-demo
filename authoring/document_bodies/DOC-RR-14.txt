@@ -1,0 +1,25 @@
+Summary:
+Power demand from data centers and broader electrification is arriving on a grid that was built for flat load. Meeting it takes more than new generation: it requires transmission upgrades, substations, transformers and grid-scale battery storage that shifts energy into peak hours and lets utilities connect new load sooner. In January's "Powering AI" report we focused on generation and gas supply; this report turns to the wires and the batteries. We see grid modernization and battery storage as the most durable part of the power demand theme, because they are needed whichever fuel wins and are driven more by reliability than by subsidies.
+
+Key Points:
+- Across the utilities we follow, multi-year capital plans for transmission and distribution keep rising, and regulators are generally approving reliability spending even as they push back on other costs.
+- In our view, battery storage is the fastest resource to add in most interconnection queues. Four-hour batteries move midday solar output into the evening peak, and some data center developers now pair storage with flexible-load commitments to secure earlier connections.
+- Equipment remains the bottleneck. Large power transformers and high-voltage breakers have lead times measured in years, which favors suppliers with capacity and contractors with crews.
+- Uncertainty around clean energy tax credits weighs more on solar and wind developers than on grid and storage spending.
+
+Company views:
+- NextEra Energy. A large regulated utility combined with one of the biggest renewables and storage development platforms in the country. Its procurement scale and interconnection pipeline make it, in our view, a natural partner for data center customers that need large volumes of new supply.
+- First Solar. A US-based maker of thin-film solar modules whose domestic manufacturing reduces exposure to tariffs and supply-chain restrictions on imported panels. Utility-scale solar remains one of the fastest ways to add energy, and First Solar is our preferred way to own it.
+- Fluence Energy. A battery storage integrator that benefits directly from storage demand. In our view integrator margins are structurally thin and reliance on imported battery cells is a risk, so we size it more modestly than our core holdings.
+- GE Vernova. Best known for gas turbines, but its grid equipment business - transformers, switchgear and high-voltage transmission systems - is, in our view, underappreciated and has the longer runway.
+- Quanta Services. The contractor behind much of the transmission, substation and interconnection work, with a skilled workforce that, in our view, competitors struggle to match. Quanta Services is the clearest way to own the labor side of grid modernization.
+
+Risks:
+- Permitting and siting delays for new transmission lines.
+- Affordability: regulators facing higher customer bills may slow or trim utility capital plans.
+- Policy: changes to tax credits, and tariffs on imported cells and components.
+- Supply chain: transformer and battery cell shortages can delay projects and squeeze integrator margins.
+- Demand: if data center forecasts prove too high, some grid investment could come early, although much of it replaces aging assets and is needed regardless.
+
+Portfolio Implications:
+The Clean Energy Transition Fund holds NextEra Energy, First Solar, Fluence Energy, GE Vernova and Quanta Services alongside Constellation Energy, and we are comfortable with that positioning. IC-2026-008 raised the Energy Infrastructure Fund model weight from 5% to 7% on the gas side of the same power demand story. The Clean Energy Transition Fund remains the energy allocation for clients whose investment policies exclude fossil-fuel infrastructure, and it gives them participation in data center power demand through the grid and storage rather than pipelines. GE Vernova and Quanta Services are also held in the Energy Infrastructure Fund, and Quanta Services and Constellation Energy in the AI Infrastructure Fund, so clients who own several of these funds have more power-related exposure than any single fund shows. We will share our holdings data with the risk team for its mid-year look-through exposure review.

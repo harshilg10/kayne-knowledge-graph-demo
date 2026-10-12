@@ -1,0 +1,36 @@
+Summary:
+Two forces are reshaping the semiconductor supply chain at the same time: export controls that keep evolving, and a capacity race in leading-edge wafers and advanced packaging. Our conclusions:
+- Export controls redirect demand more than they reduce it. We continue to exclude restricted markets from our base case for leading-edge accelerators.
+- TSMC's expansion, including its Arizona fabs, adds geographic resilience, and its continued growth in advanced packaging is easing, but not eliminating, the constraint on accelerator supply.
+- Demand for lithography and process equipment stays strong, which supports ASML and Applied Materials.
+- For the AI Infrastructure Fund, the July changes leave semiconductor exposure well balanced, and nothing here argues for revisiting them.
+
+Export controls:
+The rules covering advanced accelerators, high-bandwidth memory and chipmaking tools have been revised several times, and we assume they will keep changing. Three practical consequences:
+- Our demand models exclude restricted markets for leading-edge accelerators. Any loosening would be upside; further tightening has limited effect on accelerator volumes because supply is allocated to other buyers in any case.
+- Equipment makers carry more direct exposure than chip designers. Tool restrictions determine what ASML and Applied Materials can ship to some customers, so their order books can move with each rule change.
+- Licensing reviews and compliance costs are now a recurring feature of the industry. We treat them as a source of volatility rather than a thesis-changing event.
+
+TSMC capacity and advanced packaging:
+TSMC remains the most important company in the chain: it manufactures nearly every leading accelerator and packages most of them.
+- Geography: TSMC is expanding leading-edge capacity outside its home market, including in Arizona, which we see as a hedge against geographic concentration and a response to customer and policy pressure. In our view most leading-edge volume and nearly all CoWoS capacity remain in Taiwan for now, so the Arizona sites add resilience rather than near-term supply.
+- Packaging: CoWoS capacity continues to grow quickly, and TSMC is adding newer formats for larger multi-die designs. In our assessment, packaging was the main constraint on accelerator output through 2024 and 2025; as we argued in February, it now shares that role with high-bandwidth memory.
+
+Equipment: ASML and Applied Materials:
+- ASML is the only supplier of EUV lithography, which every leading-edge node depends on. Each new node uses more EUV exposures, and high-NA tools extend that dependence further. With TSMC and the memory makers adding leading-edge capacity, we expect demand for ASML's lithography systems to stay strong.
+- Applied Materials benefits from the steps that scale with process complexity rather than wafer count: new transistor architectures, backside power delivery, and the deposition, etch and bonding used in advanced packaging and HBM. We expect its equipment demand to remain strong through 2027.
+
+Implications for Nvidia supply:
+- Over the next several quarters, Nvidia's output is governed by TSMC packaging slots and HBM availability rather than by wafers or export rules. Both are rising, and we expect Nvidia's supply to grow meaningfully into 2027 without catching up with demand.
+- Export controls mainly affect where Nvidia can sell, not how much it can build. Because demand outside restricted markets still exceeds supply in our view, rule changes are more a risk to sentiment than to volumes.
+- Wafers made in Arizona still need advanced packaging. Until packaging capacity outside Taiwan becomes meaningful, US production is a partial hedge for Nvidia's supply, not a full one.
+
+Portfolio Implications:
+- The AI Infrastructure Fund owns the bottleneck as well as the designer: it holds TSMC, ASML and Applied Materials alongside Nvidia. We continue to support these positions.
+- Nvidia now sits at the 10% single-name cap adopted in July under IC-2026-011, consistent with Meredith Calloway's July 2 position review. Nothing in the supply picture argues for revisiting the cap.
+- We would treat weakness in equipment names driven by export headlines as an opportunity to add, since the long-term demand drivers are intact.
+
+Risks:
+- An abrupt tightening of tool restrictions that hits equipment makers' order books.
+- Geopolitical disruption in Taiwan, where most leading-edge and packaging capacity still sits.
+- A digestion phase in accelerator demand that leaves new packaging capacity underused.

@@ -1,0 +1,107 @@
+node {
+  diameter: 50px;
+  color: #A5ABB6;
+  border-color: #9AA1AC;
+  border-width: 2px;
+  text-color-internal: #FFFFFF;
+  font-size: 10px;
+}
+relationship {
+  color: #A5ABB6;
+  shaft-width: 1px;
+  font-size: 8px;
+  padding: 3px;
+  text-color-external: #000000;
+  text-color-internal: #FFFFFF;
+  caption: "<type>";
+}
+node.Client {
+  color: #E8A33D;
+  border-color: #B97E22;
+  diameter: 75px;
+  font-size: 11px;
+  caption: "{name}";
+}
+node.Account {
+  color: #F2C879;
+  border-color: #C9A04F;
+  text-color-internal: #3A2A06;
+  diameter: 45px;
+  caption: "{id}";
+}
+node.Fund {
+  color: #4C8BF5;
+  border-color: #2F66C4;
+  diameter: 65px;
+  caption: "{name}";
+}
+node.Company {
+  color: #7B61FF;
+  border-color: #5A43D6;
+  diameter: 55px;
+  caption: "{name}";
+}
+node.Theme {
+  color: #E5484D;
+  border-color: #B4282D;
+  diameter: 75px;
+  font-size: 11px;
+  caption: "{name}";
+}
+node.Concept {
+  color: #F28B82;
+  border-color: #D0645B;
+  text-color-internal: #3B0D0A;
+  diameter: 45px;
+  caption: "{name}";
+}
+node.Person {
+  color: #2BB673;
+  border-color: #1E8E5A;
+  diameter: 50px;
+  caption: "{name}";
+}
+node.Advisor {
+  color: #1E8E5A;
+  border-color: #136B42;
+  diameter: 55px;
+  caption: "{name}";
+}
+node.Document {
+  color: #8D99AE;
+  border-color: #6B778C;
+  diameter: 50px;
+  caption: "{title}";
+}
+node.Meeting {
+  color: #00A3BF;
+  border-color: #007C92;
+  diameter: 60px;
+  caption: "{title}";
+}
+node.Committee {
+  color: #0B6E7F;
+  border-color: #064C58;
+  diameter: 70px;
+  caption: "{name}";
+}
+node.Decision {
+  color: #D6336C;
+  border-color: #A61E4D;
+  diameter: 60px;
+  caption: "{id}";
+}
+node.Transaction {
+  color: #B0B7C3;
+  border-color: #8A93A3;
+  text-color-internal: #1F2937;
+  diameter: 32px;
+  caption: "{txn_type}";
+}
+node.Chunk {
+  color: #DADDE2;
+  border-color: #B6BBC4;
+  text-color-internal: #1F2937;
+  diameter: 25px;
+  caption: "{seq}";
+}

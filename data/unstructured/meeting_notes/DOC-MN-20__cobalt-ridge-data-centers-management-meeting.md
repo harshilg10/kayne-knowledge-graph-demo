@@ -1,0 +1,26 @@
+Cobalt Ridge Data Centers Management Meeting
+
+Date: 2026-03-18
+Meeting Type: Due Diligence
+
+Participants:
+Marcus Bell
+Priya Nair
+Owen Fitzgerald (Cobalt Ridge Data Centers)
+Alicia Moreno (Cobalt Ridge Data Centers)
+
+Site visit to the Cobalt Ridge Data Centers campus in West Texas: walk-through of the phase 1 data hall and the substation site, followed by presentations from Owen Fitzgerald (CEO) and Alicia Moreno (CFO).
+
+Discussion:
+- Campus and tenants (Owen Fitzgerald): 120 MW campus built in two phases; phase 1 (60 MW) is scheduled to be energized in Q3 2026. Tenants are an investment-grade hyperscale tenant and a GPU cloud operator deploying Nvidia-based GPU clusters, with deliveries planned for Q3 to match energization. Planned rack density in the GPU halls is above 100 kW per rack, beyond what air cooling can handle, so the halls are designed around direct-to-chip liquid cooling supplied by Polar Loop Cooling Systems.
+- Power (Alicia Moreno): a 15-year power purchase agreement and a secured interconnection queue position. The on-site substation is being built by Ostrander Power Constructors, an existing Private Credit Fund II borrower; Marcus Bell noted we know its execution record.
+- Financing (Alicia Moreno): phase 1 would be funded with sponsor equity and the requested $45 million senior secured term loan, secured by a first lien on land, buildings and power equipment. Phase 2 would be financed separately once phase 1 is leased and operating.
+- Construction of the data hall and substation was visibly under way and appeared on schedule.
+- Priya Nair pressed on how firm the tenant commitments are, the construction contingency, and the PPA's pricing and assignability. Management expects to convert letters of intent into signed leases before energization.
+- Marcus Bell came away positive on management, the power position and the tenant mix, subject to the follow-ups below.
+
+Action Items:
+- Owen Fitzgerald to send the tenant letters of intent, the substation energization timeline from Ostrander Power Constructors and the PPA term sheet.
+- Alicia Moreno to send the detailed construction budget, including contingency.
+- Priya Nair to share the power documents with Pemberton Grid Consulting for the independent power assessment, and the PPA and lease documents with Caldwell & Pierce LLP for legal review.
+- Priya Nair to complete the credit due diligence report; Marcus Bell targeting the April Investment Committee.

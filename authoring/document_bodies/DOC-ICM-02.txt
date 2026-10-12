@@ -1,0 +1,22 @@
+Recommendation:
+We recommend adding the Arbor Peak Cybersecurity Leaders Fund to the Growth models at a 4% target weight, funded entirely from the Arbor Peak Global Technology Fund, whose model weight would fall from 16% to 12% (proposed decision IC-2025-019). The switch leaves the model's overall technology weight unchanged. It replaces part of a broad technology allocation with a dedicated cybersecurity position, where we see more durable demand than in technology spending overall.
+
+Background:
+Daniel Cho's November 3 report, Cybersecurity Platform Consolidation, sets out the research behind this proposal. Growth models reach security today only indirectly: the Global Technology Fund holds CrowdStrike, Palo Alto Networks, Zscaler and Fortinet, but at modest weights next to the large platform companies. The Cybersecurity Leaders Fund concentrates on the category leaders - CrowdStrike, Palo Alto Networks, Zscaler and Fortinet - and holds Microsoft for its security franchise. From the Global Technology Fund's side, this is a model-level reallocation; the fund's own strategy and holdings are unaffected.
+
+Investment Thesis:
+- Platform consolidation: Security teams are cutting the number of vendors they manage and buying integrated platforms that span endpoint, network, cloud and identity. We expect the platform leaders, CrowdStrike and Palo Alto Networks in particular, to take a growing share of budgets as point products are retired.
+- Zero trust adoption: Organizations continue to replace perimeter VPNs with zero trust access tied to user identity and device posture. We see Zscaler as the most direct beneficiary in the fund, while Fortinet should benefit from the related refresh of firewalls and secure networking.
+- Resilient budgets: In our industry conversations, security remains among the last budget lines to be cut, and the move of workloads to the cloud keeps widening what has to be protected. Cloud security and endpoint security are where we see the strongest spending intentions.
+- Portfolio fit: Dedicated exposure gives the Growth models a source of technology growth that depends less on the hardware spending cycle than the rest of the technology sleeve.
+
+Risks and Mitigants:
+- Valuation: In our assessment the leading security platforms trade at premium multiples, and the group can de-rate quickly if growth slows. Mitigant: the 4% weight is modest, and position sizes within the fund are managed against valuation.
+- Competition: Bundled security offerings from Microsoft and pricing pressure among platforms could squeeze standalone vendors, and consolidation will create losers as well as winners. Mitigant: the fund concentrates on companies we expect to be consolidators and owns Microsoft directly.
+- Event risk: A major outage or breach at a holding could hit that stock sharply. Mitigant: the thesis does not depend on any single company.
+- Overlap: Microsoft is held in both funds, and the Global Technology Fund keeps smaller positions in several security names. We consider the added overlap acceptable at these weights.
+
+Implementation:
+- Trades to be executed November 17-26 across 15 Growth taxable accounts, selling the Global Technology Fund and buying the Cybersecurity Leaders Fund in the same session for each account.
+- Advisors should review the tax impact of the Global Technology Fund sales with each client before the trade date.
+- Advisor talking points will cover platform consolidation, zero trust and why overall technology exposure does not change.

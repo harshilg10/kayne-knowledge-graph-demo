@@ -1,0 +1,21 @@
+Recommendation:
+I recommend that the committee add the Arbor Peak Energy Infrastructure Fund to both the Growth and the Balanced models at a 5% target weight, funded from fixed income (proposed decision IC-2025-014). Neither model holds dedicated midstream exposure today. The allocation would add contracted, inflation-linked income that behaves differently from both the technology-heavy equity sleeve and the core bond holdings it would partly replace.
+
+Background:
+The fund has invested in US energy infrastructure since 2019. Its core is natural gas pipelines, storage, processing and export-linked assets, with a smaller sleeve of power generation and grid equipment names. The largest positions include Williams Companies, Kinder Morgan, Energy Transfer, Enterprise Products Partners and Cheniere Energy. Portfolio construction favors long-lived assets with contracted or regulated revenue, owned by operators with conservative balance sheets.
+
+Investment Thesis:
+- Fee-based cash flows: In our assessment, most of the portfolio's underlying cash flow comes from fee-based contracts, take-or-pay commitments and regulated tariffs rather than from commodity prices. That should give the fund a steadier income profile than the broader energy sector.
+- Inflation-linked tariffs: Many pipeline tariffs and long-term transport contracts include inflation escalators, a form of protection that nominal bonds do not provide.
+- Volume growth on natural gas pipelines: We expect throughput to grow with LNG exports as new liquefaction capacity comes online over the next several years, and with gas-fired power generation as electricity demand rises, including early demand from large data center campuses. Williams Companies and Kinder Morgan are well placed in interstate gas transmission; Energy Transfer and Enterprise Products Partners add processing, storage and export logistics; Cheniere Energy provides direct exposure to LNG exports.
+- Diversification: Midstream returns are driven by volumes, contracts and tariffs rather than by the growth expectations that dominate the rest of the equity sleeve, which should improve the balance of risk in both models.
+
+Risks and Mitigants:
+- Commodity sensitivity: Even fee-based businesses see volumes and some processing margins move with commodity prices, and the equities can trade with oil and gas in risk-off markets. Mitigant: the fund emphasizes long-haul transmission and contracted export capacity over commodity-exposed gathering, and a 5% weight limits the effect at the model level.
+- Policy: Pipeline permitting, export authorizations and environmental rules can shift with the political cycle. Mitigant: the portfolio is weighted toward assets already in service rather than projects awaiting approval.
+- ESG exclusions: Some clients restrict fossil-fuel investments. The Bellamy Foundation's investment policy excludes fossil-fuel infrastructure, so the foundation will be exempt and will keep its energy exposure in the Clean Energy Transition Fund. Advisors should confirm any other client restrictions before orders are placed.
+
+Implementation:
+- Target weight of 5% in both models, sourced from the fixed income sleeve: the Municipal Income Fund in taxable accounts and the Core Fixed Income Fund in tax-exempt accounts.
+- Trading in late June and early July 2025, after approval, staggered across accounts by the trading desk.
+- Advisor talking points covering the income and diversification rationale, with the Bellamy Foundation exemption documented in the client file.

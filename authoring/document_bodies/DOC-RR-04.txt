@@ -1,0 +1,32 @@
+Summary:
+This is the fourth-quarter edition of our hyperscaler capex tracker, covering commentary from Microsoft, Alphabet, Amazon, Meta and Oracle during Q4 2025. The direction is unambiguous: on our read, all five signaled that 2026 capital spending will be higher than 2025, and in each case the increase is directed at AI data centers. The tone has shifted as well. A year ago the message was spending ahead of demand; this quarter most of the group described itself as capacity constrained, with inference demand growing faster than compute can be added and GPU supply still allocated rather than freely available. As in prior editions, we describe direction and tone only, and any figures below are internal estimates, not company guidance.
+
+Scorecard (2026 capex direction versus 2025; tone versus last quarter):
+- Microsoft: higher; firmer. Our read is that capacity, not demand, is the gating factor for its cloud business, with spending split between short-lived servers and accelerators and long-lived data center shells and power.
+- Alphabet: higher; firmer. Demand from cloud customers and its own AI services came through clearly, and we expect it to keep serving that demand with a mix of in-house accelerators and merchant GPUs.
+- Amazon: higher; steady. We read the message as a multi-year data center and power program, and we expect its in-house chips to take a larger role next to merchant GPUs.
+- Meta: higher; more assertive. In our read, Meta ties new capacity to ranking, recommendations and advertising tools as well as to model development, and it signaled a substantial step-up.
+- Oracle: higher; the most aggressive relative to its size. In our view its spending is the most financing-sensitive of the five, and we are watching its funding mix closely.
+
+What changed this quarter:
+- Inference demand is accelerating. Across the group, inference - serving models to consumers, developers and enterprises - came through as the fastest-growing workload. It scales with usage rather than with the number of models trained, which makes the demand more recurring than a training cycle.
+- GPU supply remains allocated. Buyers continue to describe accelerator supply as allocated by vendors rather than available on demand, and commitments are extending into 2027.
+- The constraint is moving to power and buildings. More of the commentary concerned powered land, substations and long-term power contracts than chips, consistent with Natalie Brooks' January 8 report on data center power demand.
+
+Internal estimates:
+- Combined 2026 capex for the five companies rises roughly 30% versus 2025 (internal estimate), with the share devoted to AI data centers rising again.
+- Roughly half or more of the increase goes to servers, accelerators and networking, with the balance to buildings, power and cooling (internal estimate).
+
+Implications for the Global Technology Fund:
+- Microsoft, Alphabet, Amazon and Meta are among the fund's largest holdings and Oracle is also held, so the Global Technology Fund benefits from AI demand but also carries the capex burden. We expect depreciation from this spending to weigh on margins in 2026 and 2027; our key test is whether cloud and AI revenue growth keeps pace. So far, in our view, it does.
+- The fund's direct exposure to accelerator spending comes through Nvidia (about 8% of the fund), Broadcom, TSMC, AMD, Arista Networks and Dell Technologies. That gives the fund more sensitivity to AI data centers than its broad mandate suggests, which advisors should keep in mind for clients who also own Nvidia through other Arbor Peak funds.
+- No positioning change is proposed in this note.
+
+Implications for suppliers:
+- Higher capex flows first to accelerator, memory and networking suppliers, then to power and cooling equipment and data center developers. This quarter's commentary supports the view expressed at the January 15 Investment Committee that demand for GPU capacity will continue through 2027.
+- Growth in in-house accelerators at several of these companies is a share shift within accelerator spending, not a reduction of it; custom-silicon design partners benefit alongside merchant GPU vendors.
+
+What we are watching next quarter:
+- Whether 2026 capex plans hold as depreciation rises.
+- Power procurement: long-term power contracts and on-site generation at new campuses.
+- Signs of digestion: slower accelerator orders, shortening lead times or cancelled data center leases.

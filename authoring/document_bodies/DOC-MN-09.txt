@@ -1,0 +1,16 @@
+Discussion:
+- Elena Vasquez and Lucas Meyer presented the risk memo on look-through AI concentration, the review Elena Vasquez asked for in February when IC-2026-004 was approved. Method: client fund positions, multiplied through each fund's holdings and each company's theme exposure.
+- Using positions as of June 15, three clients exceeded the 15% look-through AI Infrastructure guideline: Hartwell Family Trust 15.9%, Okafor Family Office 16.3% and Sterling-Hayes Family Office 16.5%. All other clients are below the guideline.
+- Lucas Meyer: the main driver is client-directed overweights in the Global Technology Fund overlapping with the AI Infrastructure Fund; Nvidia is the largest single-name look-through exposure. Private Credit Fund II's data center loan to Cobalt Ridge Data Centers adds to the total for the clients invested in that fund.
+- Meredith Calloway summarized her July Nvidia position review: fundamentals are intact and GPU capacity is still tight, but concentration and valuation argue for trimming Nvidia from 12% to 10% of the AI Infrastructure Fund. Brendan Kessler agreed and will redeploy the proceeds within the fund.
+- Philip Ashworth: the overweights were set at client direction, so advisors will walk each family through the change before trading.
+- Douglas Whitfield noted the proposals address concentration without changing the committee's constructive view on GPU demand.
+
+Decisions:
+- IC-2026-011, approved 7-0: (a) adopt a 10% single-name cap in thematic funds, with Nvidia trimmed from 12% to 10% of the AI Infrastructure Fund; (b) for clients above the guideline, sell Global Technology Fund to bring look-through exposure to about 13%, reinvesting in the Cybersecurity Leaders Fund and Core Fixed Income Fund. Trades July 27 to August 7.
+
+Action Items:
+- Philip Ashworth to notify advisors; Michael Torres and Jennifer Walsh to contact the three affected clients before trading.
+- Trevor Iwasaki to execute the client trades July 27 to August 7.
+- Brendan Kessler to complete the Nvidia trim in the AI Infrastructure Fund.
+- Lucas Meyer to rerun the look-through report once the trades settle.

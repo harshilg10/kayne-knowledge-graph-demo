@@ -1,0 +1,15 @@
+All,
+
+Yesterday the Investment Committee approved IC-2026-005 by a 7-0 vote, shortening the Core Fixed Income Fund duration target from 6.0 to 5.0 years.
+
+What it means for clients: nothing to trade. The change is implemented inside the fund - we are selling longer-dated Treasuries and reinvesting in shorter maturities over the coming weeks. Client allocations to the Core Fixed Income Fund do not change, and the Municipal Income Fund is unaffected.
+
+Talking points:
+- Why now: we think the market is pricing more rate cuts than are likely, and the path of policy rates is unusually uncertain. We expect Treasury yields to stay volatile and see a risk that the yield curve steepens.
+- What it does: a shorter duration target reduces the fund's sensitivity to a rise in longer-term yields. The trade-off is less price upside if yields fall sharply.
+- What it does not do: this is not a call that rates will spike, and it is not a move out of bonds. The fund remains an investment-grade core holding.
+- Income: we expect the effect on the fund's yield to be modest.
+
+The full analysis is in my March 2 note, "Rate Path and Duration Positioning", if clients want more detail. Send questions to me directly.
+
+Stephen Albrecht

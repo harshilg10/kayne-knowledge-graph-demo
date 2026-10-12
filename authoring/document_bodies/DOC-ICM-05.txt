@@ -1,0 +1,30 @@
+Recommendation:
+We recommend that the Investment Committee approve a $45 million senior secured term loan from Arbor Peak Private Credit Fund II to Cobalt Ridge Data Centers (proposed decision IC-2026-006). The loan finances phase 1 of a 120 MW data center campus in West Texas. Our March due diligence - Priya Nair's credit review after the March 18 site visit, Pemberton Grid Consulting's independent power assessment and the Caldwell & Pierce LLP legal review - supports proceeding, with executed tenant leases and our review of the detailed construction budget as conditions to funding.
+
+Transaction Overview:
+- Facility: $45 million senior secured term loan, first lien, 5-year term.
+- Pricing: floating at SOFR + 575 bps, with a 1.5% original issue discount.
+- Use of proceeds: construction and fit-out of phase 1 (60 MW).
+- Collateral: land, buildings, power equipment and an assignment of leases.
+- Funding: PCF II capital call #6 on April 20, 2026.
+
+Business Overview:
+Cobalt Ridge Data Centers is a private developer of GPU-dense data center capacity, led by CEO Owen Fitzgerald and CFO Alicia Moreno. Phase 1 is committed under letters of intent to two tenants: an investment-grade hyperscale tenant (60% of phase 1) and a GPU cloud operator (40%) deploying Nvidia-based GPU clusters. Rack densities above 100 kW require direct-to-chip liquid cooling, which Polar Loop Cooling Systems will supply.
+
+Key Findings:
+- Power: Cobalt Ridge has a 15-year power purchase agreement and a secured interconnection queue position. The new substation is being built by Ostrander Power Constructors, an existing PCF II borrower whose January annual review confirmed covenant compliance. Pemberton Grid Consulting's independent power assessment, prepared by Dr. Leah Goldberg, supports the interconnection timeline and concludes that phase 1 energization in Q3 2026 is achievable with moderate risk. On-site gas-fired generation is permitted for backup duty only, so we treat it as a reliability feature rather than a schedule mitigant.
+- Tenants: The hyperscale anchor brings investment-grade credit to the majority of phase 1 capacity. Both draft leases tie rent to phase 1 energization, with abatement for delay and tenant termination rights after an outside date.
+- Legal: Caldwell & Pierce LLP reviewed title, permits, the leases, the assignability of the power purchase agreement and the first lien collateral package, and found no material litigation. Open items before closing include executed leases, the power supplier's consent and direct agreement, and title endorsements.
+
+Covenants:
+- Debt service coverage of at least 1.35x after stabilization.
+- Loan-to-value of at most 65%.
+- A debt service reserve funded at closing, plus completion milestones, sponsor funding of cost overruns and monthly construction reporting.
+
+Risks and Mitigants:
+- Construction delay: Late equipment deliveries, particularly the main power transformers, or cost overruns could push out stabilization. Mitigants: the debt service reserve, sponsor cost-overrun support, completion milestones and equity beneath our loan at the 65% loan-to-value ceiling.
+- Tenant concentration: Phase 1 depends on two tenants, and the GPU cloud operator is a weaker credit than the anchor. Mitigants: the investment-grade tenant carries 60% of phase 1, and scarce powered, liquid-cooled capacity in this market supports re-leasing.
+- Power timing: Energization depends on the substation and the transmission owner's tie-in, and the leases carry outside dates. Mitigants: the Pemberton Grid Consulting assessment, the secured queue position, the long-term power purchase agreement and Ostrander's record with us. Because PCF II also lends to Ostrander Power Constructors, a delay would touch two positions, although Ostrander's backlog extends well beyond this project.
+
+Portfolio Implications:
+The loan would become the largest single position in PCF II. It adds data center exposure for clients invested in Private Credit Fund II, and we have asked Elena Vasquez's team to include it in the mid-year look-through review requested in February.

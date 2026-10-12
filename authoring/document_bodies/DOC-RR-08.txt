@@ -1,0 +1,32 @@
+Summary:
+Next-generation GPU racks have moved beyond what air can cool. Rack density in current training systems is several times what legacy data halls were designed for, and the roadmaps we track point higher still. Direct-to-chip liquid cooling has gone from a supercomputing niche to the default design for new AI data centers. After advanced packaging and high-bandwidth memory, the subject of our February note, thermal management is the next constraint on how quickly new GPU capacity can be energized.
+
+The physics:
+- Air cooling becomes impractical above roughly 40 kW per rack on our estimates, even with rear-door heat exchangers. By the same estimates, current rack-scale GPU systems run well above 100 kW per rack.
+- In our view, Nvidia's move to rack-scale systems has made liquid cooling a requirement rather than an option. The designs rely on cold plates mounted on the processors, coolant distribution units (CDUs) that circulate the fluid, and a facility water loop that rejects the heat.
+- Immersion cooling remains a niche; we expect direct-to-chip designs to dominate new builds through 2027.
+
+Content and economics:
+We estimate that thermal management content per megawatt of IT load in a liquid-cooled hall is roughly 1.5 to 2 times that of an air-cooled design (internal estimate), because operators still need air handling for residual heat while adding CDUs, manifolds, cold plates and larger heat-rejection plant. Power and cooling scale together: higher rack density also raises power distribution content per rack, and Eaton supplies much of that chain, from switchgear and busway to UPS systems and rack-level distribution.
+
+Competitive landscape:
+- Vertiv is the leading public player in our view, with the broadest portfolio across thermal and power, a global service network that hyperscale customers value, and the manufacturing scale for multi-site programs.
+- Private suppliers such as Polar Loop Cooling Systems win on lead times. Focused manufacturers can deliver CDUs and cold-plate loops faster than the large incumbents and tailor them to individual sites. Polar Loop Cooling Systems supplies the direct-to-chip systems for the Cobalt Ridge Data Centers campus in West Texas that Private Credit Fund II financed in April, and the diligence on that loan underscored how highly developers value delivery certainty.
+- We expect larger industrial and HVAC companies to keep entering the market, and some hyperscalers design their own cooling loops, which could pressure margins over time.
+
+Supply-chain risks:
+- Cold plates: precision-machined copper parts with fine internal channels; qualified capacity is limited and the design changes with each GPU generation.
+- Pumps: CDUs need redundant, high-reliability pumps, and a small number of qualified pump makers sit behind most systems.
+- Quick disconnects, manifolds and leak detection: small components where a single quality failure can take down a rack.
+- Commissioning: liquid systems need facility water infrastructure and specialist labor, which can delay energization even when the hardware arrives on time.
+
+Risks:
+- Shortages of cold plates or pumps could delay deployments and shift revenue timing for GPU vendors, including Nvidia.
+- A high-profile leak or reliability incident could slow adoption or raise warranty costs.
+- Design changes with each GPU generation can strand inventory, a bigger risk for smaller private suppliers with concentrated customer bases.
+- Vertiv's valuation already assumes strong execution.
+
+Portfolio Implications:
+- Vertiv and Eaton remain our preferred public exposures to thermal and power content in AI data centers; Eaton is also held in the Energy Infrastructure Fund.
+- Cooling readiness is now a gating item for GPU deployments, so we will track CDU and cold-plate lead times alongside our HBM and packaging indicators as a read on Nvidia's delivery cadence.
+- For Private Credit Fund II, timely delivery of liquid cooling matters to the Cobalt Ridge Data Centers phase 1 schedule, and we will share our supply-chain checks with the private credit team.

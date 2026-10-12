@@ -1,0 +1,24 @@
+Summary:
+Enterprises are consolidating security vendors onto fewer platforms, and we think this is the defining trend in cybersecurity for the next several years. Security teams that once ran dozens of point products are standardizing on a handful of vendors to cut cost, reduce integration work and get a single view of threats. At the same time, zero trust and cloud security budgets have proven resilient even where overall IT spending is under scrutiny. The winners are the platforms with the breadth to absorb adjacent categories. We believe the Cybersecurity Leaders Fund, which concentrates on those platforms, deserves a place in Growth models.
+
+Key Points:
+- Platform consolidation is accelerating. In our conversations with security buyers, most say they plan to reduce the number of vendors they use over the next two years, and they prefer to buy new capabilities from a vendor already in place.
+- Zero trust has moved from concept to architecture. Remote work, cloud migration and identity-based attacks have made perimeter defenses insufficient, and zero trust projects are funded as multi-year programs rather than discretionary purchases.
+- In our checks, cloud security is the fastest-growing budget line as workloads move to public clouds and as generative AI applications create new data exposure.
+- Security spending is defensive. Breaches carry regulatory, legal and reputational costs that boards now track directly, which supports budgets through slower economic periods.
+
+Company views:
+- CrowdStrike. In our view the leader in endpoint security, built on a single lightweight agent and a cloud-native data platform that make it easy to add modules for cloud security, identity protection and security operations. Module adoption per customer is the clearest indicator of consolidation, and we view CrowdStrike as the best-positioned platform in the group. Valuation is the main debate.
+- Palo Alto Networks. What we consider the broadest portfolio across network security, secure access, cloud security and security operations. In our view it is also the most aggressive consolidator, willing to trade some near-term revenue for long-term platform adoption, and we think that trade-off will prove correct.
+- Zscaler. A cloud-native zero trust architecture that replaces legacy VPNs and perimeter firewalls for user access. Zscaler is the purest exposure to zero trust adoption; the risk is that larger platforms bundle comparable capabilities, so its expansion into data security and workload protection matters.
+- Fortinet. A price-performance leader in firewalls built on its own custom chips, with strength in the mid-market and in operational technology. Fortinet is more hardware-driven and therefore more cyclical; we expect a firewall refresh cycle to support demand in 2026.
+- Microsoft. Bundling security into enterprise licenses is the main competitive threat to point vendors, and we see Microsoft as another beneficiary of the same consolidation trend.
+
+Risks:
+- Valuation: the leading platforms trade at premium multiples that leave little room for execution misses.
+- Competition: bundling by Microsoft and price competition among platforms could compress growth.
+- Concentration: a major outage or breach at a platform vendor could make customers rethink consolidation.
+- IT budgets: a sharp downturn would lengthen sales cycles, even if security spending holds up better than other categories.
+
+Portfolio Implications:
+The Cybersecurity Leaders Fund owns CrowdStrike, Palo Alto Networks, Zscaler and Fortinet alongside Microsoft, giving targeted exposure to the consolidation winners. Growth models already hold some of these names through the Global Technology Fund, but only as a modest slice of a broad technology portfolio. We support adding the Cybersecurity Leaders Fund to Growth models, funded from existing technology exposure so that the total technology weight stays broadly unchanged. Olivia Grant and I will bring a formal proposal, including sizing and funding, to the Investment Committee.

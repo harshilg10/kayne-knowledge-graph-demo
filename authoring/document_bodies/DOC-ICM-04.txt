@@ -1,0 +1,25 @@
+Recommendation:
+I recommend reducing the duration target of the Arbor Peak Core Fixed Income Fund from 6.0 years to 5.0 years (proposed decision IC-2026-005). The change would be implemented inside the fund by selling long Treasuries, with no change to model weights and no client account trades. The Municipal Income Fund is unchanged.
+
+Background:
+I said at the December 11 Investment Committee meeting that rate cuts were likely to come more slowly than the market expected, and we agreed to revisit the fund's duration in the first quarter. In my March 2 note, Rate Path and Duration Positioning, I set out the full analysis. The short version: the reward for carrying a long duration target has shrunk, and the risks of carrying it have grown.
+
+Rationale:
+- Fewer rate cuts than priced: Our base case is that easing proceeds more slowly, and ends at a higher level, than market pricing implies. If that is right, the price gains a longer duration would earn from falling yields are unlikely to arrive on the market's timetable, and the fund is paid little to wait.
+- Curve steepening risk: Even if short rates decline, long yields need not follow. A rebuilding term premium and heavy Treasury supply could steepen the yield curve, and the long end would underperform. The fund's longest Treasury positions are the most exposed to that outcome.
+- Volatile Treasury yields: Treasury yields have been volatile, and we do not think the extra income from long maturities compensates for that volatility. In this environment a shorter duration target should deliver better risk-adjusted returns.
+
+Impact:
+- Our internal estimate is that the change lowers the fund's loss in a parallel 100 basis point rise in yields from roughly 6% of NAV to roughly 5%.
+- We expect the yield given up to be modest at the current shape of the curve, while the price risk at the long end is material.
+
+Risks and Mitigants:
+- Faster easing: If growth weakens and cuts come faster than we expect, the fund will lag a longer-duration alternative. Mitigant: at 5.0 years the fund still carries meaningful duration and still benefits from falling yields; we are reducing rate exposure, not eliminating it.
+- Execution: Selling long Treasuries into a weak market could lock in losses at poor levels. Mitigant: we will execute over several weeks using the fund's normal liquidity rather than in a single session.
+
+Implementation:
+- Sell long Treasuries and reinvest the proceeds in the two- to five-year part of the curve over several weeks after approval.
+- No client account trades and no model changes. The Core Fixed Income Fund continues to serve as the core bond allocation in client models exactly as it does today.
+- The Municipal Income Fund keeps its current positioning; municipal bonds remain attractive for taxable accounts on an after-tax basis.
+- Advisors will receive a short explanation after the meeting so they can answer client questions.
+- I would consider moving back toward 6.0 years on a sharp deterioration in employment or a clear signal that the easing cycle will accelerate.

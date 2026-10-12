@@ -1,0 +1,16 @@
+All,
+
+Yesterday the Investment Committee approved IC-2026-011 by a 7-0 vote. It has two parts.
+
+1. Single-name cap. No company may exceed 10% of a thematic fund. Nvidia is trimmed from 12% to 10% within the AI Infrastructure Fund. This happens inside the fund; no client trades are needed.
+
+2. Overlap reduction. Three clients were above our 15% look-through guideline for AI infrastructure exposure as of June 15, mainly because client-directed overweights in the Global Technology Fund overlap with the AI Infrastructure Fund. For them we will sell Global Technology Fund and reinvest in the Cybersecurity Leaders Fund and the Core Fixed Income Fund, bringing look-through exposure to about 13%:
+- Okafor Family Office - July 29 (Jennifer Walsh)
+- Hartwell Family Trust - August 3 (Michael Torres)
+- Sterling-Hayes Family Office - August 5 (Michael Torres)
+
+Please call the affected clients this coming week, before the first trade. Walk them through the change, confirm any restrictions and document the conversation and the client's consent in CRM, as Grace Holloway asked. The message is risk management, not a change in conviction: the committee remains constructive on GPU demand. Meredith Calloway's "Nvidia Position Review: Valuation, Concentration, and Supply" is a good reference for the Nvidia discussion.
+
+No other clients are affected; everyone else is below the guideline.
+
+Philip Ashworth

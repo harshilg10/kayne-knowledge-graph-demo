@@ -1,0 +1,16 @@
+Robert, Elaine,
+
+Elaine, back in March you asked how much Nvidia the family owns once both funds are added together. I now have a proper answer.
+
+Our risk team ran its first look-through analysis as of June 15, which breaks each fund down into the companies it holds and how exposed each one is to AI infrastructure. On that basis the Hartwell Family Trust's look-through AI exposure was 15.9%, above the firm's 15% guideline. Nvidia is the largest single contributor because it sits in both the Global Technology Fund and the AI Infrastructure Fund; the trust's share of the Private Credit Fund II loan to Cobalt Ridge Data Centers adds a smaller amount.
+
+The Investment Committee approved IC-2026-011 on July 16. The plan for August 3:
+- Hartwell Family Trust taxable account: sell about $3.17 million of the Global Technology Fund and reinvest in the Cybersecurity Leaders Fund and the Core Fixed Income Fund.
+- Robert Hartwell rollover IRA: sell about $608,000 of the Global Technology Fund and reinvest in the Core Fixed Income Fund.
+
+That should bring the exposure to about 13%. Under the same decision's new 10% single-name cap, Nvidia is also being trimmed from about 12% to 10% inside the AI Infrastructure Fund.
+
+The trust-account sale will realize gains; I will send an estimate before the trade date. Please let me know if you are comfortable proceeding.
+
+Best regards,
+Michael Torres

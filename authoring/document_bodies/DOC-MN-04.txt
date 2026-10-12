@@ -1,0 +1,18 @@
+Discussion:
+Item 1 - Fixed income update (Stephen Albrecht)
+- Stephen Albrecht thinks rate cuts are likely to come more slowly than the market currently expects, and sees the risk skewed toward longer pauses rather than a faster easing cycle.
+- No change yet to the Core Fixed Income Fund duration target, which stays at 6.0 years for now. Stephen Albrecht will revisit duration positioning in Q1 and report back to the committee.
+
+Item 2 - GPU demand outlook (Meredith Calloway)
+- Meredith Calloway walked the committee through the November report she co-authored with Arjun Mehta, "GPU Demand Outlook 2026-2027: Capacity Remains Tight". Main points: GPU capacity remains tight; hyperscaler capex is still rising; the binding constraint is TSMC advanced packaging capacity rather than end demand. The research team remains constructive on Nvidia as the platform leader.
+- Marcus Bell asked what would change the view. Meredith Calloway: a digestion phase in hyperscaler spending, tighter export controls, or valuation getting ahead of fundamentals.
+- Douglas Whitfield asked to revisit at the January meeting whether the AI infrastructure allocation - the AI Infrastructure Fund at 5% of Growth models - is large enough given the outlook.
+- Elena Vasquez flagged that Nvidia already appears in both the AI Infrastructure Fund and the Global Technology Fund, so any increase would add to overlapping single-name exposure for clients who hold both funds. She asked that concentration be addressed in any proposal.
+- Brendan Kessler raised several questions on advanced packaging lead times, which Meredith Calloway will answer in writing.
+
+No decisions were taken.
+
+Action Items:
+- Meredith Calloway to follow up in writing on the TSMC advanced packaging and GPU capacity questions.
+- Douglas Whitfield to put AI Infrastructure Fund sizing on the January agenda.
+- Stephen Albrecht to revisit Core Fixed Income Fund duration in Q1.

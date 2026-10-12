@@ -1,0 +1,17 @@
+Priya,
+
+Thank you and Marcus for the time yesterday. As promised, the follow-up package is now in the data room.
+
+Backlog summary. The schedule shows backlog by customer and delivery quarter; it has grown sharply this year, almost entirely from direct-to-chip liquid cooling orders for GPU deployments.
+
+Customer pipeline. Cobalt Ridge Data Centers leads the list - its phase 1 order is our largest single backlog item, and we are in early discussions about phase 2. Behind it are colocation operators and GPU cloud providers at earlier stages. Each opportunity is marked contracted or prospective, so the customer concentration you asked about is plain to see.
+
+Second manufacturing line. If the facility closes in September, we would order long-lead equipment immediately; the timeline has the line commissioning in the first half of next year and shows how much of its first-year output is already covered by backlog. The pump and cold plate supplier agreements you requested are in the same folder.
+
+The demand driver has not changed: rack density keeps climbing. Most racks in our pipeline are specified above 100 kW, well past what air cooling can handle, which is why liquid cooling has become standard in new halls. Lead times remain our edge against larger competitors such as Vertiv.
+
+I have given Priya Nair and Marcus Bell full data room access; let me know if anyone else needs it.
+
+Best regards,
+Henrik Larsen
+Polar Loop Cooling Systems

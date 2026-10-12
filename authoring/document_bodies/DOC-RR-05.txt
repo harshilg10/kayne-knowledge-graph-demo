@@ -1,0 +1,35 @@
+Summary:
+For most of the past two years, the binding constraint on accelerator output has been advanced packaging capacity at TSMC. We think the next bottleneck is high-bandwidth memory (HBM). HBM content per accelerator rises every generation, supply is concentrated among three manufacturers, and memory and packaging must arrive together for a GPU to ship. Our conclusion: GPU supply stays tight through 2027, HBM becomes as important a limiting factor as packaging, and Micron is well positioned.
+
+What HBM does:
+HBM stacks DRAM dies vertically and places the stack beside the processor on a silicon interposer, giving an accelerator far more memory bandwidth than conventional DRAM can. Large models are increasingly limited by how quickly data reaches the compute units rather than by raw compute, especially in inference, where serving long contexts to many simultaneous users is memory-bound. More HBM per accelerator translates directly into more useful work from every chip.
+
+Content per accelerator keeps rising:
+Each generation of flagship accelerators has carried more stacks, taller stacks, or both. On our internal estimates, HBM capacity per flagship accelerator has roughly tripled over the last three product generations, and custom accelerators are on the same path. Because content per unit rises faster than unit volumes, HBM bit demand grows faster than accelerator shipments.
+
+Supply is tight:
+- Our checks indicate HBM output is effectively committed through 2026, as we noted at our December working session.
+- HBM is wafer-hungry. On our internal estimates, an HBM bit consumes roughly three times the wafer capacity of a conventional DRAM bit once larger dies, through-silicon vias and stacking yield losses are included. Every increase in HBM output pulls capacity away from standard DRAM.
+- Each new generation must be qualified with the major accelerator customers, and yields fall as stacks get taller. A supplier that misses a qualification window can lose most of a product cycle.
+
+The packaging link:
+HBM is only useful if there is advanced packaging capacity to put it next to the GPU. At TSMC, the HBM stacks and the compute die are assembled on CoWoS interposers, so packaging slots and memory stacks must be planned together; adding one without the other does not raise GPU supply. We expect the coupling to tighten with the next HBM generation, whose more complex logic base die, on our checks, will be built at foundries, including TSMC, in several designs.
+
+GPU supply in 2026 and 2027:
+- 2026: output is set by the lower of CoWoS capacity and qualified HBM supply. Both are growing; in our view neither is growing as fast as demand.
+- 2027: we expect packaging additions to ease first, leaving next-generation HBM as the more likely limiter.
+- Mix: if next-generation stacks arrive late or yield poorly, buyers will take more prior-generation accelerators, which keeps units flowing but slows the performance gains customers are paying for.
+
+Nvidia's product cadence:
+In our view Nvidia's product cadence has quickened, and each new data center platform carries more HBM per GPU than the last. That cadence now depends on memory suppliers qualifying new stacks on schedule. We see HBM availability as the most important external dependency in Nvidia's roadmap - more than wafers - and a slip at the memory makers would show up as a slower ramp of a new platform rather than weaker demand.
+
+Micron:
+In our assessment, Micron started behind in HBM but has since gained share, helped by the power efficiency of its stacks, and our checks indicate it is qualified with leading accelerator customers. It benefits twice: directly from HBM growth, and indirectly from the tighter conventional DRAM market that HBM creates. We view Micron as well positioned through 2027.
+
+Risks:
+- Memory remains cyclical: if accelerator demand pauses, today's capacity additions could quickly become oversupply.
+- Share can swing between generations on qualification timing, and the two Korean suppliers are aggressive competitors.
+- Taller stacks and new bonding methods carry yield risk that could delay next-generation supply.
+
+Portfolio Implications:
+HBM is a less crowded way to express the view that GPU supply stays tight. We favor Micron and continue to regard TSMC as the indispensable packaging partner. The supply picture here also supports IC-2026-004, approved by the Investment Committee last week, which rests on demand for GPU capacity outrunning supply through 2027.

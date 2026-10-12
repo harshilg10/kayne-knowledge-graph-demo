@@ -1,0 +1,567 @@
+# =============================================================================
+# Semantic Model — Wealth Management & Investment Research Knowledge Graph
+# -----------------------------------------------------------------------------
+# This file IS the business vocabulary and ontology. It defines:
+#   1. entities        — the kinds of things the business talks about
+#   2. relationships   — how those things connect (and where each link comes from)
+#   3. vocabulary      — what business words mean (themes, concepts, synonyms)
+#   4. rules           — business definitions that derive new facts
+#   5. exposure_model  — how look-through theme exposure is measured
+#   6. sources         — which systems feed which entities
+#
+# Every label and relationship type in Neo4j must be declared here; the test
+# suite enforces that. Extraction (rules engine or Claude) is constrained by it.
+# All firm, client and people names are fictional. Public-company names are used
+# for realism only; all opinions in the corpus are synthetic.
+# =============================================================================
+
+model:
+  name: Arbor Peak Wealth & Investment Research Semantic Model
+  version: "1.0"
+  as_of: "2026-09-30"
+  firm: Arbor Peak Wealth Partners
+  description: >
+    Turns structured system data (CRM, portfolio accounting, security master,
+    IC decision log) and unstructured content (meeting notes, CRM notes,
+    research PDFs, emails, IC memos, due-diligence reports) into one connected
+    graph with a shared business meaning.
+
+# -----------------------------------------------------------------------------
+# 1. ENTITIES
+# -----------------------------------------------------------------------------
+entities:
+  - label: Person
+    display_name: Person
+    description: An individual - a firm employee, a client contact, or an external contact.
+    key: id
+    caption: name
+    properties: [id, name, title, department, person_type, organization, email]
+    sources: [HR Directory, CRM Contacts]
+    extractable: true
+    examples: [Douglas Whitfield, Meredith Calloway, Robert Hartwell]
+
+  - label: Advisor
+    display_name: Advisor
+    description: A wealth advisor who owns client relationships. Always also a Person (secondary label).
+    key: id
+    caption: name
+    is_a: Person
+    properties: [id, name, title, office, start_date]
+    sources: [Advisor Roster]
+    extractable: false
+    examples: [Michael Torres]
+
+  - label: Client
+    display_name: Client
+    description: A client relationship - household, trust, family office, foundation or endowment.
+    key: id
+    caption: name
+    properties: [id, name, client_type, segment, risk_profile, client_since, city, notes]
+    sources: [CRM]
+    extractable: true
+    examples: [Hartwell Family Trust]
+
+  - label: Account
+    display_name: Account
+    description: A custodial or private-investment account owned by a client.
+    key: id
+    caption: name
+    properties: [id, name, account_number, registration, account_type, custodian, tax_status, model, opened_date, commitment_usd]
+    sources: [Portfolio Accounting]
+    extractable: false
+    examples: [ACC-1001 Hartwell Family Trust - Taxable]
+
+  - label: Fund
+    display_name: Fund
+    description: An investment vehicle managed by the firm (mutual fund, private fund).
+    key: id
+    caption: name
+    properties: [id, name, ticker, share_class, asset_class, strategy, benchmark, inception_date, expense_ratio_pct, aum_usd_m, nav, nav_date]
+    sources: [Security Master]
+    extractable: true
+    examples: [Arbor Peak AI Infrastructure Fund]
+
+  - label: Company
+    display_name: Company
+    description: An operating company or organization - a public issuer, a private borrower, or a service provider.
+    key: id
+    caption: name
+    properties: [id, name, legal_name, ticker, kind, sector, industry, country]
+    sources: [Security Master, Private Deal Register, Vendor Register]
+    extractable: true
+    examples: [Nvidia, Cobalt Ridge Data Centers]
+
+  - label: Theme
+    display_name: Investment Theme
+    description: A curated investment theme in the firm's research taxonomy.
+    key: id
+    caption: name
+    properties: [id, name, definition]
+    sources: [Semantic Model Vocabulary]
+    extractable: true
+    examples: [AI Infrastructure]
+
+  - label: Concept
+    display_name: Concept
+    description: A narrower business term that rolls up to an investment theme (e.g. GPU Capacity -> AI Infrastructure).
+    key: id
+    caption: name
+    properties: [id, name, theme_id]
+    sources: [Semantic Model Vocabulary]
+    extractable: true
+    examples: [GPU Capacity, Hyperscaler Capex]
+
+  - label: Document
+    display_name: Document
+    description: Any unstructured artifact - meeting notes, CRM note, research report, email, IC memo, due-diligence report.
+    key: id
+    caption: title
+    properties: [id, title, doc_type, date, source_system, source_path, text, summary]
+    sources: [Document Management, CRM, Email, Research Portal, Deal Management]
+    extractable: false
+    examples: [Investment Committee Meeting notes (2026-01-15)]
+
+  - label: Meeting
+    display_name: Meeting
+    description: A meeting event (committee, research, client review, due diligence). Meeting notes RECORD it.
+    key: id
+    caption: title
+    properties: [id, title, date, meeting_type]
+    sources: [Extracted from meeting notes]
+    extractable: true
+    examples: [Investment Committee Meeting (2026-01-15)]
+
+  - label: Committee
+    display_name: Committee
+    description: A standing governance body that holds meetings and makes decisions.
+    key: id
+    caption: name
+    properties: [id, name, charter]
+    sources: [Governance Register]
+    extractable: true
+    examples: [Investment Committee]
+
+  - label: Decision
+    display_name: Decision
+    description: A formal Investment Committee decision from the IC decision log.
+    key: id
+    caption: id
+    properties: [id, title, date, status, vote, direction, summary]
+    sources: [IC Decision Log]
+    extractable: true
+    examples: [IC-2026-004]
+
+  - label: Transaction
+    display_name: Transaction
+    description: A trade or cash flow in an account (buy, sell, capital call, distribution, reinvestment).
+    key: id
+    caption: id
+    properties: [id, date, settle_date, txn_type, shares, price, amount_usd, order_reason]
+    sources: [Order Management]
+    extractable: false
+    examples: [TXN-000123]
+
+  - label: Chunk
+    display_name: Text Chunk
+    description: Technical node - a passage of a document with a vector embedding, used for retrieval (RAG).
+    key: id
+    caption: id
+    properties: [id, doc_id, seq, text, embedding]
+    sources: [Embedding pipeline]
+    extractable: false
+    technical: true
+
+# -----------------------------------------------------------------------------
+# 2. RELATIONSHIPS
+#    origin: structured = loaded from a system of record
+#            extracted  = produced by entity extraction from unstructured text
+#            derived    = produced by a business rule in section 4
+# -----------------------------------------------------------------------------
+relationships:
+  # ---- structured ----------------------------------------------------------
+  - type: HAS_ACCOUNT
+    from: [Client]
+    to: [Account]
+    origin: structured
+    description: The client owns the account.
+  - type: ADVISED_BY
+    from: [Client]
+    to: [Advisor]
+    origin: structured
+    description: The client's relationship is owned by this advisor.
+  - type: CONTACT_FOR
+    from: [Person]
+    to: [Client]
+    origin: structured
+    description: The person is a decision-maker or contact for the client (role property).
+  - type: HOLDS
+    from: [Account]
+    to: [Fund]
+    origin: structured
+    description: The account holds a position in the fund (shares, price, market_value, cost_basis, as_of).
+  - type: HAS_TRANSACTION
+    from: [Account]
+    to: [Transaction]
+    origin: structured
+    description: The transaction was executed in the account.
+  - type: INVOLVES
+    from: [Transaction]
+    to: [Fund]
+    origin: structured
+    description: The fund that was bought, sold, called or distributed.
+  - type: PURSUANT_TO
+    from: [Transaction]
+    to: [Decision]
+    origin: structured
+    description: The trade was executed to implement an IC decision (decision id parsed from the order reason).
+  - type: INVESTED_IN
+    from: [Fund]
+    to: [Company]
+    origin: structured
+    description: The fund holds the company (weight in % of fund NAV, since date).
+  - type: FOCUSES_ON
+    from: [Fund]
+    to: [Theme]
+    origin: structured
+    description: The fund's mandate targets the theme.
+  - type: MANAGED_BY
+    from: [Fund]
+    to: [Person]
+    origin: structured
+    description: The fund's portfolio manager.
+  - type: EXPOSED_TO
+    from: [Company]
+    to: [Theme]
+    origin: structured
+    description: The company's business is exposed to the theme (degree high / medium / low).
+  - type: WORKS_FOR
+    from: [Person]
+    to: [Company]
+    origin: structured
+    description: External contact's employer.
+  - type: MEMBER_OF
+    from: [Person]
+    to: [Committee]
+    origin: structured
+    description: Committee membership (role property).
+  - type: AFFECTS
+    from: [Decision]
+    to: [Fund, Company, Theme]
+    origin: structured
+    description: What the decision changes, according to the IC decision log.
+  - type: BROADER
+    from: [Concept]
+    to: [Theme]
+    origin: structured
+    description: Taxonomy - the concept is a narrower term of the theme.
+  - type: RELATED_TO
+    from: [Theme]
+    to: [Theme]
+    origin: structured
+    description: Two themes are economically linked (rationale property).
+
+  # ---- extracted from unstructured content ---------------------------------
+  - type: ATTENDED
+    from: [Person]
+    to: [Meeting]
+    origin: extracted
+    description: The person participated in the meeting.
+  - type: DISCUSSED
+    from: [Meeting]
+    to: [Company, Theme, Concept, Fund, Client]
+    origin: extracted
+    description: The meeting discussed the entity (from the notes' discussion text).
+  - type: MENTIONS
+    from: [Document]
+    to: [Person, Company, Fund, Client, Theme, Concept]
+    origin: extracted
+    description: The document's body mentions the entity. Theme mentions may be inferred via a Concept (property via).
+  - type: RECORDS
+    from: [Document]
+    to: [Meeting]
+    origin: extracted
+    description: The document is the record (notes) of the meeting.
+  - type: AUTHORED
+    from: [Person]
+    to: [Document]
+    origin: extracted
+    description: The person wrote the document (author, preparer or CRM note owner).
+  - type: SENT
+    from: [Person]
+    to: [Document]
+    origin: extracted
+    description: The person sent the email.
+  - type: SENT_TO
+    from: [Document]
+    to: [Person]
+    origin: extracted
+    description: The email was addressed (to or cc) to the person.
+  - type: ABOUT
+    from: [Document]
+    to: [Client, Company]
+    origin: extracted
+    description: The primary subject of the document (CRM note client, due-diligence borrower).
+  - type: PROPOSES
+    from: [Document]
+    to: [Decision]
+    origin: extracted
+    description: The IC memo proposes the decision.
+  - type: REFERENCES
+    from: [Document]
+    to: [Decision]
+    origin: extracted
+    description: The document refers to the decision by its id.
+  - type: CITES
+    from: [Document]
+    to: [Document]
+    origin: extracted
+    description: The document cites another document by title.
+  - type: HELD_BY
+    from: [Meeting]
+    to: [Committee]
+    origin: extracted
+    description: The meeting was a session of the committee.
+  - type: DECIDED
+    from: [Meeting]
+    to: [Decision]
+    origin: extracted
+    description: The decision was taken at the meeting.
+  - type: FOR_CLIENT
+    from: [Meeting]
+    to: [Client]
+    origin: extracted
+    description: A client meeting held for the client.
+
+  # ---- derived by business rules --------------------------------------------
+  - type: OWNS
+    from: [Client]
+    to: [Fund]
+    origin: derived
+    description: "Business definition: a client owns a fund when any of its accounts holds it (market_value summed)."
+
+  # ---- technical (retrieval) ------------------------------------------------
+  - type: PART_OF
+    from: [Chunk]
+    to: [Document]
+    origin: structured
+    technical: true
+    description: The text chunk belongs to the document.
+
+# -----------------------------------------------------------------------------
+# 3. CONTROLLED VOCABULARY
+#    Theme and concept matching is case-insensitive. Synonyms are what make
+#    "GPU capacity" or "hyperscaler capex" mean AI Infrastructure.
+# -----------------------------------------------------------------------------
+vocabulary:
+  themes:
+    - id: THM-AI
+      name: AI Infrastructure
+      definition: Compute, memory, networking, cooling and facilities required to train and serve AI models.
+      synonyms: [AI infrastructure, AI infra, AI build-out, AI buildout, artificial intelligence infrastructure]
+      concepts:
+        - {id: CON-GPU, name: GPU Capacity, synonyms: [GPU capacity, GPU supply, GPU demand, GPU clusters, GPU cluster, GPU-dense, GPUs]}
+        - {id: CON-ACCEL, name: Accelerated Computing, synonyms: [accelerated computing, AI accelerators, AI accelerator, custom silicon, custom accelerators]}
+        - {id: CON-CAPEX, name: Hyperscaler Capex, synonyms: [hyperscaler capex, hyperscaler capital expenditures, hyperscaler capital spending, cloud capex, AI capex]}
+        - {id: CON-AIDC, name: AI Data Centers, synonyms: [AI data centers, AI data center, AI campuses, AI campus, AI workloads, AI training clusters]}
+        - {id: CON-HBM, name: High-Bandwidth Memory, synonyms: [high-bandwidth memory, HBM]}
+        - {id: CON-AINET, name: AI Networking, synonyms: [AI networking, AI network fabric, back-end networking, optical interconnects]}
+        - {id: CON-COOL, name: Liquid Cooling, synonyms: [liquid cooling, direct-to-chip cooling, immersion cooling, rack density, rack densities]}
+        - {id: CON-INFER, name: Inference Demand, synonyms: [inference demand, inference workloads, AI inference]}
+
+    - id: THM-POWER
+      name: Data Center Power Demand
+      definition: Electricity generation, grid capacity and power contracts needed to energize data centers.
+      synonyms: [data center power demand, data center power, power for data centers, powering AI]
+      concepts:
+        - {id: CON-PWRD, name: Power Demand, synonyms: [power demand, electricity demand, load growth, power consumption]}
+        - {id: CON-GRID, name: Grid Interconnection, synonyms: [grid interconnection, interconnection queue, interconnection queues, substation capacity, transmission constraints]}
+        - {id: CON-PPA, name: Power Purchase Agreements, synonyms: [power purchase agreement, power purchase agreements, PPA, PPAs]}
+        - {id: CON-GAS, name: Gas-Fired Generation, synonyms: [gas-fired generation, gas-fired power, natural gas generation, gas turbines, gas turbine]}
+        - {id: CON-NUC, name: Nuclear Power, synonyms: [nuclear power, nuclear restarts, nuclear generation, small modular reactors]}
+
+    - id: THM-SEMI
+      name: Semiconductor Supply Chain
+      definition: Chip design, manufacturing capacity, equipment and trade policy that constrain semiconductor supply.
+      synonyms: [semiconductor supply chain, chip supply chain]
+      concepts:
+        - {id: CON-FOUNDRY, name: Foundry Capacity, synonyms: [foundry capacity, leading-edge nodes, wafer capacity]}
+        - {id: CON-PKG, name: Advanced Packaging, synonyms: [advanced packaging, CoWoS, chiplets]}
+        - {id: CON-EXPORT, name: Export Controls, synonyms: [export controls, export restrictions]}
+        - {id: CON-LITHO, name: Lithography, synonyms: [lithography, EUV]}
+
+    - id: THM-ENERGY
+      name: Energy Infrastructure
+      definition: Midstream pipelines, processing and export assets with fee-based cash flows.
+      synonyms: [energy infrastructure, midstream energy, midstream]
+      concepts:
+        - {id: CON-PIPE, name: Natural Gas Pipelines, synonyms: [natural gas pipelines, natural gas pipeline, gas pipelines, pipeline capacity, interstate pipelines]}
+        - {id: CON-LNGX, name: LNG Exports, synonyms: [LNG exports, LNG export, liquefaction]}
+        - {id: CON-GATHER, name: Gathering & Processing, synonyms: [gathering and processing, gathering & processing, gas gathering]}
+        - {id: CON-FEE, name: Fee-Based Cash Flows, synonyms: [fee-based cash flows, fee-based contracts, take-or-pay]}
+
+    - id: THM-TRANSITION
+      name: Energy Transition
+      definition: Renewable generation, storage and grid modernization.
+      synonyms: [energy transition, clean energy, decarbonization]
+      concepts:
+        - {id: CON-SOLAR, name: Utility-Scale Solar, synonyms: [utility-scale solar, solar capacity, solar modules]}
+        - {id: CON-STORAGE, name: Battery Storage, synonyms: [battery storage, energy storage, grid-scale storage]}
+        - {id: CON-GRIDMOD, name: Grid Modernization, synonyms: [grid modernization, transmission upgrades, grid upgrades]}
+        - {id: CON-TAXCR, name: Clean Energy Tax Credits, synonyms: [clean energy tax credits, investment tax credits, production tax credits]}
+
+    - id: THM-CREDIT
+      name: Private Credit
+      definition: Privately negotiated loans to middle-market companies, typically senior secured and floating rate.
+      synonyms: [private credit, private lending]
+      concepts:
+        - {id: CON-DIRECT, name: Direct Lending, synonyms: [direct lending, direct loan, direct loans]}
+        - {id: CON-SENIOR, name: Senior Secured Loans, synonyms: [senior secured loan, senior secured loans, senior secured term loan, senior secured facility, first-lien, first lien, unitranche]}
+        - {id: CON-COVENANT, name: Covenants, synonyms: [covenant, covenants, covenant compliance, maintenance covenants]}
+        - {id: CON-FLOAT, name: Floating-Rate Income, synonyms: [floating-rate, floating rate income, SOFR]}
+
+    - id: THM-CYBER
+      name: Cybersecurity
+      definition: Software and services that protect networks, endpoints, identities and cloud workloads.
+      synonyms: [cybersecurity, cyber security]
+      concepts:
+        - {id: CON-ZT, name: Zero Trust, synonyms: [zero trust, zero-trust]}
+        - {id: CON-ENDPOINT, name: Endpoint Security, synonyms: [endpoint security, endpoint protection]}
+        - {id: CON-CLOUDSEC, name: Cloud Security, synonyms: [cloud security]}
+        - {id: CON-CONSOL, name: Platform Consolidation, synonyms: [platform consolidation, vendor consolidation]}
+
+    - id: THM-HEALTH
+      name: Healthcare Innovation
+      definition: Therapeutics and medical technology with structural growth.
+      synonyms: [healthcare innovation, health care innovation]
+      concepts:
+        - {id: CON-GLP1, name: GLP-1 Therapies, synonyms: [GLP-1 therapies, GLP-1, obesity drugs, obesity treatments]}
+        - {id: CON-ROBOT, name: Robotic Surgery, synonyms: [robotic surgery, surgical robotics]}
+        - {id: CON-MEDDEV, name: Medical Devices, synonyms: [medical devices, medtech]}
+
+    - id: THM-RATES
+      name: Interest Rates & Fixed Income
+      definition: Rate path, duration and credit positioning of fixed income portfolios.
+      synonyms: [interest rates, interest rate, fixed income, rate path]
+      concepts:
+        - {id: CON-DURATION, name: Duration Risk, synonyms: [duration risk, portfolio duration, duration target, duration positioning, years of duration]}
+        - {id: CON-CUTS, name: Rate Cuts, synonyms: [rate cuts, rate cut, easing cycle]}
+        - {id: CON-CURVE, name: Yield Curve, synonyms: [yield curve, curve steepening]}
+        - {id: CON-MUNI, name: Municipal Bonds, synonyms: [municipal bonds, municipal bond, munis]}
+        - {id: CON-TSY, name: Treasury Yields, synonyms: [Treasury yields, 10-year Treasury]}
+
+    - id: THM-DIGITAL-RE
+      name: Digital Infrastructure Real Estate
+      definition: Data center, tower and fiber real estate that leases digital capacity.
+      synonyms: [digital infrastructure, digital real estate, data center real estate]
+      concepts:
+        - {id: CON-COLO, name: Colocation, synonyms: [colocation, interconnection revenue]}
+        - {id: CON-DCREIT, name: Data Center REITs, synonyms: [data center REITs, data center REIT]}
+        - {id: CON-TOWER, name: Cell Towers, synonyms: [cell towers, tower leasing]}
+        - {id: CON-FIBER, name: Fiber Networks, synonyms: [fiber networks, dark fiber, fiber routes, long-haul fiber]}
+
+  theme_links:
+    - {from: THM-AI, to: THM-POWER, rationale: AI data centers are the fastest-growing source of electricity demand.}
+    - {from: THM-AI, to: THM-SEMI, rationale: AI compute depends on leading-edge chip supply.}
+    - {from: THM-AI, to: THM-DIGITAL-RE, rationale: AI workloads drive data center leasing.}
+    - {from: THM-POWER, to: THM-ENERGY, rationale: Gas-fired generation for data centers needs pipeline capacity.}
+    - {from: THM-POWER, to: THM-TRANSITION, rationale: Grid upgrades and storage serve new data center load.}
+    - {from: THM-CREDIT, to: THM-DIGITAL-RE, rationale: Private credit finances data center and fiber build-outs.}
+    - {from: THM-RATES, to: THM-CREDIT, rationale: Floating-rate loan income moves with policy rates.}
+
+  committees:
+    - {id: COM-IC, name: Investment Committee, aliases: [IC], meeting_types: [Investment Committee], charter: "Approves model allocations, fund mandates and private credit commitments."}
+    - {id: COM-RISK, name: Risk Committee, aliases: [], meeting_types: [Risk Review], charter: "Oversees concentration, liquidity and look-through exposure limits."}
+
+# -----------------------------------------------------------------------------
+# 4. BUSINESS RULES (derived facts). Applied by kgdemo/graph_load.py.
+# -----------------------------------------------------------------------------
+rules:
+  - id: R-OWNS
+    name: Client owns fund
+    produces: OWNS
+    definition: A client OWNS a fund if any account the client has holds that fund. market_value is the sum across accounts.
+    cypher: |
+      MATCH (c:Client)-[:HAS_ACCOUNT]->(:Account)-[h:HOLDS]->(f:Fund)
+      WITH c, f, sum(h.market_value) AS mv, count(h) AS n
+      MERGE (c)-[o:OWNS]->(f)
+      SET o.market_value = mv, o.accounts = n, o.origin = 'derived', o.rule = 'R-OWNS'
+  - id: R-CONCEPT-THEME
+    name: Concept mention implies theme mention
+    produces: MENTIONS / DISCUSSED
+    definition: >
+      A document that mentions a concept also mentions the concept's broader theme; a meeting
+      that discussed a concept also discussed the theme. The edge keeps `via` = the concept name,
+      so every inferred link is explainable.
+  - id: R-TXN-DECISION
+    name: Trade implements decision
+    produces: PURSUANT_TO
+    definition: A transaction whose order reason contains an IC decision id (IC-YYYY-NNN) implements that decision.
+  - id: R-IC-MEETING
+    name: Committee meetings
+    produces: HELD_BY
+    definition: A meeting whose title or type names a committee is held by that committee.
+
+# -----------------------------------------------------------------------------
+# 5. LOOK-THROUGH EXPOSURE MODEL
+# -----------------------------------------------------------------------------
+exposure_model:
+  description: >
+    Look-through theme exposure of a client = sum over the client's fund positions of
+    (position market value x sum over the fund's holdings of (holding weight x exposure factor)),
+    divided by the client's total market value. Exposure degree comes from Company-EXPOSED_TO->Theme.
+  factors: {high: 1.0, medium: 0.5, low: 0.25}
+  guideline_pct: 15.0
+  guideline_theme: THM-AI
+
+# -----------------------------------------------------------------------------
+# 6. SOURCE SYSTEMS -> MODEL
+# -----------------------------------------------------------------------------
+sources:
+  - system: CRM
+    kind: structured
+    files: [clients.csv, contacts.csv]
+    produces: [Client, Person, CONTACT_FOR, ADVISED_BY]
+  - system: Advisor Roster
+    kind: structured
+    files: [advisors.csv]
+    produces: [Advisor]
+  - system: HR Directory
+    kind: structured
+    files: [people.csv]
+    produces: [Person, MEMBER_OF, WORKS_FOR]
+  - system: Portfolio Accounting
+    kind: structured
+    files: [accounts.csv, holdings.csv]
+    produces: [Account, HAS_ACCOUNT, HOLDS]
+  - system: Order Management
+    kind: structured
+    files: [transactions.csv]
+    produces: [Transaction, HAS_TRANSACTION, INVOLVES, PURSUANT_TO]
+  - system: Security Master
+    kind: structured
+    files: [funds.csv, fund_nav.csv, companies.csv, fund_holdings.csv, company_themes.csv]
+    produces: [Fund, Company, INVESTED_IN, FOCUSES_ON, MANAGED_BY, EXPOSED_TO]
+  - system: IC Decision Log
+    kind: structured
+    files: [ic_decisions.csv]
+    produces: [Decision, AFFECTS]
+  - system: Document Management
+    kind: unstructured
+    files: [meeting_notes/*.md, ic_memos/*.docx]
+    produces: [Document, Meeting, ATTENDED, DISCUSSED, MENTIONS, RECORDS, AUTHORED, PROPOSES, CITES, DECIDED, HELD_BY]
+  - system: CRM
+    kind: unstructured
+    files: [crm/crm_notes_export.csv]
+    produces: [Document, ABOUT, AUTHORED, MENTIONS, REFERENCES]
+  - system: Email
+    kind: unstructured
+    files: [emails/*.eml]
+    produces: [Document, SENT, SENT_TO, MENTIONS, REFERENCES]
+  - system: Research Portal
+    kind: unstructured
+    files: [research/*.pdf]
+    produces: [Document, AUTHORED, MENTIONS]
+  - system: Deal Management
+    kind: unstructured
+    files: [due_diligence/*.pdf]
+    produces: [Document, ABOUT, AUTHORED, MENTIONS]

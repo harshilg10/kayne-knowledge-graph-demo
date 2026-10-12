@@ -1,0 +1,25 @@
+Summary:
+We expect fewer rate cuts over the next twelve months than the market is pricing, and we see a growing risk that the yield curve steepens as investors demand more compensation to hold long-dated bonds. We recommend shortening the Core Fixed Income Fund duration target from 6.0 to 5.0 years. Municipal bonds remain attractive for taxable accounts, and we would keep the Municipal Income Fund unchanged.
+
+Rate path:
+At the December Investment Committee we said rate cuts were likely to come more slowly than the market expected and that we would revisit duration in Q1. Our view has firmed since then. In our assessment services inflation is proving sticky, the labor market is cooling only gradually and fiscal deficits remain large, which gives the Fed room to be patient. Our base case is one or two cuts over the next twelve months, fewer than futures pricing implies (internal estimate). If we are right, the front end of the curve has limited room to rally from here.
+
+The curve:
+The larger risk for a 6.0-year portfolio sits at the long end. Even if the Fed eases, long-dated Treasury yields can rise if term premium rebuilds on heavy issuance, deficit concerns or inflation uncertainty. That combination - a front end anchored by policy and a long end pushed higher - is curve steepening, and it penalizes portfolios that hold their duration in long bonds. We think the trade-off is unfavorable: the yield given up by moving shorter is modest at the current shape of the curve, while the price risk at the long end is material.
+
+Recommendation:
+- Shorten the Core Fixed Income Fund duration target from 6.0 to 5.0 years.
+- Implement inside the fund by reducing long Treasuries and adding to the two- to five-year part of the curve. No client account trades are required, and model weights do not change.
+- Sensitivity: at 5.0 years, a 100 bp parallel rise in yields reduces the fund's price by roughly 5%, versus roughly 6% at the current target. The cost is less upside if yields fall sharply.
+- Triggers to revisit: a sharp deterioration in employment, or a clear signal that the Fed intends to accelerate its easing cycle, would lead us to consider moving back toward 6.0 years.
+
+Municipal bonds:
+Municipal bonds remain attractive for taxable clients. Tax-equivalent yields for investors in the top brackets compare well with taxable high-grade alternatives, and state and local credit quality is solid in our view. We are not proposing a change to the Municipal Income Fund, which remains the core fixed income holding for taxable accounts. The IC-2026-004 rebalancing now under way draws on it to fund the AI Infrastructure Fund increase in taxable accounts, and on the Core Fixed Income Fund in other accounts. Those sales are within normal liquidity and do not change our recommendations.
+
+Risks:
+- A growth shock or rapid labor market weakening would bring faster cuts and a sharp fall in Treasury yields, and a shorter duration would lag.
+- A re-acceleration of inflation would push yields higher across the curve; the shorter target limits but does not eliminate losses.
+- Heavy municipal issuance or changes to tax policy could weigh on municipal bond valuations.
+
+Portfolio Implications:
+I will bring a formal proposal to the Investment Committee. If adopted, advisors can describe the change as reducing sensitivity to long-term interest rates while keeping the income profile of the Core Fixed Income Fund broadly intact.

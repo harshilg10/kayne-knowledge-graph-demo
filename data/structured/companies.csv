@@ -1,0 +1,51 @@
+id,name,legal_name,ticker,kind,sector,industry,country,aliases
+CMP-NVDA,Nvidia,NVIDIA Corporation,NVDA,public,Information Technology,Semiconductors,US,NVIDIA|NVIDIA Corporation|NVDA
+CMP-AMD,AMD,"Advanced Micro Devices, Inc.",AMD,public,Information Technology,Semiconductors,US,Advanced Micro Devices
+CMP-AVGO,Broadcom,Broadcom Inc.,AVGO,public,Information Technology,Semiconductors,US,AVGO
+CMP-TSM,TSMC,Taiwan Semiconductor Manufacturing Company Limited,TSM,public,Information Technology,Semiconductors,TW,Taiwan Semiconductor|Taiwan Semiconductor Manufacturing
+CMP-MU,Micron,"Micron Technology, Inc.",MU,public,Information Technology,Semiconductors,US,Micron Technology
+CMP-ANET,Arista Networks,"Arista Networks, Inc.",ANET,public,Information Technology,Communications Equipment,US,Arista|ANET
+CMP-MRVL,Marvell,"Marvell Technology, Inc.",MRVL,public,Information Technology,Semiconductors,US,Marvell Technology|MRVL
+CMP-ASML,ASML,ASML Holding N.V.,ASML,public,Information Technology,Semiconductor Equipment,NL,ASML Holding
+CMP-AMAT,Applied Materials,"Applied Materials, Inc.",AMAT,public,Information Technology,Semiconductor Equipment,US,AMAT
+CMP-VRT,Vertiv,Vertiv Holdings Co,VRT,public,Industrials,Electrical Equipment,US,Vertiv Holdings
+CMP-ETN,Eaton,Eaton Corporation plc,ETN,public,Industrials,Electrical Equipment,IE,Eaton Corporation
+CMP-DELL,Dell Technologies,Dell Technologies Inc.,DELL,public,Information Technology,Technology Hardware,US,Dell
+CMP-MSFT,Microsoft,Microsoft Corporation,MSFT,public,Information Technology,Software,US,MSFT
+CMP-GOOGL,Alphabet,Alphabet Inc.,GOOGL,public,Communication Services,Interactive Media,US,Google|GOOGL
+CMP-AMZN,Amazon,"Amazon.com, Inc.",AMZN,public,Consumer Discretionary,Broadline Retail,US,Amazon.com|Amazon Web Services|AWS|AMZN
+CMP-META,Meta,"Meta Platforms, Inc.",META,public,Communication Services,Interactive Media,US,Meta Platforms|META
+CMP-ORCL,Oracle,Oracle Corporation,ORCL,public,Information Technology,Software,US,ORCL
+CMP-EQIX,Equinix,"Equinix, Inc.",EQIX,public,Real Estate,Data Center REITs,US,EQIX
+CMP-DLR,Digital Realty,"Digital Realty Trust, Inc.",DLR,public,Real Estate,Data Center REITs,US,Digital Realty Trust
+CMP-AMT,American Tower,American Tower Corporation,AMT,public,Real Estate,Telecom Tower REITs,US,
+CMP-CEG,Constellation Energy,Constellation Energy Corporation,CEG,public,Utilities,Electric Utilities,US,Constellation|CEG
+CMP-VST,Vistra,Vistra Corp.,VST,public,Utilities,Independent Power Producers,US,Vistra Corp
+CMP-NEE,NextEra Energy,"NextEra Energy, Inc.",NEE,public,Utilities,Electric Utilities,US,NextEra
+CMP-GEV,GE Vernova,GE Vernova Inc.,GEV,public,Industrials,Electrical Equipment,US,Vernova
+CMP-PWR,Quanta Services,"Quanta Services, Inc.",PWR,public,Industrials,Construction & Engineering,US,Quanta
+CMP-WMB,Williams Companies,"The Williams Companies, Inc.",WMB,public,Energy,Oil & Gas Midstream,US,The Williams Companies|WMB
+CMP-KMI,Kinder Morgan,"Kinder Morgan, Inc.",KMI,public,Energy,Oil & Gas Midstream,US,KMI
+CMP-ET,Energy Transfer,Energy Transfer LP,ET,public,Energy,Oil & Gas Midstream,US,Energy Transfer LP
+CMP-EPD,Enterprise Products Partners,Enterprise Products Partners L.P.,EPD,public,Energy,Oil & Gas Midstream,US,Enterprise Products|EPD
+CMP-LNG,Cheniere Energy,"Cheniere Energy, Inc.",LNG,public,Energy,Oil & Gas Midstream,US,Cheniere
+CMP-TRGP,Targa Resources,Targa Resources Corp.,TRGP,public,Energy,Oil & Gas Midstream,US,Targa|TRGP
+CMP-CRWD,CrowdStrike,"CrowdStrike Holdings, Inc.",CRWD,public,Information Technology,Software,US,CRWD
+CMP-PANW,Palo Alto Networks,"Palo Alto Networks, Inc.",PANW,public,Information Technology,Software,US,PANW
+CMP-ZS,Zscaler,"Zscaler, Inc.",ZS,public,Information Technology,Software,US,
+CMP-FTNT,Fortinet,"Fortinet, Inc.",FTNT,public,Information Technology,Software,US,FTNT
+CMP-LLY,Eli Lilly,Eli Lilly and Company,LLY,public,Health Care,Pharmaceuticals,US,Lilly|LLY
+CMP-NVO,Novo Nordisk,Novo Nordisk A/S,NVO,public,Health Care,Pharmaceuticals,DK,NVO
+CMP-ISRG,Intuitive Surgical,"Intuitive Surgical, Inc.",ISRG,public,Health Care,Health Care Equipment,US,ISRG
+CMP-BSX,Boston Scientific,Boston Scientific Corporation,BSX,public,Health Care,Health Care Equipment,US,BSX
+CMP-FSLR,First Solar,"First Solar, Inc.",FSLR,public,Information Technology,Semiconductors,US,FSLR
+CMP-FLNC,Fluence Energy,"Fluence Energy, Inc.",FLNC,public,Industrials,Electrical Equipment,US,Fluence
+CMP-COBALT,Cobalt Ridge Data Centers,Cobalt Ridge Data Centers LLC,,private,Real Estate,Data Centers,US,Cobalt Ridge
+CMP-POLARLOOP,Polar Loop Cooling Systems,"Polar Loop Cooling Systems, Inc.",,private,Industrials,Thermal Management,US,Polar Loop
+CMP-OSTRANDER,Ostrander Power Constructors,Ostrander Power Constructors LLC,,private,Industrials,Construction & Engineering,US,Ostrander Power|Ostrander
+CMP-LARKSPUR,Larkspur Fiber Networks,Larkspur Fiber Networks LLC,,private,Communication Services,Telecom Services,US,Larkspur Fiber
+CMP-MESQUITE,Mesquite Draw Midstream,Mesquite Draw Midstream LLC,,private,Energy,Oil & Gas Midstream,US,Mesquite Draw
+CMP-HARBORLIGHT,Harborlight Health Partners,Harborlight Health Partners LLC,,private,Health Care,Health Care Services,US,Harborlight
+CMP-CORBEL,Corbel Logistics,Corbel Logistics Inc.,,private,Industrials,Logistics,US,Corbel
+CMP-PEMBERTON,Pemberton Grid Consulting,Pemberton Grid Consulting LLC,,service_provider,Industrials,Professional Services,US,Pemberton Grid|Pemberton
+CMP-CALDWELL,Caldwell & Pierce LLP,Caldwell & Pierce LLP,,service_provider,Industrials,Legal Services,US,Caldwell & Pierce

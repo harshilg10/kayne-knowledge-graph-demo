@@ -1,0 +1,11 @@
+Discussion:
+- Flows: Daniel Cho reviewed the Cybersecurity Leaders Fund after the IC-2026-011 overlap reduction. Trades for three family office and trust clients completed in early August; part of each client's Global Technology Fund sale proceeds went into the fund and the balance into the Core Fixed Income Fund. The inflows were invested pro rata across existing positions, with no change to names or target weights.
+- Olivia Grant covered the other side of the same trades: the Global Technology Fund met the redemptions without changing its positioning. Because the Global Technology Fund also owns CrowdStrike, Palo Alto Networks, Zscaler and Fortinet, the net increase in those clients' cybersecurity exposure is smaller than the inflow suggests.
+- Platform consolidation: Daniel Cho sees consolidation continuing to favor CrowdStrike and Palo Alto Networks. Customers are cutting the number of security vendors at renewal and buying broader suites; the two platforms with the widest coverage across endpoint security, cloud security and the network are the main winners in his view.
+- Zscaler: Daniel Cho still sees it as the cleanest exposure to zero trust adoption as enterprises move off legacy VPN and perimeter designs.
+- Fortinet: Daniel Cho expects a firewall refresh cycle to support demand over the next several quarters. Olivia Grant asked how much has already been pulled forward; he thinks the cycle is early.
+- Olivia Grant asked whether suite bundling by the large cloud platforms threatens the specialists. Daniel Cho's view: large enterprises still buy best-of-breed for endpoint and network protection, though the risk is higher in smaller accounts.
+
+Action Items:
+- Daniel Cho to publish a mid-year cybersecurity update covering platform consolidation, zero trust adoption, the Fortinet refresh cycle and the recent inflows.
+- Olivia Grant to send current Global Technology Fund weights in the four names for the update's overlap section.

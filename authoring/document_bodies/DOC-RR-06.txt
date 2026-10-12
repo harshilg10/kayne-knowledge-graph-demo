@@ -1,0 +1,26 @@
+Summary:
+AI workloads have become the main driver of incremental leasing for data center REITs. Hyperscale demand for training capacity has been strong for some time; what is newer is inference and enterprise AI moving into colocation facilities that sit close to users, networks and cloud on-ramps. Supply is not keeping up, and the constraint is power. In most major markets the question is no longer whether a tenant will sign, but when the utility can energize the building. We remain constructive on the group and on our positioning in the Digital Infrastructure Real Estate Fund, with a preference for interconnection-rich platforms over pure wholesale exposure.
+
+Key Points:
+- Demand is broadening. Hyperscalers continue to pre-lease capacity well ahead of delivery, and enterprises are beginning to place GPU clusters for inference in third-party facilities rather than build their own.
+- Power is the gating factor for new supply. Utility connections for large campuses can take years, which limits new entrants and supports rents on capacity that is already powered.
+- Density is rising. GPU racks draw several times the power of traditional enterprise racks and increasingly need liquid cooling, so older halls require retrofits before they can host the newest deployments.
+- In our assessment, pricing power has shifted toward landlords in power-constrained markets, and we expect lease terms to keep improving for owners of powered land.
+
+Company views:
+- Equinix. The interconnection-rich colocation model remains, in our view, the most defensible business in the sector. Customers pay for proximity to networks, clouds and each other, and that ecosystem makes revenue sticky. Inference workloads that need low latency and private connections to several clouds are a natural fit. The debate is capital intensity as the company funds larger hyperscale builds alongside its retail colocation footprint; we think the returns justify it.
+- Digital Realty. Its hyperscale campuses and land bank give it the scale to serve large training deployments, and its colocation and interconnection business adds diversification. It is more exposed than Equinix to hyperscaler spending cycles and to pricing on large leases, but in a power-constrained market its ability to deliver energized capacity is the asset that matters most.
+- American Tower. Still primarily a tower landlord with steady escalators from tower leasing, American Tower is diversifying into data centers through its US colocation platform. In our estimate the data center business is a small share of the company but a faster-growing one. We see it as a diversifier within the fund rather than a direct play on AI demand.
+
+Power and supply:
+Power demand from new AI deployments is reshaping where and how data centers get built. Developers now lead with power, securing utility commitments, substations and sometimes on-site generation before they commit to land. For the REITs this cuts both ways. It slows the pace at which they can add capacity, but it raises the value of the powered capacity and entitled land they already control. We expect returns on new development to hold up better than many investors assume, because competing supply faces the same bottleneck.
+
+Risks:
+- Power delays push out deliveries and the revenue tied to them.
+- A pause in hyperscaler spending, or a shift toward self-built campuses, would hit wholesale leasing first.
+- Facilities designed for lower densities may need costly upgrades to stay competitive.
+- Higher interest rates raise funding costs for a capital-intensive sector and weigh on REIT valuations.
+- Valuations already discount strong growth, leaving little room for execution misses.
+
+Portfolio Implications:
+We recommend maintaining Equinix and Digital Realty as core positions in the Digital Infrastructure Real Estate Fund and keeping American Tower for its tower cash flows and data center optionality. We are not proposing changes to fund weights. One point for the risk team: Equinix and Digital Realty are also held in the AI Infrastructure Fund, so clients who own both funds have more data center exposure than either fund's label suggests. With the AI Infrastructure Fund's model weight increased under IC-2026-004, that overlap has grown. We will provide holdings data for the mid-year look-through exposure review that Elena Vasquez requested.

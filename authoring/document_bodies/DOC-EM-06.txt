@@ -1,0 +1,14 @@
+All,
+
+Yesterday the Investment Committee approved IC-2026-004 by a 6-1 vote. The AI Infrastructure Fund model weight rises from 5% to 8% in Growth and from 3% to 5% in Balanced; Conservative models are unchanged. Elena Vasquez dissented on concentration grounds - a fair question that clients may raise too (see below).
+
+Implementation: Trevor Iwasaki's desk trades February 17 to March 6, about four accounts a day - 60 accounts across 32 clients, roughly $10 million of purchases. Taxable accounts are funded from the Municipal Income Fund; IRAs and tax-exempt accounts from the Core Fixed Income Fund. Trevor will send the account-level schedule before trading starts.
+
+Talking points:
+- Our research team expects demand for GPU capacity to keep running ahead of supply through 2027. We read hyperscaler capex plans as still rising, and the bottlenecks - advanced packaging, memory, networking, power and cooling - are all areas the fund owns.
+- This is a measured step in a long-term theme, funded from bonds rather than from other equity holdings.
+- Concentration: be direct if asked. Nvidia appears in both the AI Infrastructure Fund (about 12% of that fund) and the Global Technology Fund (about 8%), so clients who own both funds have overlapping exposure. The risk team will report look-through exposure by client by mid-year, and we will share it with you.
+
+Please log client conversations in CRM.
+
+Philip Ashworth

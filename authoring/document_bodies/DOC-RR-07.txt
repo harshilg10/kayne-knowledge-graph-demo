@@ -1,0 +1,28 @@
+Summary:
+Power demand from AI data centers is turning into natural gas demand. In our assessment, most of the new generation being planned for large campuses in Texas and the Southeast is gas-fired, on-site or on the grid, because it can be built quickly and run around the clock. That gives natural gas pipelines a second leg of growth alongside LNG exports. Expansions are being underwritten by long-term fee-based contracts, so the volume upside comes with unusually good cash flow visibility. We recommend an overweight to midstream within the Energy Infrastructure Fund.
+
+Background:
+This note follows Natalie Brooks's January report on data center electricity demand and our January session with Leah Goldberg of Pemberton Grid Consulting, who described campuses pairing grid supply with on-site gas-fired generation while they wait in interconnection queues. Here we translate those power estimates into gas demand.
+
+Gas demand estimates:
+Combining Natalie Brooks's load estimates with our assumptions on the share of new data center supply met by gas, we estimate that data center gas burn adds roughly 2-4 Bcf/d of US demand by 2030 (internal estimate). On our math a gigawatt of combined-cycle capacity running at high utilization burns about 0.13 Bcf/d, and on-site engines and simple-cycle turbines burn more per megawatt-hour. That increment matters in a market where LNG has been the main source of new demand, and it is concentrated in states with existing pipeline networks and supply from the Permian Basin and the Haynesville.
+
+Company views:
+- Williams Companies. Its interstate system runs through the Mid-Atlantic and the Southeast, where we see the strongest growth in utility load forecasts. Expansions are backed by long-term contracts with utilities and generators, and we see Williams Companies as the most direct pipeline exposure to data center power demand.
+- Kinder Morgan. One of the largest natural gas pipeline networks in the country, with a strong footprint in Texas and along the Gulf coast. Its intrastate pipelines can serve new gas-fired generation for Texas campuses as well as LNG feed gas, and we expect a steady flow of contracted expansions.
+- Energy Transfer. A large integrated system with Texas intrastate pipelines and direct access to Permian supply. Energy Transfer is well placed to fuel generation for Texas data center projects, though it carries more commodity exposure and a more complex structure than the pure pipeline names.
+- Targa Resources. Gathering and processing volumes in the Permian Basin rise as producers grow output to meet demand. Targa Resources benefits from that volume growth and from NGL handling, and in our view its contract mix has become more fee-based over time.
+- Cheniere Energy. A leading LNG exporter in the United States with long-term contracted liquefaction. New LNG capacity and new gas-fired generation will compete for the same supply, which could tighten the market and raise fuel costs for generators. That supports pipeline volumes, but in our view it makes Cheniere Energy a hold rather than an addition.
+
+Contract structure:
+Interstate expansions are generally built only after shippers commit to long-term firm transportation agreements. These fee-based contracts carry take-or-pay reservation charges, so revenue does not depend on throughput or on the gas price. In midstream, the data center trade is a contracted capital program rather than a commodity bet.
+
+Risks:
+- Permitting and construction delays, particularly for interstate projects that cross several states.
+- Data center demand could fall short of plan if hyperscaler capex slows or efficiency gains outpace expectations.
+- Higher gas prices from competing LNG and power demand could draw political attention to utility bills and pipeline economics.
+- Midstream equities remain sensitive to interest rates as income vehicles.
+- Exclusions: clients whose investment policies exclude fossil-fuel infrastructure cannot hold the fund, which limits the reach of any increase.
+
+Recommendation:
+Overweight midstream within the Energy Infrastructure Fund, favoring pipeline operators with contracted expansion programs - Williams Companies, Kinder Morgan and Energy Transfer - over power producers whose valuations, in our view, already reflect much of the data center opportunity. Hold Targa Resources at a neutral weight and keep Cheniere Energy as a core position. The fund has carried a 5% model weight since IC-2025-014; if the Investment Committee considers a larger allocation, we believe this analysis supports it, and we will work with Rebecca Thornton on the details.

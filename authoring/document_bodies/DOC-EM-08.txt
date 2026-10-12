@@ -1,0 +1,10 @@
+Robert,
+
+A quick note on a change we made in the trust yesterday. We purchased about $957,000 of the AI Infrastructure Fund in the Hartwell Family Trust taxable account on February 17, funded from the Municipal Income Fund. A purchase of about $184,000 in your rollover IRA follows on February 20, funded from the Core Fixed Income Fund.
+
+Both trades implement IC-2026-004, which our Investment Committee approved on February 12 to raise the fund's weight in growth models from 5% to 8%. The reasoning: our research team expects demand for GPU capacity to keep running ahead of supply through 2027, and we see AI infrastructure - the chips, networking, power and cooling behind these systems - as one of the more durable growth areas we follow. The fund's largest holdings are Nvidia, Broadcom and TSMC, alongside networking, memory and data center equipment names.
+
+I know concentration in technology has come up in our recent conversations. I will bring what we have on that to our quarterly review next month so we can go through it properly.
+
+Best regards,
+Michael Torres

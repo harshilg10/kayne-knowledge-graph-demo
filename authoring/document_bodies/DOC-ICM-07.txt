@@ -1,0 +1,29 @@
+Recommendation:
+This memo presents the firm's first look-through exposure analysis, as of June 15, 2026, and asks the Investment Committee to approve two actions (proposed decision IC-2026-011): a 10% single-name cap in thematic funds, and targeted sales of the Global Technology Fund for the three clients above the 15% AI infrastructure guideline.
+
+Background:
+When the committee approved IC-2026-004 in February, Elena Vasquez dissented on concentration grounds and asked for a look-through review by mid-year. Client questions reinforced the request; at the Hartwell Family Trust's March review, Elaine Hartwell asked how much Nvidia the family owns across funds. The Risk Committee reviewed these results on June 18.
+
+Methodology:
+For each client we multiply fund positions by fund holdings and by each company's theme exposure, scored high (1.0), medium (0.5) or low (0.25), and divide by total assets across all of the client's accounts, including private investments. Nvidia, Broadcom, TSMC and Cobalt Ridge Data Centers score high; platform companies such as Microsoft and Alphabet score medium.
+
+Findings:
+- Sterling-Hayes Family Office: 16.5%
+- Okafor Family Office: 16.3%
+- Hartwell Family Trust: 15.9%
+- Every other client is below 13%. The highest is Nakamura Family Partners at 12.7%, which needs no action but stays on watch.
+
+Drivers:
+- Overlap: All three clients carry long-standing, client-directed overweights in the Global Technology Fund, which owns many of the same companies as the AI Infrastructure Fund. The February model increase added to that overlap.
+- Nvidia: Nvidia is the largest single-name look-through exposure; it is 12% of the AI Infrastructure Fund and about 8% of the Global Technology Fund.
+- Private credit: Private Credit Fund II's loan to Cobalt Ridge Data Centers (IC-2026-006) adds data center exposure. All three clients, and Nakamura Family Partners, are investors in the fund.
+
+Recommendations:
+- Single-name cap: Adopt a 10% single-name cap in thematic funds. In the AI Infrastructure Fund, Nvidia is the only position above the cap and would be trimmed from 12% to 10%, consistent with Meredith Calloway's July 2 Nvidia position review, which remains constructive on fundamentals but supports the cap on valuation and concentration grounds. Because the proceeds stay within the theme, the cap reduces single-name risk rather than theme exposure.
+- Overlap reduction: For clients above the guideline, sell Global Technology Fund to bring look-through exposure to about 13%, reinvesting 40% in the Cybersecurity Leaders Fund and 60% in the Core Fixed Income Fund. In Robert Hartwell's IRA, which does not hold the Cybersecurity Leaders Fund, proceeds would go to the Core Fixed Income Fund. Estimated sales are about $4.27 million for the Okafor Family Office, $3.78 million for the Hartwell Family Trust (trust and IRA) and $3.32 million for the Sterling-Hayes Family Office. The 13% target leaves room below the guideline for market moves and future private credit capital calls.
+- Alternative considered: Relying on documented client consent without trades. We do not recommend it, because all three clients would remain above the guideline.
+
+Implementation:
+- Michael Torres (Hartwell Family Trust and Sterling-Hayes Family Office) and Jennifer Walsh (Okafor Family Office) will review the trades with each client before execution.
+- Chief Compliance Officer Grace Holloway asked at the June 18 meeting that advisors document client consent for the client-directed overweights.
+- The risk team will refresh the look-through report quarterly and before any new thematic allocation or PCF II capital call.

@@ -1,0 +1,26 @@
+Summary:
+The first wave of GLP-1 therapies created one of the most important new drug categories in decades, built on injectable products for diabetes and obesity. The second wave will be defined by access and breadth: oral formulations that are easier to manufacture and distribute, new indications beyond weight loss, and next-generation combination mechanisms. We continue to prefer Eli Lilly to Novo Nordisk, and we think concerns about the effect of GLP-1 adoption on medical devices are overstated. This note reflects our own assessment of the category and does not depend on any single trial readout.
+
+Oral formulations:
+Injectables have been limited by manufacturing capacity, cold-chain distribution and patient reluctance to inject. Oral options could widen the market to primary-care patients, needle-averse patients and people moving to maintenance therapy after initial weight loss. Small-molecule pills are also simpler to produce at scale than peptides, which matters for global supply and for price points that payers outside the US can support. Both Eli Lilly and Novo Nordisk are investing heavily in oral options. In our view the long-term winner will be the company that pairs a convenient oral with the manufacturing scale to supply it, and we think Lilly is better placed on both counts.
+
+New indications:
+The category is expanding from metabolic disease into conditions linked to obesity, including cardiovascular risk, sleep apnea, kidney disease, liver disease and joint pain, with earlier-stage work in other areas. We are not modeling any specific trial outcome. The investment point is that each new indication supported by outcomes data strengthens the case for payer coverage, which remains the main constraint on volume growth.
+
+Company positioning:
+- Eli Lilly. A broad incretin pipeline, a dual-agonist franchise and heavy investment in manufacturing capacity make Lilly, in our view, the category leader for the next several years. Valuation already reflects much of this, so execution on supply and new indications matters.
+- Novo Nordisk. The category pioneer, with deep experience in peptide manufacturing and a strong position outside the US. In our view Novo Nordisk has lost momentum to Lilly, and regaining it depends on its next-generation and oral programs. We see value in the shares but less near-term visibility.
+
+Second-order effects on devices:
+Investors have worried that weight loss will reduce demand for procedures tied to obesity. We think the effect is smaller and slower than feared.
+- Intuitive Surgical. Bariatric surgery is a modest part of robotic surgery volumes in our estimate, and patients who lose weight can become eligible for procedures that were previously too risky, from hernia repair to joint and gynecologic surgery. We expect growth at Intuitive Surgical to be driven by new procedure categories and international adoption rather than obesity trends.
+- Boston Scientific. Cardiology and electrophysiology procedures are driven mainly by aging and by the prevalence of conditions such as atrial fibrillation. GLP-1 use may lower some cardiovascular risk over time, but healthier, longer-lived patients remain candidates for treatment. We see little effect on Boston Scientific's growth over our investment horizon.
+
+Risks:
+- Pricing: government negotiation, employer coverage decisions and cash-pay channels are likely to lower net prices even as volumes grow.
+- Competition: a wave of new entrants from large pharmaceutical and biotechnology companies could erode share and pricing from 2027 onward.
+- Safety: broader use across larger populations could surface rare side effects.
+- Devices: if long-term adoption is much higher than we assume, some obesity-related procedure categories could shrink.
+
+Portfolio Implications:
+We are maintaining the Healthcare Innovation Fund's positions. Eli Lilly remains our preferred GLP-1 holding; we are holding Novo Nordisk while we monitor its oral and next-generation programs; and we continue to own Intuitive Surgical and Boston Scientific, where we see GLP-1-related concerns as overstated. GLP-1 headlines generate frequent client questions, and advisors can point out that the fund owns both the leading drug makers and the device companies we think benefit indirectly.

@@ -1,0 +1,9 @@
+Discussion:
+- IC-2026-008: Andre Washington confirmed that the Investment Committee's May 14 decision to raise the Energy Infrastructure Fund model weight from 5% to 7% does not apply to the Bellamy Foundation. The foundation's investment policy excludes fossil-fuel infrastructure, it holds no Energy Infrastructure Fund, and its account will be left out of the June rebalancing.
+- Energy allocation: the foundation's energy exposure stays in the Clean Energy Transition Fund. Andre Washington reviewed its holdings, including NextEra Energy, First Solar and Fluence Energy, and its focus on battery storage and grid modernization. Margaret Bellamy said the board is comfortable with that sleeve at its current weight.
+- Indirect exposure: Margaret Bellamy asked whether the foundation is indirectly exposed to data center power demand, the thesis behind IC-2026-008. Andre Washington explained that the AI Infrastructure Fund, which the foundation holds through the Balanced model, owns Constellation Energy and Quanta Services. These are power generation and grid construction companies rather than fossil-fuel pipelines, and the policy's exclusion is written around midstream and pipeline assets. He added that both names also appear in the Clean Energy Transition Fund.
+- Margaret Bellamy said the board will want figures rather than a description and asked for something she can circulate before its next meeting.
+
+Action Items:
+- Andre Washington to provide a holdings look-through report showing the foundation's indirect exposure to power and grid companies across all funds.
+- Andre Washington to send a written recap confirming the IC-2026-008 exemption.

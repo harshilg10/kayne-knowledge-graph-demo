@@ -1,0 +1,15 @@
+Team,
+
+Yesterday the Investment Committee approved IC-2025-019 by a 7-0 vote, adding the Cybersecurity Leaders Fund to the Growth models at a 4% weight. The allocation is funded from the Global Technology Fund, which goes from 16% to 12% of the Growth model, so total technology exposure is essentially unchanged - we are shifting part of it toward dedicated security names.
+
+Implementation: our trading desk will rebalance the 15 Growth taxable accounts November 17-26. Please review the tax impact of the Global Technology Fund sale with each client before the trade date, and flag any client restriction on selling the fund to me and the desk by end of day today.
+
+Talking points:
+- Platform consolidation: enterprises are cutting the number of security vendors they use, and we think scaled platforms such as CrowdStrike and Palo Alto Networks are best placed to win those consolidated budgets.
+- Zero trust: the shift to zero trust architectures and cloud security keeps security budgets resilient even when broader IT spending is under pressure.
+- Complement, not duplicate: the Cybersecurity Leaders Fund is concentrated in security platform leaders, while the Global Technology Fund owns them only at small weights.
+- Risks: valuations across the group are full and competition is intense; this is a long-term position, not a trade.
+
+The full thesis is in my November 3 note, "Cybersecurity Platform Consolidation". Olivia Grant and I are happy to join client calls.
+
+Daniel Cho

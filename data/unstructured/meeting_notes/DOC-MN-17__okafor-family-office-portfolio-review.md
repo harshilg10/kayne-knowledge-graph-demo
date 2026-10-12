@@ -1,0 +1,20 @@
+Okafor Family Office Portfolio Review
+
+Date: 2026-02-24
+Meeting Type: Client Review
+
+Participants:
+Jennifer Walsh
+Chinedu Okafor (Okafor Family Office)
+Ngozi Okafor (Okafor Family Office)
+
+Discussion:
+- Jennifer Walsh reviewed IC-2026-004, approved by the Investment Committee on February 12, which raises the AI Infrastructure Fund weight in Growth models from 5% to 8%. For the Okafor Family Office this means a purchase of about $1.20 million in the taxable account, scheduled for February 25 and funded from the Municipal Income Fund in the same account.
+- Chinedu Okafor was enthusiastic. He cited recent hyperscaler capex headlines and asked whether the family office should go beyond the model. Jennifer Walsh explained the firm's research view - demand for GPU capacity continuing through 2027 - and recommended staying at the model weight given the existing overweight.
+- Ngozi Okafor asked about liquidity: how quickly the position could be sold and whether the purchase touches cash set aside for private commitments. Jennifer Walsh confirmed the AI Infrastructure Fund offers daily liquidity and that the trade is a swap out of municipal bonds, so cash balances are unchanged. Ngozi Okafor wants the family office's commitments to Private Credit Fund II kept steady - no new commitments and no reductions - and asked for early notice of any capital call.
+- Technology overweight: the family office has maintained a client-directed technology overweight since 2023, mainly through the Global Technology Fund. Jennifer Walsh pointed out that this purchase adds to it and that Nvidia is held in both funds; the risk team is building look-through exposure reporting, with results expected by mid-year. Chinedu Okafor wants to keep the overweight. Ngozi Okafor agreed, provided it is documented.
+
+Action Items:
+- Jennifer Walsh to send an updated investment policy statement acknowledging the client-directed technology overweight, for Chinedu Okafor and Ngozi Okafor to sign.
+- Jennifer Walsh to confirm the February 25 trade after settlement.
+- Jennifer Walsh to give advance notice of any Private Credit Fund II capital call.

@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-ink-950: #0b1220;
+  --color-ink-900: #0f1b2d;
+  --color-ink-800: #17263d;
+  --color-ink-700: #22344f;
+  --color-ink-600: #3a4d6b;
+
+  --color-brand-50: #eef3ff;
+  --color-brand-100: #dce6ff;
+  --color-brand-200: #bccdfe;
+  --color-brand-300: #8eaafc;
+  --color-brand-400: #6489f7;
+  --color-brand-500: #3f68ef;
+  --color-brand-600: #2f54d6;
+  --color-brand-700: #2643ad;
+  --color-brand-800: #233b8a;
+  --color-brand-900: #21346d;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "cv11", "ss01";
+  }
+  body {
+    @apply bg-slate-50 text-slate-800;
+  }
+  ::selection {
+    @apply bg-brand-100 text-ink-900;
+  }
+}
+
+@layer components {
+  .doc-text {
+    @apply font-mono text-[12.5px] leading-[1.65] whitespace-pre-wrap break-words text-slate-700;
+  }
+  .prose-answer {
+    @apply text-[14px] leading-relaxed text-slate-700;
+  }
+  .prose-answer p {
+    @apply my-2;
+  }
+  .prose-answer strong {
+    @apply font-semibold text-slate-900;
+  }
+  .prose-answer ul {
+    @apply my-2 list-disc space-y-1.5 pl-5 marker:text-slate-400;
+  }
+  .prose-answer ol {
+    @apply my-2 list-decimal space-y-1.5 pl-5 marker:text-slate-400;
+  }
+  .prose-answer h1,
+  .prose-answer h2,
+  .prose-answer h3,
+  .prose-answer h4 {
+    @apply mt-4 mb-1.5 text-[14px] font-semibold text-slate-900;
+  }
+  .prose-answer em {
+    @apply text-slate-500;
+  }
+  .prose-answer code {
+    @apply rounded bg-slate-100 px-1 py-0.5 font-mono text-[12px];
+  }
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #eef1f5;
+  border-radius: 8px;
+}
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+  animation: shimmer 1.4s infinite;
+}

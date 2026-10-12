@@ -1,0 +1,41 @@
+id,name,client_type,segment,risk_profile,client_since,city,advisor_id,aliases,notes
+C-001,Hartwell Family Trust,Trust,UHNW,Growth,2014-05-12,"Dallas, TX",PER-018,Hartwell family|Hartwell Trust|Hartwell trust,Trustees Robert and Elaine Hartwell. Client-directed technology overweight since 2023. Sensitive to single-stock concentration. PCF II commitment $7.0M.
+C-002,Okafor Family Office,Family Office,UHNW,Growth,2018-03-05,"Houston, TX",PER-019,Okafor family|Okafor office,Client-directed technology overweight since 2023. Interested in private credit. PCF II commitment $9.0M.
+C-003,Bellamy Foundation,Foundation,Institutional,Balanced,2016-09-01,"Chicago, IL",PER-020,,"Investment policy statement excludes fossil-fuel infrastructure (midstream and pipelines). Grants paid semiannually (June, December)."
+C-004,Lindqvist Revocable Trust,Trust,HNW,Balanced,2019-01-15,"Minneapolis, MN",PER-021,Lindqvist Trust|Lindqvist trust,Erik Lindqvist takes annual RMD from his IRA in December.
+C-005,Ramirez Household,Household,HNW,Balanced,2020-06-01,"San Antonio, TX",PER-022,Ramirez family,Funding daughter's university tuition from the joint account each August.
+C-006,Whitman Charitable Foundation,Foundation,Institutional,Conservative,2015-04-20,"Denver, CO",PER-020,Whitman Foundation,Annual grant distribution each February.
+C-007,Nakamura Family Partners,Family Partnership,UHNW,Growth,2017-11-02,"Los Angeles, CA",PER-021,Nakamura family,Growth model. PCF II commitment $3.0M.
+C-008,Delgado Family Trust,Trust,HNW,Conservative,2021-02-10,"Phoenix, AZ",PER-022,Delgado Trust|Delgado trust,"Income-focused; monthly withdrawal of $9,000 from the trust. Bond income paid to cash."
+C-009,St. Aldric School Endowment,Endowment,Institutional,Balanced,2013-08-30,"Boston, MA",PER-019,St. Aldric Endowment|St. Aldric endowment,"5% annual spending policy, drawn quarterly."
+C-010,Brennan Household,Household,HNW,Growth,2022-03-14,"Austin, TX",PER-018,Brennan family,"Quarterly contribution of $10,000 to the joint account."
+C-011,Sterling-Hayes Family Office,Family Office,UHNW,Growth,2019-07-08,"New York, NY",PER-018,Sterling-Hayes family|Sterling-Hayes office,Client-directed technology overweight since 2023. PCF II commitment $8.0M.
+C-012,Volkov Household,Household,HNW,Conservative,2023-05-22,"Seattle, WA",PER-023,Volkov family,"Monthly withdrawal of $3,500 from the individual account."
+C-013,Prescott Household,Household,HNW,Growth,2016-10-03,"Dallas, TX",PER-018,Prescott family,"Quarterly contribution of $15,000 to the joint account; Anne funds her Roth IRA each April."
+C-014,Whitcomb Family Trust,Trust,UHNW,Balanced,2012-03-19,"University Park, TX",PER-018,Whitcomb Trust,"Monthly trust distribution of $25,000. Harold Whitcomb takes his RMD in December."
+C-015,Adeyemi Household,Household,HNW,Growth,2021-08-09,"Plano, TX",PER-018,Adeyemi family,"Quarterly contribution of $20,000 to the joint account."
+C-016,Thibodeaux Household,Household,HNW,Balanced,2017-05-22,"Houston, TX",PER-019,Thibodeaux family,
+C-017,Garza Family Foundation,Foundation,Institutional,Balanced,2014-11-10,"Houston, TX",PER-019,Garza Foundation,"Grants paid semiannually (May, November)."
+C-018,Raghavan Household,Household,HNW,Growth,2020-02-03,"Sugar Land, TX",PER-019,Raghavan family,"Quarterly contribution of $15,000 to the joint account."
+C-019,Kowalczyk Household,Household,HNW,Balanced,2018-09-17,"Evanston, IL",PER-020,Kowalczyk family,
+C-020,Fairbanks Charitable Trust,Trust,Institutional,Conservative,2011-04-04,"Chicago, IL",PER-020,,5% annual unitrust payout in December.
+C-021,Odum Household,Household,HNW,Growth,2022-06-13,"Oak Park, IL",PER-020,Odum family,"Quarterly contribution of $12,000 to the joint account; Keisha funds her Roth IRA each April."
+C-022,Takahashi Household,Household,HNW,Balanced,2015-07-27,"Pasadena, CA",PER-021,Takahashi family,
+C-023,Bergstrom Family Trust,Trust,UHNW,Growth,2013-02-25,"Santa Monica, CA",PER-021,Bergstrom Trust,Growth model at target weights.
+C-024,Weiss Family Foundation,Foundation,Institutional,Balanced,2016-01-19,"Los Angeles, CA",PER-021,Weiss Foundation,"Quarterly grant draws of $125,000."
+C-025,Villarreal Household,Household,HNW,Conservative,2019-10-07,"San Antonio, TX",PER-022,Villarreal family,"Retired; monthly withdrawal of $6,500. Ernesto takes his RMD in December. Bond income paid to cash."
+C-026,Kerrigan Family Trust,Trust,HNW,Balanced,2018-04-16,"Boerne, TX",PER-022,Kerrigan Trust,
+C-027,Castellanos Household,Household,HNW,Growth,2023-01-23,"San Antonio, TX",PER-022,Castellanos family,"Quarterly contribution of $10,000 to the joint account."
+C-028,Lindahl Household,Household,HNW,Growth,2021-11-01,"Bellevue, WA",PER-023,Lindahl family,"Quarterly contribution of $25,000 to the joint account."
+C-029,Haugen Household,Household,HNW,Balanced,2019-03-11,"Seattle, WA",PER-023,Haugen family,
+C-030,Cascade Wetlands Conservancy,Endowment,Institutional,Conservative,2020-09-14,"Tacoma, WA",PER-023,,"Annual operating draw of $150,000 each March."
+C-031,Montgomery Household,Household,HNW,Conservative,2011-09-12,"Dallas, TX",PER-018,Montgomery family,"Retired; monthly withdrawal of $12,500. Clayton and Beverly take RMDs in December. Bond income paid to cash."
+C-032,Ferraro Family Partners,Family Partnership,UHNW,Growth,2016-06-06,"Houston, TX",PER-019,Ferraro family,
+C-033,Delacroix Household,Household,HNW,Balanced,2019-05-20,"Chicago, IL",PER-020,,
+C-034,Varga Household,Household,HNW,Growth,2022-10-24,"Irvine, CA",PER-021,Varga family,"Quarterly contribution of $9,000 to the joint account."
+C-035,Sorensen Family Trust,Trust,UHNW,Balanced,2017-08-28,"Seattle, WA",PER-023,Sorensen Trust,
+C-036,Medina Household,Household,HNW,Balanced,2021-04-12,"San Antonio, TX",PER-022,Medina family,
+C-037,Hollis Creek Day School Endowment,Endowment,Institutional,Balanced,2015-09-08,"Fort Worth, TX",PER-018,Hollis Creek Endowment,"4.5% annual spending policy, drawn quarterly."
+C-038,Rahman Household,Household,HNW,Growth,2023-09-18,"Houston, TX",PER-019,Rahman family,"Quarterly contribution of $18,000 to the joint account."
+C-039,Brandt Revocable Trust,Trust,HNW,Conservative,2014-12-01,"Naperville, IL",PER-020,Brandt Trust,"Monthly withdrawal of $7,500 from the trust. Walter Brandt takes his RMD in December. Bond income paid to cash."
+C-040,Kaplan-Reyes Household,Household,HNW,Balanced,2020-11-16,"Los Angeles, CA",PER-021,,Isabel funds her Roth IRA each April.

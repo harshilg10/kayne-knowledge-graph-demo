@@ -1,0 +1,14 @@
+Natalie,
+
+Thank you for hosting me yesterday - a useful session, and Wade Pruitt's questions on gas supply were exactly the right ones.
+
+As promised, attached is our interconnection queue data summary for Texas and the Mid-Atlantic, covering large-load requests by requested capacity, county and stated in-service date, along with our estimate of the typical time from request to energization. Three points stand out:
+- AI data centers account for most new large-load requests in both regions. Our classification relies on load profiles and developer disclosures, so please treat the split as our estimate rather than a reported figure.
+- In our data, waits of three to five years are now typical for large loads, and requested in-service dates keep slipping as projects are restudied. Power demand is arriving faster than transmission can be built.
+- On-site gas-fired generation is becoming common. More developers pair a grid connection with on-site turbines or reciprocating engines, either as a bridge until the interconnection is energized or as permanent backup.
+
+I have copied Rebecca Thornton. Rebecca, Natalie Brooks mentioned you may want the gas-fired generation section for the Energy Infrastructure Fund work you described yesterday, and I am glad to walk you through the underlying data whenever convenient.
+
+Best regards,
+Leah Goldberg
+Pemberton Grid Consulting

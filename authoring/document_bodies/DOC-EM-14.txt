@@ -1,0 +1,17 @@
+All,
+
+Yesterday the Investment Committee approved IC-2026-008 by a 7-0 vote. The Energy Infrastructure Fund moves from 5% to 7% in the Growth models and in the Balanced models, funded from fixed income as in February (Municipal Income Fund in taxable accounts, Core Fixed Income Fund elsewhere). Trading runs June 1-12 and covers about 31 accounts and roughly $6.5 million of purchases.
+
+Talking points:
+- The thesis is data center power demand. Power demand from AI data centers is growing faster than the grid can add capacity, and we expect much of the new supply to come from gas-fired generation.
+- New gas plants need gas. We expect pipeline operators such as Williams Companies and Kinder Morgan to move higher volumes through their natural gas pipelines under largely fee-based contracts - a volume story, not a commodity-price bet.
+- Power producers already in the fund, such as Constellation Energy and Vistra, should also benefit from tighter power markets.
+- Risks to acknowledge: rate sensitivity, project delays and policy changes.
+
+Background reading: Natalie Brooks's January report "Powering AI: Data Center Electricity Demand and the Grid" and Wade Pruitt's April report "Natural Gas Midstream: The Data Center Power Trade".
+
+Andre Washington: the Bellamy Foundation is exempt. Its investment policy excludes fossil-fuel infrastructure, so it will not receive the increase - the same treatment as under IC-2025-014.
+
+Please log client conversations in CRM and send questions to me or Philip Ashworth.
+
+Rebecca Thornton

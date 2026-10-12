@@ -1,0 +1,30 @@
+Summary:
+Ostrander Power Constructors has been a Private Credit Fund II borrower since June 2024 under a first lien term loan. The company builds high-voltage substations and grid interconnection facilities for data center developers, utilities and industrial customers, mainly in Texas and the Southwest. 2025 was a strong year: backlog grew substantially, leverage declined and every covenant test to date was met with comfortable headroom. I recommend a one-notch upgrade of the internal risk rating, with no change to terms.
+
+Business update:
+Backlog is the main story. Demand for substation capacity from data center campuses has become the largest part of the order book, alongside multi-year master service agreements with regional utilities that provide a recurring base of maintenance and upgrade work. Data center jobs are mostly fixed-price engineering, procurement and construction contracts, usually with owner-furnished transformers or escalation clauses on major equipment, which limits Ostrander's exposure to long equipment lead times. Utility work is largely unit-priced. The company added field crews during the year, and management reports stable retention of linemen and electricians despite a tight labor market.
+
+Management discussion:
+On our year-end call, CFO Janet Pryor walked through preliminary full-year 2025 results and the 2026 budget. Both revenue and EBITDA grew strongly, margins held steady, and working capital rose with the larger project load, mainly contract assets on fixed-price jobs. Janet Pryor expects backlog conversion to support continued growth in 2026 and noted that the company's surety bonding capacity was increased during the year. Audited 2025 statements are expected in the spring, and we will confirm the preliminary figures against them.
+
+Covenant compliance:
+- Total leverage: compliant at the March, June and September 2025 test dates and declining through the year as EBITDA grew; preliminary year-end figures indicate continued compliance.
+- Fixed charge coverage: compliant with comfortable headroom.
+- Reporting: compliance certificates and monthly financials delivered on time.
+- No waivers or amendments were requested.
+The covenants have not come close to a breach at any point since closing.
+
+Competitive position:
+Quanta Services is the main public competitor. In our view it brings national scale, a much larger balance sheet and self-performed crews, and it tends to win the largest transmission and multi-site programs. Ostrander competes on mid-size substations and interconnection scopes, where speed of mobilization, local crews and working relationships with transmission owners matter most. With grid interconnection requests backed up across Texas, contractor capacity is tight enough to support pricing for both firms.
+
+Sector context:
+Natalie Brooks's January 8 report on data center electricity demand identifies long interconnection queues as a key constraint on new campuses and names grid construction contractors such as Quanta Services among the beneficiaries. That view supports the durability of Ostrander's pipeline.
+
+Risks:
+- Concentration in data center developers: a slowdown in data center construction would reduce new awards, although utility work provides a base.
+- Execution on fixed-price contracts as project sizes grow.
+- Working capital growth and the timing of milestone payments.
+- Availability of skilled labor.
+
+Rating and recommendation:
+Upgrade the internal risk rating by one notch, reflecting lower leverage, a larger backlog with a recurring utility base and consistent covenant compliance. Maintain the position on existing terms and continue quarterly monitoring. Submitted to Marcus Bell for approval.

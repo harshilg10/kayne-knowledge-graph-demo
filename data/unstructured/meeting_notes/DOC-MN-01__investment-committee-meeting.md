@@ -1,0 +1,28 @@
+Investment Committee Meeting
+
+Date: 2025-06-18
+Meeting Type: Investment Committee
+
+Participants:
+Douglas Whitfield
+Meredith Calloway
+Brendan Kessler
+Rebecca Thornton
+Marcus Bell
+Elena Vasquez
+Philip Ashworth
+
+Discussion:
+- Douglas Whitfield opened the meeting. One agenda item: Rebecca Thornton's proposal (memo dated June 11) to add the Arbor Peak Energy Infrastructure Fund to the Growth and Balanced models at a 5% weight, funded from fixed income.
+- Rebecca Thornton outlined the thesis. The fund is built around midstream natural gas pipelines whose revenue comes mainly from fee-based cash flows under long-term contracts, with tariffs that adjust for inflation. That gives the models an income stream with less commodity sensitivity than the broader energy sector. Top holdings are Williams Companies, Kinder Morgan and Energy Transfer, alongside a smaller sleeve of power-generation names.
+- Rebecca Thornton expects pipeline volumes to grow with LNG exports and with gas demand from power generation.
+- Elena Vasquez asked how the fund behaves in an energy price shock. Rebecca Thornton: contracted volumes limit the cash-flow impact, but the fund is still an equity exposure and the 5% weight was sized with that in mind.
+- Marcus Bell asked why the funding comes from fixed income rather than equities. Douglas Whitfield: the committee wants the income character of the asset, so fixed income is the natural funding source.
+- Philip Ashworth noted that the Bellamy Foundation's investment policy statement excludes fossil-fuel infrastructure, including midstream pipelines, so the foundation will not receive the allocation and keeps its current mix. Advisors will check for any other client restrictions before trades are placed.
+
+Decisions:
+- IC-2025-014: add the Energy Infrastructure Fund at 5% to Growth and Balanced models, funded from fixed income; the Bellamy Foundation is exempt. Approved 7-0.
+
+Action Items:
+- Trevor Iwasaki to implement the model trades in late June and early July 2025.
+- Advisors to explain the change to clients before their accounts are traded; Philip Ashworth to coordinate.

@@ -1,0 +1,32 @@
+Summary:
+Electricity demand from AI data centers is now the fastest-growing source of US load growth, and we think power, more than chips, will set the pace at which new GPU capacity comes online in 2026 and 2027. After roughly two decades of flat national demand, utilities are planning for sustained growth again, but generation, transmission and substations take years to add. Below we set out our framework for data center power demand, how developers are working around grid interconnection delays, and the listed companies we expect to benefit.
+
+Key Points:
+- Power demand from data centers is large and concentrated. A single GPU campus can require several hundred megawatts, and projects cluster where land, fiber and power coincide: Texas, the Mid-Atlantic and parts of the Southeast and the Midwest.
+- Grid interconnection is the binding constraint. Large-load requests are arriving faster than utilities can study them, and new transmission and substation capacity takes years to permit and build.
+- Existing nuclear power is the scarcest asset in the system: carbon-free, available around the clock and already connected. Restarts of retired units and uprates at operating plants add capacity at the margin, and we expect contracts for that output to carry a premium.
+
+Demand estimates:
+Our internal base case has data centers rising from a mid-single-digit share of US electricity consumption today to roughly 9-10% by 2030, with AI training and inference driving most of the increase. On those assumptions data centers alone add close to one percentage point a year to national demand, before electrification of buildings, transport and industry. These internal estimates draw on announced campus pipelines, utility large-load forecasts and our assumptions on GPU power draw; the range is wide, and we will update them as utilities refresh their plans.
+
+How developers are securing power:
+- Grid supply under long-term power purchase agreements or new large-load tariffs, usually with minimum-take commitments that protect other ratepayers.
+- On-site gas-fired generation, either as a bridge until the grid connection is energized or as prime power with the grid as backup.
+- Contracts with existing nuclear plants, including co-location arrangements.
+- Battery storage and curtailment commitments, which some utilities now accept in exchange for a faster connection.
+
+Beneficiaries:
+- Constellation Energy and Vistra. Owners of existing nuclear and gas fleets in competitive markets are best placed to sign long-dated contracts with hyperscale buyers. We see Constellation Energy as the purest nuclear exposure and Vistra as a more diversified operator whose gas fleet adds flexibility.
+- GE Vernova. In our assessment, orders for large gas turbines have outrun manufacturing capacity, with delivery slots committed several years out, which supports pricing.
+- Eaton and Vertiv. Every new megawatt of IT load needs switchgear, transformers, UPS systems and power distribution, and higher-density GPU racks raise cooling content per megawatt. We prefer Eaton for power distribution; Vertiv pairs power management with thermal management.
+- Quanta Services. A leading contractor for transmission lines and substations, positioned for the interconnection work new campuses require, much of it under multi-year utility programs.
+- Williams Companies. New gas-fired generation needs pipeline capacity, and Williams Companies' interstate system runs through several of the fastest-growing data center markets, with expansions typically backed by long-term contracts.
+
+Risks:
+- Regulation. We expect continued scrutiny of co-location at nuclear plants and of how grid upgrade costs are allocated.
+- Rate cases. Rising residential bills could slow utility rate case approvals and prompt special tariffs for large loads.
+- Overbuild. Interconnection queues include speculative and duplicate requests. If hyperscaler capex slows or chips become more power-efficient faster than we assume, some gas generation and equipment orders could be stranded.
+- Execution. Turbine, transformer and switchgear lead times could push energization dates out.
+
+Portfolio Implications:
+The theme is already represented in the Energy Infrastructure Fund, which holds Constellation Energy, Vistra, GE Vernova, Quanta Services and Eaton alongside pipeline operators such as Williams Companies, and in the Clean Energy Transition Fund through its nuclear and grid holdings. We are not proposing a model change. The analysis supports the Energy Infrastructure Fund's 5% model weight set under IC-2025-014, and we would revisit sizing once our demand estimates firm up. Next steps: pressure-test the interconnection assumptions with outside grid specialists, and work with the midstream team on the gas demand implied by new gas-fired generation.

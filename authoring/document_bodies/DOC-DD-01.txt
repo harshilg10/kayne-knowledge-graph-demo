@@ -1,0 +1,25 @@
+Transaction Overview:
+Private Credit Fund II is evaluating a $45 million senior secured term loan to Cobalt Ridge Data Centers, a private developer building a 120 MW data center campus in West Texas; proceeds would fund completion of phase 1 (60 MW), scheduled to be energized in Q3 2026. Proposed terms: first lien on the land, buildings and power equipment plus an assignment of tenant leases; five-year tenor; SOFR + 575 bps with a 1.5% original issue discount; maintenance covenants requiring debt service coverage of at least 1.35x after stabilization and loan-to-value of no more than 65%; and a debt service reserve funded at closing. If approved, the loan would be funded by a Private Credit Fund II capital call and become the fund's largest single position.
+
+Business Overview:
+Cobalt Ridge develops GPU-dense capacity for large users that cannot secure powered sites quickly in established markets. The site offers land, nearby high-voltage transmission and gas supply. Phase 1 is committed under letters of intent to two tenants: an investment-grade hyperscale tenant (about 60% of phase 1) and a GPU cloud operator (about 40%) that will deploy Nvidia-based GPU clusters, with first deliveries expected in Q3, timed to energization. Phase 2 (the remaining 60 MW) is not part of this financing.
+
+Site visit, March 18:
+Marcus Bell and I toured the campus with CEO Owen Fitzgerald and CFO Alicia Moreno. Construction of the phase 1 data hall and on-site substation is under way. Owen Fitzgerald walked us through the hall design: rack densities above 100 kW, which require direct-to-chip liquid cooling supplied by Polar Loop Cooling Systems. Alicia Moreno presented the financing plan and the equity committed to date. Management sent the tenant letters of intent, the substation energization timeline and the power purchase agreement term sheet the next day; the detailed phase 1 construction budget is still outstanding.
+
+Key Findings:
+- Power is the critical path. Cobalt Ridge holds a secured interconnection queue position for phase 1 load, and a 15-year power purchase agreement covers expected phase 1 consumption at largely fixed prices. The substation is being built by Ostrander Power Constructors, an existing Private Credit Fund II borrower whose January annual review recommended a rating upgrade; its timeline shows energization in Q3 2026 with limited float. Pemberton Grid Consulting's independent power assessment is in progress.
+- Tenant quality is adequate but uneven: the investment-grade hyperscale tenant provides most of the expected rent, while the GPU cloud operator is younger, growing quickly and more dependent on outside funding. Neither lease is executed yet.
+- Cooling: Polar Loop direct-to-chip systems are designed into both tenants' halls. Because Polar Loop is a smaller private manufacturer, we will review its delivery schedule and warranty terms.
+- The demand backdrop is supportive. Meredith Calloway and Arjun Mehta's November report expects demand for GPU capacity to exceed supply through 2027, and energized, liquid-cooled capacity is scarce, which supports re-leasing value.
+
+Risks and Mitigants:
+- Construction or energization delay (the principal risk; a slip defers rent): mitigated by the debt service reserve, completion milestones and sponsor cost-overrun support, Ostrander's record with us and the independent power review.
+- Power cost and reliability: the largely fixed-price PPA limits price exposure, and on-site gas-fired generation provides backup.
+- Tenant concentration (two tenants): mitigated by an investment-grade anchor, assignment of leases to the lender, quarterly covenant tests and the 65% loan-to-value ceiling.
+- GPU tenant credit and obsolescence: tenant servers are not our collateral; the building, power and cooling plant can serve future generations of GPU clusters.
+- Linked exposure: a Cobalt Ridge delay would also affect Ostrander Power Constructors, already in the fund, so we will monitor the two credits together.
+- Fund concentration: the loan adds data center exposure for Private Credit Fund II investors, several of whom also hold the firm's technology equity funds; we will flag it to Risk for the mid-year look-through review.
+
+Recommendation:
+Proceed to the Investment Committee for credit approval in April, subject to (1) Pemberton Grid Consulting supporting the Q3 2026 energization timeline and (2) satisfactory legal due diligence from Caldwell & Pierce LLP, including assignability of the power purchase agreement and leases. Our review of the detailed construction budget and executed tenant leases consistent with the letters of intent should be conditions precedent to funding. Deal lead: Marcus Bell.

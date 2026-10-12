@@ -1,0 +1,30 @@
+Summary:
+Clients increasingly ask where AI spending actually goes. Most of the capital the large cloud platforms commit to AI ends up with a small group of suppliers: the companies that design the chips, manufacture them, connect them, and keep them powered and cooled. That supplier layer is what we mean by AI infrastructure, and it is the opportunity set for the Arbor Peak AI Infrastructure Fund. Below we cover the value chain, why we launched the fund in 2023, and our early view that GPU capacity will stay tight.
+
+The value chain:
+- Compute: accelerated computing is the engine of the build. Nvidia is the platform leader; its GPUs, systems and software ecosystem set the standard most large training clusters are built around. AMD is the main merchant alternative, and we expect buyers to keep cultivating it as a second source.
+- Foundry: nearly every leading accelerator is manufactured by TSMC on its leading-edge nodes and assembled with its advanced packaging (CoWoS), which places the processor next to stacks of high-bandwidth memory. Foundry and packaging capacity are planned years ahead, which is why supply responds slowly when demand jumps.
+- Networking: a cluster is only as fast as the network that ties thousands of GPUs together, and a slow fabric leaves expensive chips idle. Broadcom supplies switching silicon used in many of these networks and also co-designs custom accelerators with hyperscalers. Arista Networks builds high-performance Ethernet switches, and we expect Ethernet to win a growing share of back-end networking in AI data centers.
+- Power and cooling: a rack of GPUs draws several times the power of a conventional server rack, and heat has become a design constraint. Vertiv supplies the power distribution and thermal management these sites need, including the liquid cooling that dense racks increasingly require. Beyond the building, the grid itself is becoming the slowest link of all.
+
+Why we launched the AI Infrastructure Fund in 2023:
+The Global Technology Fund already gives clients the platforms, meaning the cloud providers and software companies that will monetize AI over time. When we launched the AI Infrastructure Fund in April 2023, our thesis was that the platforms would have to spend heavily, for several years, before AI revenue fully arrived, and that their spending would become revenue for suppliers first. Three design choices followed:
+- Own the layers, not a single winner: compute, foundry, networking, equipment and power and cooling names, so that clients are not making a one-stock bet on Nvidia.
+- Complement the broader technology fund: some overlap is unavoidable, since Nvidia and Broadcom sit in both, but the AI Infrastructure Fund adds suppliers the Global Technology Fund does not own, such as Vertiv, Eaton and Micron.
+- Move with the bottleneck: since launch we have added memory (Micron), custom silicon (Marvell) and, earlier this year, power generation and grid construction exposure (Constellation Energy and Quanta Services).
+
+Our early view - GPU capacity stays tight:
+We expect GPU capacity to remain tight through at least 2026, for three reasons:
+- TSMC's advanced packaging capacity is growing quickly but from a low base, and every leading accelerator, merchant or custom, needs it.
+- High-bandwidth memory comes from a small number of suppliers and is committed well in advance.
+- The constraint is increasingly physical: power, substations and cooling take years, not quarters, to add.
+Demand, meanwhile, is broadening from training toward inference, which grows with everyday usage and should prove more durable than a one-time training cycle.
+
+What could go wrong:
+- Digestion: the platforms could pause orders to absorb capacity, as has happened in past cloud spending cycles.
+- Valuation: many of these stocks already discount strong growth, and drawdowns can be sharp even when fundamentals hold.
+- Concentration: Nvidia is a top position in both the AI Infrastructure Fund and the Global Technology Fund, so clients who own both should understand their combined exposure.
+- Policy: export controls on advanced chips can shift where demand shows up.
+
+Portfolio Implications:
+We see the AI Infrastructure Fund as the right vehicle for clients who want exposure to AI infrastructure without a single-stock bet. For advisors, the simplest framing is this: the Global Technology Fund owns the companies that spend on AI, and the AI Infrastructure Fund owns the companies they spend it with.

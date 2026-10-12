@@ -1,0 +1,13 @@
+Douglas, Brendan,
+
+Following up on the questions from yesterday's Investment Committee.
+
+1. TSMC advanced packaging. The constraint is CoWoS-class packaging, not leading-edge wafers. Our estimate is that TSMC keeps adding packaging capacity through 2026, but not fast enough to close the gap with accelerator demand through 2027. Until it does, packaging rather than wafer supply sets how many high-end GPUs reach the market.
+
+2. GPU capacity. Our channel checks say supply is still being allocated rather than filled on demand, with long lead times on the newest Nvidia platforms, while hyperscaler capex budgets are still rising. The other limits we track are high-bandwidth memory supply and power availability at new data centers. We do not expect any of these to ease meaningfully in the next few quarters.
+
+3. Concentration. Elena Vasquez's point is fair - Nvidia sits in both the AI Infrastructure Fund and the Global Technology Fund, where Olivia Grant puts it at about 8%. Any sizing proposal has to address that overlap directly.
+
+On sizing: the AI Infrastructure Fund is 5% of the Growth model and 3% of the Balanced model. My suggestion is to put sizing on the January 15 agenda and decide then whether that is still enough given the outlook. The detailed supply-demand work is in the November report Arjun Mehta and I published, "GPU Demand Outlook 2026-2027: Capacity Remains Tight".
+
+Meredith Calloway
